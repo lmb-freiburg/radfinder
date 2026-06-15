@@ -27,7 +27,7 @@ classification, and slice-level localization at 12 mm resolution.
 
 ## News
 
-- 12 June 2026: **Code and models** released, including the report structuring pipeline
+- 15 June 2026: **Code and models** released, including the report structuring pipeline
 - 7 May 2026: **Accepted** to MICCAI 2026 (early-acceptance)
 - 2 March 2026: **Preprint** on [arXiv](https://arxiv.org/abs/2603.02026)
 
