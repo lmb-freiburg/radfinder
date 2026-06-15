@@ -1,0 +1,102 @@
+category: "Male Pelvis"
+description: "Male pelvic findings"
+prompts:
+  - question: "Is there prostatomegaly or prostatic hyperplasia?"
+    positive:
+      - "Prostatomegaly is present."
+      - "The prostate gland is enlarged, consistent with benign prostatic hyperplasia."
+      - "The prostate is prominently enlarged with a heterogeneous appearance, compatible with prostatic hyperplasia."
+    negative:
+      - "There is no prostatomegaly or prostatic hyperplasia."
+      - "No prostatic enlargement is identified."
+      - "The prostate gland is normal in size without features of benign prostatic hyperplasia."
+
+  - question: "Is there prostatitis?"
+    positive:
+      - "Prostatitis is present."
+      - "Inflammatory changes within the prostate gland are identified, consistent with prostatitis."
+      - "The prostate demonstrates diffuse enhancement with surrounding fat stranding, suggestive of prostatitis."
+    negative:
+      - "There is no prostatitis."
+      - "No prostatitis is identified."
+      - "The prostate gland shows no inflammatory changes or surrounding fat stranding to suggest prostatitis."
+
+  - question: "Is there prostate cancer?"
+    positive:
+      - "Prostate cancer is present."
+      - "A suspicious mass within the prostate gland is identified, consistent with prostate carcinoma."
+      - "A focal lesion with abnormal enhancement is seen within the prostate, suspicious for malignancy."
+    negative:
+      - "There is no prostate cancer."
+      - "No prostate carcinoma is identified."
+      - "The prostate gland shows no focal lesions or masses suspicious for malignancy."
+
+  - question: "Is there testicular torsion?"
+    positive:
+      - "Testicular torsion is present."
+      - "Findings consistent with testicular torsion are identified, including twisting of the spermatic cord."
+      - "The affected testis demonstrates absent or diminished enhancement with twisting of the spermatic cord, consistent with testicular torsion."
+    negative:
+      - "There is no testicular torsion."
+      - "No testicular torsion is identified."
+      - "The testes show normal symmetric enhancement without twisting of the spermatic cord."
+
+  - question: "Are there any testicular masses?"
+    positive:
+      - "A testicular mass is present."
+      - "A focal mass within the testis is identified."
+      - "A solid lesion with abnormal enhancement is seen within the testicular parenchyma, suspicious for a testicular neoplasm."
+    negative:
+      - "There are no testicular masses."
+      - "No testicular masses are identified."
+      - "The testes are homogeneous without focal masses or lesions."
+
+  - question: "Is there testicular (segmental) infarct?"
+    positive:
+      - "A testicular infarct is present."
+      - "A wedge-shaped area of non-enhancement within the testis is identified, consistent with a segmental testicular infarct."
+      - "A focal region of absent perfusion is seen within the testicular parenchyma, compatible with testicular infarction."
+    negative:
+      - "There is no testicular infarct."
+      - "No testicular infarct is identified."
+      - "The testes enhance homogeneously without areas of non-perfusion suggestive of infarction."
+
+  - question: "Are there any scrotal hematomas?"
+    positive:
+      - "A scrotal hematoma is present."
+      - "A high-attenuation collection is identified within the scrotum, consistent with a scrotal hematoma."
+      - "A hyperdense fluid collection is seen in the scrotal sac, indicating hemorrhage."
+    negative:
+      - "There are no scrotal hematomas."
+      - "No scrotal hematoma is identified."
+      - "The scrotal contents show no high-attenuation collections suggestive of hematoma."
+
+  - question: "Is there epididymitis?"
+    positive:
+      - "Epididymitis is present."
+      - "Enlargement and increased enhancement of the epididymis are identified, consistent with epididymitis."
+      - "The epididymis is swollen and hyperenhancing with surrounding inflammatory fat stranding, compatible with epididymitis."
+    negative:
+      - "There is no epididymitis."
+      - "No epididymitis is identified."
+      - "The epididymis is normal in size and enhancement without inflammatory changes."
+
+  - question: "Are there any hydroceles?"
+    positive:
+      - "A hydrocele is present."
+      - "A fluid collection is identified surrounding the testis within the tunica vaginalis, consistent with a hydrocele."
+      - "Simple fluid is seen layering within the scrotal sac around the testis, compatible with a hydrocele."
+    negative:
+      - "There are no hydroceles."
+      - "No hydrocele is identified."
+      - "No fluid collection is seen within the tunica vaginalis surrounding the testes."
+
+  - question: "Are there any varicoceles?"
+    positive:
+      - "A varicocele is present."
+      - "Dilated, tortuous veins are identified within the pampiniform plexus, consistent with a varicocele."
+      - "Serpiginous tubular structures are seen adjacent to the testis, representing dilated spermatic veins compatible with a varicocele."
+    negative:
+      - "There are no varicoceles."
+      - "No varicocele is identified."
+      - "The pampiniform plexus veins are of normal caliber without dilatation or tortuosity."

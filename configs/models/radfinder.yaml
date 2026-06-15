@@ -1,0 +1,3 @@
+# this config is a combination of configs/models/spectre_pretrained_half_patch_embed.yaml
+# and relevant fields of configs/runs/training/train_radfinder_3mm.yaml
+huggingface_path: hf-hub:lmb-freiburg/radfinder

@@ -1,0 +1,72 @@
+category: "Bones"
+description: "Bone-related findings"
+prompts:
+  - question: "Are there any fractures of rib or clavicle?"
+    positive:
+      - "Fractures of the rib or clavicle are present."
+      - "Rib or clavicle fracture noted."
+      - "There is a cortical disruption involving the rib or clavicle consistent with fracture."
+    negative:
+      - "No rib or clavicle fractures are identified."
+      - "The ribs and clavicles are intact without fracture."
+      - "There is no cortical disruption of the ribs or clavicles."
+
+  - question: "Are there any fractures of spine?"
+    positive:
+      - "A spinal fracture is present with vertebral body compression or cortical disruption."
+      - "Vertebral fracture noted."
+      - "There is loss of vertebral body height or cortical discontinuity consistent with a spinal fracture."
+    negative:
+      - "No spinal fractures are identified."
+      - "The vertebral bodies are intact without fracture."
+      - "There is no loss of vertebral body height or cortical disruption to suggest spinal fracture."
+
+  - question: "Is there any osteopenia?"
+    positive:
+      - "Osteopenia is present with diffuse reduction in bone mineral density."
+      - "Osteopenic changes noted."
+      - "There is generalized decreased attenuation of the osseous structures suggesting osteopenia."
+    negative:
+      - "No osteopenia is identified."
+      - "Bone mineral density appears preserved."
+      - "There is no evidence of decreased bone attenuation to suggest osteopenia."
+
+  - question: "Is there any arthritis?"
+    positive:
+      - "Degenerative arthritis is present with joint space narrowing and osteophyte formation."
+      - "Arthritic changes noted."
+      - "There are degenerative changes including osteophytes and subchondral sclerosis consistent with arthritis."
+    negative:
+      - "No arthritis is identified."
+      - "The visualized joints are unremarkable without arthritic changes."
+      - "There is no joint space narrowing or osteophyte formation to suggest arthritis."
+
+  - question: "Is there any sternotomy?"
+    positive:
+      - "Prior median sternotomy is evident with sternal wires in place."
+      - "Sternotomy changes noted."
+      - "There are midline sternal wires and a longitudinal sternal defect consistent with prior sternotomy."
+    negative:
+      - "No sternotomy is identified."
+      - "The sternum is intact without surgical changes."
+      - "There are no sternal wires or findings to suggest prior sternotomy."
+
+  - question: "Are there any osteolytic lesions?"
+    positive:
+      - "Osteolytic lesions are present with focal areas of bone destruction."
+      - "Lytic osseous lesions noted."
+      - "There are well-defined or permeative areas of decreased bone density consistent with osteolytic lesions."
+    negative:
+      - "No osteolytic lesions are identified."
+      - "The osseous structures show no lytic lesions."
+      - "There are no focal areas of bone destruction to suggest osteolytic disease."
+
+  - question: "Are there any osteosclerotic lesions?"
+    positive:
+      - "Osteosclerotic lesions are present with focal areas of increased bone density."
+      - "Sclerotic osseous lesions noted."
+      - "There are well-defined areas of increased bone attenuation consistent with osteosclerotic lesions."
+    negative:
+      - "No osteosclerotic lesions are identified."
+      - "The osseous structures show no sclerotic lesions."
+      - "There are no focal areas of abnormally increased bone density."

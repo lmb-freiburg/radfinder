@@ -1,0 +1,52 @@
+category: "Peritoneum"
+description: "Peritoneal cavity findings"
+prompts:
+  - question: "Is there any ascites?"
+    positive:
+      - "Ascites is present."
+      - "Free fluid is identified within the peritoneal cavity, consistent with ascites."
+      - "Fluid of simple attenuation is seen layering in the dependent portions of the abdomen and pelvis."
+    negative:
+      - "There is no ascites."
+      - "No ascites is identified."
+      - "No free fluid is visualized within the peritoneal cavity."
+
+  - question: "Is there any free air or pneumoperitoneum?"
+    positive:
+      - "Pneumoperitoneum is present."
+      - "Free intraperitoneal air is identified, indicating pneumoperitoneum."
+      - "Collections of extraluminal gas are seen beneath the anterior abdominal wall, consistent with free air in the peritoneal cavity."
+    negative:
+      - "There is no pneumoperitoneum."
+      - "No free intraperitoneal air is identified."
+      - "No extraluminal gas is visualized within the peritoneal cavity."
+
+  - question: "Is there pseudomyxoma peritonei?"
+    positive:
+      - "Pseudomyxoma peritonei is present."
+      - "Mucinous ascites with scalloping of the hepatic and splenic surfaces is identified, consistent with pseudomyxoma peritonei."
+      - "Low-attenuation mucinous material is seen distributed throughout the peritoneal cavity with characteristic visceral organ scalloping, compatible with pseudomyxoma peritonei."
+    negative:
+      - "There is no pseudomyxoma peritonei."
+      - "No pseudomyxoma peritonei is identified."
+      - "The peritoneal cavity shows no mucinous collections or visceral surface scalloping suggestive of pseudomyxoma peritonei."
+
+  - question: "Is there peritoneal carcinomatosis or omental caking?"
+    positive:
+      - "Peritoneal carcinomatosis is present."
+      - "Omental caking and peritoneal nodularity are identified, consistent with peritoneal carcinomatosis."
+      - "Thickening and nodular enhancement of the peritoneum with omental soft tissue infiltration is observed, indicating carcinomatous peritoneal disease."
+    negative:
+      - "There is no peritoneal carcinomatosis or omental caking."
+      - "No peritoneal carcinomatosis is identified."
+      - "The peritoneum and omentum appear normal without nodularity, thickening, or soft tissue caking."
+
+  - question: "Is there mesenteric carcinoid tumor?"
+    positive:
+      - "A mesenteric carcinoid tumor is present."
+      - "A spiculated mesenteric mass with surrounding desmoplastic reaction is identified, consistent with a mesenteric carcinoid tumor."
+      - "A stellate soft tissue mass is seen within the mesentery with radiating strands and associated tethering of adjacent bowel loops, compatible with carcinoid tumor."
+    negative:
+      - "There is no mesenteric carcinoid tumor."
+      - "No mesenteric carcinoid tumor is identified."
+      - "The mesentery shows no spiculated mass or desmoplastic reaction suggestive of carcinoid tumor."

@@ -1,0 +1,81 @@
+modality: "breast-mr"
+
+categories:
+  Mass:
+    description: "Mass lesion in the breast (e.g. cancer, focus, fibroadenoma, phyllodes tumor)"
+    questions:
+      - question: "Are any masses present in the breast?"
+      - question: "Are any foci of enhancement present in the breast?"
+      - question: "Is carcinoma in the breast suspected based on the imaging findings?"
+      - question: "Is fibroadenoma in the breast suspected based on the imaging findings?"
+      - question: "Is lipoma in the breast suspected based on the imaging findings?"
+      - question: "Is fat necrosis or oil cyst in the breast suspected based on the imaging findings?"
+
+  Mass Features:
+    description: "shape and margin features of breast mass (Nil for no or non-mass lesion)"
+    questions:
+     
+      - question: "Is the shape of the mass oval?"
+      - question: "Is the shape of the mass round?"
+      - question: "Is the shape of the mass irregular?"
+      - question: "Is the margin of the mass circumscribed?"
+      - question: "Is the margin of the mass spiculated?"
+      - question: "Is the margin of the mass irregular?"
+   
+
+  Staging:
+    description: "Staging-related findings of known breast cancer"
+    questions:
+      - question: "Is there any ipsilateral axillary lymphadenopathy?"
+      - question: "Is there any internal mammary lymphadenopathy?"
+      - question: "Is there evidence of tumor invasion of the skin?"
+      - question: "Is there evidence of tumor invasion of the pectoralis muscle?"
+      - question: "Is there evidence of tumor invasion of the chest wall?"
+      - question: "Is there any skin retraction?"
+      - question: "Is there any skin thickening?"
+
+  Nipple:
+    description: "Nipple-related findings (e.g. retraction, inversion, Paget's)"
+    questions:
+      - question: "Is there any nipple retraction or inversion?"
+      - question: "Is Paget's disease suspected based on the imaging findings?"
+
+  Non-mass Enhancement:
+    description: "Non-mass enhancement of the breast"
+    questions:
+      - question: "Is non-mass enhancement present in the breast?"
+      - question: "Is the distribution of the non-mass enhancement focal?"
+      - question: "Is the distribution of the non-mass enhancement linear?"
+      - question: "Is the distribution of the non-mass enhancement segmental?"
+      - question: "Is the distribution of the non-mass enhancement regional?"
+      - question: "Is the distribution of the non-mass enhancement diffuse?"
+      
+
+  Surgery:
+    description: "Post-surgical findings of the breast (e.g. post-mastectomy changes, hematoma or seroma)"
+    questions:
+      - question: "Are any post-partial mastectomy (lumpectomy) changes present?"
+      - question: "Are any mastectomy changes present?"
+      - question: "Are any post-operative hematomas or seromas present?"
+
+  Benign:
+    description: "Benign findings and diagnoses in the breast (e.g. cyst, inflammation, abscess, mastitis)"
+    questions:
+      - question: "Are any galactoceles present?"
+      - question: "Are any simple or complicated breast cysts present?"
+      - question: "Is breast abscess suspected based on the imaging findings?"
+      - question: "Is mastitis suspected based on the imaging findings?"
+
+  Device:
+    description: "Implant- and device-related findings in the breast (e.g. implants, biopsy clips)"
+    questions:
+      - question: "Are there any biopsy clips?"
+      - question: "Is there evidence of intra-capsular implant rupture?"
+      - question: "Is there evidence of extra-capsular implant rupture?"
+      - question: "Is implant-associated anaplastic large-cell lymphoma (BIA-ALCL) suspected based on the imaging findings?"
+
+  Abdomen:
+    description: "Incidental finding of the visible abdomen (e.g. liver cysts, liver masses)"
+    questions:
+      - question: "Are any liver cysts present?"
+      - question: "Are any liver masses present?"

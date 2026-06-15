@@ -1,0 +1,182 @@
+category: "Pancreas"
+description: "Pancreas-related findings"
+prompts:
+  - question: "Is there pancreatic atrophy?"
+    positive:
+      - "The pancreas is atrophic."
+      - "Diffuse pancreatic atrophy is noted."
+      - "The pancreatic parenchyma appears shrunken and reduced in volume."
+    negative:
+      - "The pancreas is normal in size without atrophy."
+      - "No pancreatic atrophy is identified."
+      - "The pancreatic parenchyma maintains normal volume and morphology."
+
+  - question: "Is chronic pancreatitis suspected based on imaging findings?"
+    positive:
+      - "Imaging findings are consistent with chronic pancreatitis."
+      - "Chronic pancreatitis is suspected, with parenchymal calcifications and ductal irregularity."
+      - "The pancreas shows calcifications, atrophy, and ductal changes suggestive of chronic inflammatory disease."
+    negative:
+      - "There are no imaging findings to suggest chronic pancreatitis."
+      - "No evidence of chronic pancreatitis is seen."
+      - "The pancreas lacks calcifications, ductal irregularity, or other features of chronic pancreatitis."
+
+  - question: "Is there acute pancreatitis?"
+    positive:
+      - "Acute pancreatitis is present."
+      - "Findings are consistent with acute pancreatitis, including peripancreatic fat stranding and gland enlargement."
+      - "The pancreas is edematous and enlarged with surrounding inflammatory changes indicative of acute pancreatitis."
+    negative:
+      - "There is no evidence of acute pancreatitis."
+      - "No acute pancreatitis is identified."
+      - "The pancreas shows no edema, enlargement, or peripancreatic inflammatory changes."
+
+  - question: "Is there necrotizing pancreatitis?"
+    positive:
+      - "Necrotizing pancreatitis is present."
+      - "Areas of pancreatic necrosis are identified, consistent with necrotizing pancreatitis."
+      - "The pancreas demonstrates non-enhancing regions of parenchymal necrosis with peripancreatic fluid collections."
+    negative:
+      - "There is no necrotizing pancreatitis."
+      - "No pancreatic necrosis is identified."
+      - "The pancreatic parenchyma enhances uniformly without areas of necrosis."
+
+  - question: "Is there autoimmune pancreatitis?"
+    positive:
+      - "Autoimmune pancreatitis is suspected."
+      - "The pancreas shows diffuse enlargement with a capsule-like rim, suggestive of autoimmune pancreatitis."
+      - "A diffusely sausage-shaped pancreas with loss of lobular contour and peripheral hypoattenuating halo is observed, consistent with autoimmune pancreatitis."
+    negative:
+      - "There is no evidence of autoimmune pancreatitis."
+      - "No features of autoimmune pancreatitis are identified."
+      - "The pancreas does not demonstrate diffuse enlargement, capsule-like rim, or other findings suggestive of autoimmune pancreatitis."
+
+  - question: "Is there groove pancreatitis?"
+    positive:
+      - "Groove pancreatitis is present."
+      - "Inflammatory changes are identified in the pancreaticoduodenal groove, consistent with groove pancreatitis."
+      - "There is sheet-like soft tissue and inflammatory stranding in the groove between the pancreatic head and the duodenum."
+    negative:
+      - "There is no groove pancreatitis."
+      - "No evidence of groove pancreatitis is seen."
+      - "The pancreaticoduodenal groove appears normal without inflammatory changes."
+
+  - question: "Is there any pancreatic pseudocysts?"
+    positive:
+      - "A pancreatic pseudocyst is present."
+      - "A well-defined encapsulated fluid collection consistent with a pancreatic pseudocyst is noted."
+      - "A thin-walled, homogeneous fluid-attenuation lesion adjacent to the pancreas is seen, compatible with a pseudocyst."
+    negative:
+      - "There are no pancreatic pseudocysts."
+      - "No pancreatic pseudocysts are identified."
+      - "No encapsulated peripancreatic fluid collections suggestive of pseudocysts are observed."
+
+  - question: "Are there any pancreatic tumors?"
+    positive:
+      - "A pancreatic tumor is identified."
+      - "A mass lesion is present within the pancreas."
+      - "A focal lesion with abnormal enhancement is seen in the pancreatic parenchyma, suspicious for a neoplasm."
+    negative:
+      - "There are no pancreatic tumors."
+      - "No pancreatic masses or tumors are identified."
+      - "The pancreatic parenchyma is homogeneous without focal lesions or masses."
+
+  - question: "Are there any intraductal papillary mucinous neoplasms (IPMN)?"
+    positive:
+      - "An intraductal papillary mucinous neoplasm is present."
+      - "IPMN is identified, with cystic dilatation of the pancreatic duct or side branches."
+      - "A mucin-producing cystic lesion communicating with the pancreatic ductal system is observed, consistent with IPMN."
+    negative:
+      - "There are no intraductal papillary mucinous neoplasms."
+      - "No IPMN is identified."
+      - "The pancreatic ductal system shows no cystic dilatation or features suggestive of intraductal papillary mucinous neoplasm."
+
+  - question: "Are there any intraductal papillary mucinous neoplasms with worrisome features?"
+    positive:
+      - "An IPMN with worrisome features is present."
+      - "The identified IPMN demonstrates worrisome features including a cyst size of 3 cm or greater and main duct dilatation between 5 and 9 mm."
+      - "A cystic pancreatic lesion consistent with IPMN is seen, exhibiting thickened enhancing walls, an abrupt change in pancreatic duct caliber, and lymphadenopathy, raising concern for worrisome features."
+    negative:
+      - "There are no IPMN with worrisome features."
+      - "No worrisome features are identified in association with any pancreatic cystic lesion."
+      - "The pancreatic cystic lesions lack mural nodules, thickened walls, or main duct dilatation that would constitute worrisome features."
+
+  - question: "Are there any serous cystic neoplasms?"
+    positive:
+      - "A serous cystic neoplasm of the pancreas is present."
+      - "A microcystic lesion with a honeycomb pattern is identified in the pancreas, consistent with a serous cystadenoma."
+      - "A well-defined lobulated pancreatic lesion composed of multiple small cysts with a central stellate scar is observed, characteristic of a serous cystic neoplasm."
+    negative:
+      - "There are no serous cystic neoplasms of the pancreas."
+      - "No serous cystadenoma is identified."
+      - "The pancreas does not contain microcystic or honeycomb-pattern lesions suggestive of serous cystic neoplasm."
+
+  - question: "Are there any mucinous cystic neoplasms?"
+    positive:
+      - "A mucinous cystic neoplasm of the pancreas is present."
+      - "A macrocystic lesion with peripheral calcifications is identified in the pancreatic body or tail, consistent with a mucinous cystic neoplasm."
+      - "A unilocular or oligolocular thick-walled cystic lesion is seen in the distal pancreas, compatible with a mucinous cystic neoplasm."
+    negative:
+      - "There are no mucinous cystic neoplasms of the pancreas."
+      - "No mucinous cystic neoplasm is identified."
+      - "The pancreas shows no macrocystic lesions with features suggestive of mucinous cystic neoplasm."
+
+  - question: "Are there any solid pseudopapillary tumors?"
+    positive:
+      - "A solid pseudopapillary tumor of the pancreas is present."
+      - "A well-encapsulated mixed solid and cystic mass is identified in the pancreas, consistent with a solid pseudopapillary neoplasm."
+      - "A large, well-demarcated pancreatic mass with heterogeneous enhancement and areas of hemorrhagic degeneration is observed, suggestive of a solid pseudopapillary tumor."
+    negative:
+      - "There are no solid pseudopapillary tumors of the pancreas."
+      - "No solid pseudopapillary neoplasm is identified."
+      - "The pancreas does not contain well-encapsulated mixed solid-cystic masses suggestive of solid pseudopapillary tumor."
+
+  - question: "Are there any ductal pancreatic carcinomas?"
+    positive:
+      - "Pancreatic ductal adenocarcinoma is present."
+      - "A hypoattenuating mass in the pancreas with upstream ductal dilatation is identified, consistent with ductal adenocarcinoma."
+      - "A poorly defined hypoenhancing pancreatic mass causing abrupt cutoff of the main pancreatic duct is observed, highly suspicious for ductal carcinoma."
+    negative:
+      - "There is no pancreatic ductal adenocarcinoma."
+      - "No ductal pancreatic carcinoma is identified."
+      - "The pancreas shows no hypoattenuating mass, ductal cutoff, or other features of ductal adenocarcinoma."
+
+  - question: "Are there any neuroendocrine tumors?"
+    positive:
+      - "A pancreatic neuroendocrine tumor is present."
+      - "A hyperenhancing lesion in the pancreas is identified, consistent with a neuroendocrine tumor."
+      - "A well-defined, avidly enhancing pancreatic mass is seen on the arterial phase, compatible with a pancreatic neuroendocrine neoplasm."
+    negative:
+      - "There are no pancreatic neuroendocrine tumors."
+      - "No pancreatic neuroendocrine tumor is identified."
+      - "The pancreas shows no hyperenhancing focal lesions suggestive of neuroendocrine neoplasm."
+
+  - question: "Is there main pancreatic duct dilatation?"
+    positive:
+      - "The main pancreatic duct is dilated."
+      - "Main pancreatic duct dilatation is noted."
+      - "The main pancreatic duct is abnormally widened, measuring above the normal caliber."
+    negative:
+      - "The main pancreatic duct is not dilated."
+      - "No main pancreatic duct dilatation is identified."
+      - "The main pancreatic duct is of normal caliber throughout its course."
+
+  - question: "Is there an annular pancreas?"
+    positive:
+      - "An annular pancreas is present."
+      - "Pancreatic tissue encircles the duodenum, consistent with annular pancreas."
+      - "A ring of pancreatic parenchyma is seen surrounding the second portion of the duodenum, indicating an annular pancreas."
+    negative:
+      - "There is no annular pancreas."
+      - "No annular pancreas is identified."
+      - "The pancreas follows a normal anatomical course without encirclement of the duodenum."
+
+  - question: "Is cystic fibrosis suspected based on the pancreatic imaging findings?"
+    positive:
+      - "The pancreatic imaging findings are suggestive of cystic fibrosis."
+      - "Complete fatty replacement of the pancreas is noted, consistent with pancreatic changes of cystic fibrosis."
+      - "The pancreas is diffusely replaced by fat with small cysts and punctate calcifications, findings associated with cystic fibrosis."
+    negative:
+      - "The pancreatic imaging findings do not suggest cystic fibrosis."
+      - "No pancreatic features of cystic fibrosis are identified."
+      - "The pancreas shows normal parenchymal attenuation without fatty replacement or changes suggestive of cystic fibrosis."

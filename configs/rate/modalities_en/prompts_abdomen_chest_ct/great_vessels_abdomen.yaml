@@ -1,0 +1,82 @@
+category: "Great Vessels in the Abdomen"
+description: "Vascular findings in the abdomen"
+prompts:
+  - question: "Is abdominal aortic aneurysm suspected based on the imaging findings?"
+    positive:
+      - "An abdominal aortic aneurysm is present."
+      - "The abdominal aorta is aneurysmal, measuring above the threshold for aneurysm."
+      - "Focal dilatation of the abdominal aorta is seen, consistent with an abdominal aortic aneurysm."
+    negative:
+      - "There is no abdominal aortic aneurysm."
+      - "No abdominal aortic aneurysm is identified."
+      - "The abdominal aorta is of normal caliber without aneurysmal dilatation."
+
+  - question: "Is arterial or aortic thrombosis suspected based on the imaging findings?"
+    positive:
+      - "Aortic thrombosis is present."
+      - "Mural thrombus is identified within the aortic lumen."
+      - "A filling defect is seen along the aortic wall, consistent with mural thrombus."
+    negative:
+      - "There is no arterial or aortic thrombosis."
+      - "No aortic thrombus is identified."
+      - "The aortic lumen is patent without filling defects or mural thrombus."
+
+  - question: "Is aortic atherosclerosis suspected based on the imaging findings?"
+    positive:
+      - "Aortic atherosclerosis is present."
+      - "Atherosclerotic calcifications and intimal irregularity are noted along the abdominal aorta."
+      - "The abdominal aorta demonstrates mural calcified plaques and luminal irregularity, consistent with atherosclerotic disease."
+    negative:
+      - "There is no significant aortic atherosclerosis."
+      - "No aortic atherosclerosis is identified."
+      - "The abdominal aorta has smooth walls without calcified plaques or atherosclerotic changes."
+
+  - question: "Are there any aortic stents?"
+    positive:
+      - "An aortic stent graft is in place."
+      - "An endovascular aortic stent graft is identified within the abdominal aorta."
+      - "A metallic stent graft is seen within the aortic lumen, consistent with prior endovascular aortic repair."
+    negative:
+      - "There are no aortic stents."
+      - "No aortic stent graft is identified."
+      - "The aorta does not contain any endovascular stent graft device."
+
+  - question: "Are there any deep venous thromboses?"
+    positive:
+      - "Deep venous thrombosis is present."
+      - "A filling defect consistent with deep venous thrombosis is identified within the abdominal or pelvic veins."
+      - "An intraluminal thrombus is seen within a deep vein, causing non-opacification and venous distension."
+    negative:
+      - "There are no deep venous thromboses."
+      - "No deep venous thrombosis is identified."
+      - "The visualized deep veins of the abdomen and pelvis are patent without filling defects."
+
+  - question: "Are there any aortic dissections?"
+    positive:
+      - "An aortic dissection is present."
+      - "An intimal flap is identified within the aorta, consistent with aortic dissection."
+      - "A linear hypodensity is seen dividing the aortic lumen into true and false channels, indicating aortic dissection."
+    negative:
+      - "There is no aortic dissection."
+      - "No aortic dissection is identified."
+      - "The aorta shows no intimal flap or separation of the lumen into true and false channels."
+
+  - question: "Are there any aortic intramural hematomas?"
+    positive:
+      - "An aortic intramural hematoma is present."
+      - "Crescentic high-attenuation thickening of the aortic wall is identified, consistent with an intramural hematoma."
+      - "The aortic wall demonstrates eccentric hyperdense thickening without an intimal flap or flow in the thickened region, compatible with an intramural hematoma."
+    negative:
+      - "There is no aortic intramural hematoma."
+      - "No aortic intramural hematoma is identified."
+      - "The aortic wall is of normal thickness without crescentic hyperdensity suggestive of intramural hematoma."
+
+  - question: "Are there any penetrating atherosclerotic aortic ulcers?"
+    positive:
+      - "A penetrating atherosclerotic ulcer of the aorta is present."
+      - "A focal contrast-filled outpouching extending beyond the expected aortic intimal surface is identified, consistent with a penetrating atherosclerotic ulcer."
+      - "A crater-like ulceration is seen extending through the intima into the aortic media, surrounded by atherosclerotic plaque, compatible with a penetrating aortic ulcer."
+    negative:
+      - "There are no penetrating atherosclerotic aortic ulcers."
+      - "No penetrating atherosclerotic ulcer is identified."
+      - "The aortic intimal surface shows no focal outpouchings or crater-like ulcerations suggestive of penetrating atherosclerotic ulcer."

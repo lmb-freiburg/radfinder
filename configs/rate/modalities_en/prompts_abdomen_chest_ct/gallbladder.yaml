@@ -1,0 +1,122 @@
+category: "Gallbladder"
+description: "Gallbladder-related findings"
+prompts:
+  - question: "Are there any gallbladder stones or cholelithiasis?"
+    positive:
+      - "Cholelithiasis is present."
+      - "Gallstones are identified within the gallbladder lumen."
+      - "Hyperdense calculi are seen within the dependent portion of the gallbladder, consistent with cholelithiasis."
+    negative:
+      - "There is no cholelithiasis."
+      - "No gallstones are identified."
+      - "The gallbladder lumen is free of calculi or other filling defects."
+
+  - question: "Is the gallbladder surgically absent?"
+    positive:
+      - "The gallbladder is surgically absent."
+      - "Prior cholecystectomy is noted with absence of the gallbladder in the gallbladder fossa."
+      - "The gallbladder is not visualized, and surgical clips are seen in the gallbladder fossa, consistent with prior cholecystectomy."
+    negative:
+      - "The gallbladder is present and has not been surgically removed."
+      - "No prior cholecystectomy. The gallbladder is present in its normal anatomical position."
+      - "The gallbladder is visualized in the gallbladder fossa without evidence of prior surgical removal."
+
+  - question: "Are there any choledochal cysts?"
+    positive:
+      - "A choledochal cyst is present."
+      - "Cystic dilatation of the common bile duct is identified, consistent with a choledochal cyst."
+      - "A fusiform or saccular dilatation of the extrahepatic bile duct is observed, compatible with a choledochal cyst."
+    negative:
+      - "There are no choledochal cysts."
+      - "No choledochal cyst is identified."
+      - "The extrahepatic bile duct shows no cystic or fusiform dilatation suggestive of a choledochal cyst."
+
+  - question: "Is there acute cholecystitis?"
+    positive:
+      - "Acute cholecystitis is present."
+      - "The gallbladder is distended with wall thickening, pericholecystic fluid, and mucosal hyperenhancement, consistent with acute cholecystitis."
+      - "A distended gallbladder with mural edema, surrounding fat stranding, and pericholecystic inflammatory changes is seen, indicative of acute cholecystitis."
+    negative:
+      - "There is no acute cholecystitis."
+      - "No evidence of acute cholecystitis is identified."
+      - "The gallbladder is normal in caliber without wall thickening, pericholecystic fluid, or inflammatory changes."
+
+  - question: "Is there acute cholecystitis with rupture?"
+    positive:
+      - "Acute cholecystitis with gallbladder rupture is present."
+      - "A defect in the gallbladder wall with extraluminal fluid is identified, consistent with gallbladder perforation complicating acute cholecystitis."
+      - "The gallbladder wall demonstrates a focal discontinuity with surrounding abscess formation and free fluid, indicating ruptured acute cholecystitis."
+    negative:
+      - "There is no gallbladder rupture."
+      - "No gallbladder perforation or rupture is identified."
+      - "The gallbladder wall is intact without focal discontinuity, extraluminal fluid collections, or signs of perforation."
+
+  - question: "Is there emphysematous cholecystitis?"
+    positive:
+      - "Emphysematous cholecystitis is present."
+      - "Gas is identified within the gallbladder wall, consistent with emphysematous cholecystitis."
+      - "Intramural and intraluminal gas is seen within a thickened gallbladder wall, indicative of emphysematous cholecystitis."
+    negative:
+      - "There is no emphysematous cholecystitis."
+      - "No emphysematous cholecystitis is identified."
+      - "The gallbladder wall does not contain gas, and there are no findings to suggest emphysematous cholecystitis."
+
+  - question: "Is there porcelain gallbladder?"
+    positive:
+      - "Porcelain gallbladder is present."
+      - "Mural calcification of the gallbladder wall is noted, consistent with porcelain gallbladder."
+      - "Dense calcification is seen along the gallbladder wall, characteristic of porcelain gallbladder."
+    negative:
+      - "There is no porcelain gallbladder."
+      - "No porcelain gallbladder is identified."
+      - "The gallbladder wall shows no mural calcification."
+
+  - question: "Is there pneumobilia?"
+    positive:
+      - "Pneumobilia is present."
+      - "Gas is identified within the biliary tree."
+      - "Air-density foci are seen tracking along the intrahepatic bile ducts in a central, non-dependent distribution, consistent with pneumobilia."
+    negative:
+      - "There is no pneumobilia."
+      - "No pneumobilia is identified."
+      - "The biliary tree is free of gas, with no air-density foci within the bile ducts."
+
+  - question: "Is there gallbladder wall thickening?"
+    positive:
+      - "Gallbladder wall thickening is present."
+      - "The gallbladder wall is diffusely thickened."
+      - "The gallbladder demonstrates mural thickening exceeding the normal wall thickness."
+    negative:
+      - "There is no gallbladder wall thickening."
+      - "The gallbladder wall is normal in thickness."
+      - "The gallbladder wall measures within normal limits without thickening."
+
+  - question: "Is there gallbladder adenomyomatosis?"
+    positive:
+      - "Gallbladder adenomyomatosis is present."
+      - "Focal or diffuse gallbladder wall thickening with intramural diverticula is noted, consistent with adenomyomatosis."
+      - "The gallbladder wall demonstrates Rokitansky-Aschoff sinuses and characteristic mural thickening, compatible with adenomyomatosis."
+    negative:
+      - "There is no gallbladder adenomyomatosis."
+      - "No adenomyomatosis of the gallbladder is identified."
+      - "The gallbladder wall shows no intramural diverticula or features of adenomyomatosis."
+
+  - question: "Are there any gallbladder polyps?"
+    positive:
+      - "Gallbladder polyps are present."
+      - "Polypoid soft-tissue-attenuation lesions projecting from the gallbladder wall into the lumen are identified."
+      - "Fixed, soft-tissue-attenuation projections are seen arising from the gallbladder mucosa, consistent with gallbladder polyps."
+    negative:
+      - "There are no gallbladder polyps."
+      - "No gallbladder polyps are identified."
+      - "The gallbladder wall is smooth without polypoid projections or intraluminal soft-tissue lesions."
+
+  - question: "Is there gallbladder cancer?"
+    positive:
+      - "Gallbladder cancer is present."
+      - "An enhancing mass arising from the gallbladder wall with invasion into adjacent structures is identified, consistent with gallbladder carcinoma."
+      - "A heterogeneously enhancing soft-tissue mass replacing or infiltrating the gallbladder is observed, suspicious for gallbladder malignancy."
+    negative:
+      - "There is no gallbladder cancer."
+      - "No gallbladder carcinoma is identified."
+      - "The gallbladder shows no enhancing masses, mural irregularity, or findings suggestive of malignancy."

@@ -1,0 +1,8 @@
+is_list: true
+files:
+  - configs/tasks/retrieval/ctrate_val.yaml
+  - configs/tasks/retrieval/ctrate_valdup.yaml
+  - configs/tasks/binary_zs/bz_ctrate_val.yaml
+  - configs/tasks/binary_zs/bz_radchestct_standard.yaml
+  - configs/tasks/retrieval/vr_ctrate_val.yaml
+  - configs/tasks/retrieval/merlin_pool_test.yaml

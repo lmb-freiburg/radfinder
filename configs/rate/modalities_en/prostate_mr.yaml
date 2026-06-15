@@ -1,0 +1,63 @@
+modality: "prostate-mr"
+
+categories:
+  Benign:
+    description: "Benign findings and diagnoses (e.g. benign hyperplasia, inflammation, and infection)"
+    questions:
+      - question: "Is benign prostatic hyperplasia (BPH) present?"
+      - question: "Are there any abscesses in the prostate?"
+      - question: "Is prostatitis suspected based on the imaging findings?"
+      - question: "Is seminal vesiculitis suspected based on the imaging findings?"
+
+  Cyst:
+    description: "Cyst findings and diagnoses (e.g. utricle cyst, müllerian duct cyst, ejaculatory-duct cyst, seminal vesicle cyst)"
+    questions:
+      - question: "Is cyst suspected in the prostate (e.g. Mullerian duct cyst, utricle cyst, or ejaculatory duct cyst) or seminal vesicle based on imaging findings?"
+
+  Malignancy:
+    description: "Malignant tumours in specific zones of the prostate (e.g. peripheral zone, transitional zone, central, multifocal"
+    questions:
+      - question: "Is prostate cancer in the peripheral zone of the prostate probable based on the imaging findings?"
+      - question: "Is prostate cancer in the transitional zone of the prostate probable based on the imaging findings?"
+      - question: "Is prostate cancer in the central zone of the prostate probable based on imaging findings?"
+  
+  Staging:
+    description: "Staging-related findings of prostate cancer"
+    questions:
+      - question: "Is there any extracapsular extension of prostate cancer (capsular bulge or irregularity)?"
+      - question: "Is there contralateral involvement of the prostate by prostate cancer?"
+      - question: "Is there obliteration of the rectoprostatic angle by prostate cancer?"
+      - question: "Is there invasion of the neurovascular bundle by prostate cancer?"
+      - question: "Is there invasion of the urinary bladder or urethra by prostate cancer?"
+      - question: "Is there any pelvic lymphadenopathy?"
+      - question: "Is there any invasion of the seminal vesicle by prostate cancer?"
+    
+  Surgery:
+    description: "Hemorrhage in the prostate"
+    questions:
+      - question: "Is there any hemorrhage within the prostate?"
+
+  Urinary System:
+    description: "Findings and diagnoses of the urinary system (e.g. tumor, stone)"
+    questions:
+      - question: "Is primary urinary bladder tumor suspected based on the imaging findings?"
+      - question: "Is primary ureter tumor suspected based on the imaging findings?"
+      - question: "Are there any stones in the urinary bladder?"
+      - question: "Is hydroureter present?"
+      - question: "Are there any bladder diverticula or pseudodiverticula?"
+
+  Gastrointestinal System:
+    description: "Findings and diagnoses of the gastrointestinal system (e.g. rectal tumor, bowel wall thickening)"
+    questions:
+      - question: "Is primary rectal tumor suspected based on the imaging findings?"
+      - question: "Is primary anal tumor suspected based on the imaging findings?"
+      - question: "Are there any polypoid lesions in the visualized bowel?"
+      - question: "Is there any thickening in the visualized bowel?"
+
+  Musculoskeletal System:
+    description: "Findings and diagnoses of pelvic bone, lumbar spine, sacrum (e.g. bony metastases, fracture, vertebral wedge deformity, intervertebral disc herniation)"
+    questions:
+      - question: "Is bony metastases suspected based on the imaging findings?"
+      - question: "Are there any pelvic fractures?"
+      - question: "Are there any fractures or wedge deformities of the spine?"
+      - question: "Are there any herniated intervertebral discs in the visualized spine?"

@@ -1,0 +1,24 @@
+{
+    "Medical material": [
+        "catheter_or_port", "tracheal_tube", "chest_tube", "breast_implant",
+        "pacemaker_or_defib", "stent", "clip", "staple", "gi_tube",
+        "hardware", "suture"
+    ],
+    "Arterial wall calcification": ["calcification"],
+    "Cardiomegaly": ["cardiomegaly"],
+    "Pericardial effusion": ["pericardial_effusion"],
+    "Coronary artery wall calcification": ["calcification"],
+    "Hiatal hernia": ["hernia"],
+    "Lymphadenopathy": ["lymphadenopathy"],
+    "Emphysema": ["emphysema"],
+    "Atelectasis": ["atelectasis"],
+    "Lung nodule": ["nodule", "nodulegr1cm"],
+    "Lung opacity": ["opacity"],
+    "Pulmonary fibrotic sequela": ["scarring"],
+    "Pleural effusion": ["pleural_effusion"],
+    "Mosaic attenuation pattern": [],
+    "Peribronchial thickening": ["bronchial_wall_thickening"],
+    "Consolidation": ["consolidation"],
+    "Bronchiectasis": ["bronchiectasis"],
+    "Interlobular septal thickening": ["septal_thickening"]
+}

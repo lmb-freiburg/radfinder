@@ -1,0 +1,322 @@
+category: "Gastrointestinal"
+description: "Gastrointestinal findings"
+prompts:
+  - question: "Is appendicitis suspected based on the imaging findings?"
+    positive:
+      - "Acute appendicitis is suspected with an enlarged, fluid-filled appendix."
+      - "The appendix is dilated and inflamed, consistent with appendicitis."
+      - "There is periappendiceal fat stranding and appendiceal wall thickening suggesting appendicitis."
+    negative:
+      - "There is no evidence of appendicitis."
+      - "The appendix appears normal without signs of inflammation."
+      - "No appendiceal dilation, wall thickening, or periappendiceal fat stranding is identified."
+
+  - question: "Is there submucosal edema, enterocolitis, or gastritis?"
+    positive:
+      - "Submucosal edema and mucosal inflammation consistent with enterocolitis are present."
+      - "Bowel wall thickening with submucosal edema is noted, compatible with enterocolitis or gastritis."
+      - "There is diffuse mucosal hyperenhancement and wall thickening of the stomach and bowel loops indicating gastritis and enterocolitis."
+    negative:
+      - "There is no submucosal edema, enterocolitis, or gastritis."
+      - "The gastric and bowel mucosa appear normal without edema or inflammatory changes."
+      - "No bowel wall thickening or mucosal hyperenhancement suggestive of enterocolitis or gastritis is seen."
+
+  - question: "Is bowel obstruction present?"
+    positive:
+      - "Bowel obstruction is present with proximal dilation and a transition point."
+      - "Dilated bowel loops with air-fluid levels are seen, consistent with bowel obstruction."
+      - "There is a transition point with upstream bowel dilation and decompressed distal loops indicating mechanical obstruction."
+    negative:
+      - "There is no bowel obstruction."
+      - "The bowel caliber is normal throughout without evidence of obstruction."
+      - "No dilated bowel loops, air-fluid levels, or transition point to suggest obstruction are identified."
+
+  - question: "Is hiatal hernia present?"
+    positive:
+      - "A hiatal hernia is present with herniation of the gastric fundus through the esophageal hiatus."
+      - "There is a hiatal hernia with the gastroesophageal junction located above the diaphragm."
+      - "Portions of the stomach are seen extending through the diaphragmatic hiatus into the thorax, consistent with hiatal hernia."
+    negative:
+      - "There is no hiatal hernia."
+      - "The gastroesophageal junction is in normal position at the level of the diaphragmatic hiatus."
+      - "No herniation of gastric contents through the esophageal hiatus is identified."
+
+  - question: "Is there pneumatosis intestinalis?"
+    positive:
+      - "Pneumatosis intestinalis is present with gas seen within the bowel wall."
+      - "Intramural gas is identified within the bowel wall, consistent with pneumatosis intestinalis."
+      - "Linear and bubbly lucencies are noted within the intestinal wall indicating pneumatosis."
+    negative:
+      - "There is no pneumatosis intestinalis."
+      - "No intramural gas is seen within the bowel wall."
+      - "The intestinal wall is free of gas collections, with no evidence of pneumatosis."
+
+  - question: "Is there inflammatory bowel disease?"
+    positive:
+      - "Findings are consistent with inflammatory bowel disease with segmental bowel wall thickening and mural stratification."
+      - "Mural hyperenhancement and bowel wall thickening with creeping fat are noted, compatible with inflammatory bowel disease."
+      - "There is segmental transmural inflammation with fibrofatty proliferation of the mesentery suggestive of inflammatory bowel disease."
+    negative:
+      - "There is no evidence of inflammatory bowel disease."
+      - "The bowel wall thickness and enhancement pattern are normal without features of inflammatory bowel disease."
+      - "No segmental wall thickening, mural stratification, or mesenteric fat proliferation suggestive of inflammatory bowel disease is seen."
+
+  - question: "Is there pseudomembranous colitis?"
+    positive:
+      - "Pseudomembranous colitis is present with marked colonic wall thickening and the accordion sign."
+      - "Diffuse colonic wall thickening with pericolonic fat stranding is noted, consistent with pseudomembranous colitis."
+      - "There is pancolonic mucosal hyperenhancement and wall edema forming the target sign, suggestive of pseudomembranous colitis."
+    negative:
+      - "There is no pseudomembranous colitis."
+      - "The colon is normal in caliber and wall thickness without signs of pseudomembranous colitis."
+      - "No diffuse colonic wall thickening, mucosal edema, or accordion sign to suggest pseudomembranous colitis is identified."
+
+  - question: "Is there diverticulitis?"
+    positive:
+      - "Acute diverticulitis is present with pericolic fat stranding and an inflamed diverticulum."
+      - "There is focal colonic wall thickening with adjacent fat stranding centered on a diverticulum, consistent with diverticulitis."
+      - "An inflamed diverticulum is seen with surrounding inflammatory changes and segmental colonic wall thickening indicating diverticulitis."
+    negative:
+      - "There is no diverticulitis."
+      - "Diverticula are present but show no signs of acute inflammation or diverticulitis."
+      - "No pericolic fat stranding, focal wall thickening, or inflamed diverticula suggestive of diverticulitis are identified."
+
+  - question: "Is there bowel obstruction?"
+    positive:
+      - "Bowel obstruction is present with proximal dilation and a transition point."
+      - "Dilated bowel loops with air-fluid levels are seen, consistent with bowel obstruction."
+      - "There is a transition point with upstream bowel dilation and decompressed distal loops indicating mechanical obstruction."
+    negative:
+      - "There is no bowel obstruction."
+      - "The bowel caliber is normal throughout without evidence of obstruction."
+      - "No dilated bowel loops, air-fluid levels, or transition point to suggest obstruction are identified."
+
+  - question: "Is there small bowel obstruction?"
+    positive:
+      - "Small bowel obstruction is present with dilated proximal small bowel loops and a discrete transition point."
+      - "Multiple dilated small bowel loops measuring greater than 3 cm with air-fluid levels are seen, consistent with small bowel obstruction."
+      - "There is a transition zone in the small bowel with upstream dilation and decompressed distal ileum indicating small bowel obstruction."
+    negative:
+      - "There is no small bowel obstruction."
+      - "The small bowel caliber is normal throughout without evidence of obstruction."
+      - "No small bowel dilation, transition point, or air-fluid levels to suggest small bowel obstruction are seen."
+
+  - question: "Is there ileus?"
+    positive:
+      - "Diffuse ileus is present with generalized bowel dilation without a mechanical transition point."
+      - "There is diffuse gaseous distension of the small and large bowel without a transition point, consistent with ileus."
+      - "Multiple dilated bowel loops with air-fluid levels are seen in a non-obstructive pattern, suggesting adynamic ileus."
+    negative:
+      - "There is no ileus."
+      - "Bowel gas pattern is normal without evidence of ileus."
+      - "No generalized bowel dilation or non-obstructive distension pattern suggestive of ileus is identified."
+
+  - question: "Is there volvulus?"
+    positive:
+      - "Volvulus is present with twisting of the bowel mesentery and the whirl sign."
+      - "There is a whirl sign with twisting of the mesenteric vessels, consistent with volvulus."
+      - "The bowel is abnormally twisted around its mesenteric axis with proximal dilation indicating volvulus."
+    negative:
+      - "There is no volvulus."
+      - "The bowel and mesentery show normal orientation without signs of volvulus."
+      - "No mesenteric whirl sign, bowel twisting, or abnormal rotation suggestive of volvulus is seen."
+
+  - question: "Is there large bowel obstruction?"
+    positive:
+      - "Large bowel obstruction is present with colonic dilation proximal to a transition point."
+      - "The colon is dilated upstream of a transition point with decompressed distal bowel, consistent with large bowel obstruction."
+      - "There is marked colonic distension with a caliber change at the transition zone indicating large bowel obstruction."
+    negative:
+      - "There is no large bowel obstruction."
+      - "The colon is normal in caliber without evidence of large bowel obstruction."
+      - "No colonic dilation, transition point, or findings suggestive of large bowel obstruction are identified."
+
+  - question: "Is there hiatal hernia?"
+    positive:
+      - "A hiatal hernia is present with herniation of the gastric fundus through the esophageal hiatus."
+      - "There is a hiatal hernia with the gastroesophageal junction located above the diaphragm."
+      - "Portions of the stomach are seen extending through the diaphragmatic hiatus into the thorax, consistent with hiatal hernia."
+    negative:
+      - "There is no hiatal hernia."
+      - "The gastroesophageal junction is in normal position at the level of the diaphragmatic hiatus."
+      - "No herniation of gastric contents through the esophageal hiatus is identified."
+
+  - question: "Is there intussusception?"
+    positive:
+      - "Intussusception is present with a bowel-within-bowel configuration."
+      - "There is a target sign with telescoping of one bowel segment into another, consistent with intussusception."
+      - "A bowel-within-bowel appearance is seen with concentric rings of bowel wall and mesenteric fat indicating intussusception."
+    negative:
+      - "There is no intussusception."
+      - "The bowel loops show normal configuration without intussusception."
+      - "No telescoping of bowel segments or target sign suggestive of intussusception is identified."
+
+  - question: "Are there any enteric duplication cysts?"
+    positive:
+      - "An enteric duplication cyst is present as a well-defined cystic structure adjacent to the bowel."
+      - "There is a thin-walled cystic lesion intimately associated with the bowel wall, consistent with an enteric duplication cyst."
+      - "A fluid-filled cystic structure sharing a common wall with the adjacent bowel is seen, compatible with an enteric duplication cyst."
+    negative:
+      - "There are no enteric duplication cysts."
+      - "No cystic structures adjacent to or within the bowel wall to suggest enteric duplication cysts are seen."
+      - "The bowel and mesentery are free of cystic lesions that would indicate enteric duplication cysts."
+
+  - question: "Is there achalasia or scleroderma suspected based on gastrointestinal imaging findings?"
+    positive:
+      - "The esophagus is markedly dilated with a smooth tapering at the gastroesophageal junction, suggestive of achalasia."
+      - "There is diffuse esophageal dilation with retained food debris and a bird-beak appearance distally, consistent with achalasia."
+      - "Esophageal dilation with a patulous lower esophageal segment and air-fluid level within the esophageal lumen is seen, raising concern for achalasia or scleroderma."
+    negative:
+      - "There is no evidence of achalasia or scleroderma involving the gastrointestinal tract."
+      - "The esophagus is normal in caliber without features of achalasia or scleroderma."
+      - "No esophageal dilation, bird-beak sign, or findings suggestive of achalasia or scleroderma are identified."
+
+  - question: "Are there any enteric diverticula?"
+    positive:
+      - "Enteric diverticula are present along the bowel wall."
+      - "Multiple diverticula are identified along the colon, consistent with diverticulosis."
+      - "Outpouchings of the bowel wall are seen representing enteric diverticula."
+    negative:
+      - "There are no enteric diverticula."
+      - "The bowel wall is smooth without evidence of diverticulosis."
+      - "No outpouchings or diverticula are identified along the bowel."
+
+  - question: "Is there gastric volvulus?"
+    positive:
+      - "Gastric volvulus is present with abnormal rotation of the stomach."
+      - "The stomach is abnormally rotated along its axis with associated distension, consistent with gastric volvulus."
+      - "There is abnormal positioning and twisting of the stomach with the greater curvature displaced superiorly, indicating gastric volvulus."
+    negative:
+      - "There is no gastric volvulus."
+      - "The stomach is in normal anatomic position without evidence of volvulus."
+      - "No abnormal gastric rotation, twisting, or displacement suggestive of gastric volvulus is seen."
+
+  - question: "Are there any inguinal hernias?"
+    positive:
+      - "An inguinal hernia is present with abdominal contents extending through the inguinal canal."
+      - "There is herniation of bowel or fat through the inguinal canal, consistent with an inguinal hernia."
+      - "Abdominal contents are seen protruding through the inguinal ring into the inguinal canal indicating an inguinal hernia."
+    negative:
+      - "There are no inguinal hernias."
+      - "The inguinal canals are intact bilaterally without hernia."
+      - "No herniation of abdominal contents through the inguinal canals is identified."
+
+  - question: "Are there any femoral/ventral/Spigelian hernias?"
+    positive:
+      - "A ventral hernia is present with abdominal contents extending through a defect in the anterior abdominal wall."
+      - "There is herniation through a femoral or ventral abdominal wall defect, consistent with an abdominal wall hernia."
+      - "Abdominal contents are seen protruding through a fascial defect in the ventral wall or femoral canal, indicating a hernia."
+    negative:
+      - "There are no femoral, ventral, or Spigelian hernias."
+      - "The anterior abdominal wall and femoral canals are intact without hernia."
+      - "No herniation through the ventral abdominal wall, femoral canal, or semilunar line is identified."
+
+  - question: "Is there evidence of sleeve gastrectomy or fundoplication?"
+    positive:
+      - "Postsurgical changes consistent with sleeve gastrectomy are present with a tubular gastric configuration."
+      - "The stomach demonstrates postsurgical changes compatible with prior sleeve gastrectomy or fundoplication."
+      - "A tubularized stomach or fundoplication wrap is seen around the distal esophagus, indicating prior bariatric or antireflux surgery."
+    negative:
+      - "There is no evidence of sleeve gastrectomy or fundoplication."
+      - "The stomach has a normal configuration without postsurgical changes of gastrectomy or fundoplication."
+      - "No surgical alterations of the gastric anatomy suggestive of sleeve gastrectomy or fundoplication are seen."
+
+  - question: "Is there a surgical gastric conduit?"
+    positive:
+      - "A surgical gastric conduit is present, indicating prior esophagectomy."
+      - "There is a tubular gastric pull-up in the posterior mediastinum consistent with a gastric conduit after esophagectomy."
+      - "A surgically created gastric conduit is seen extending through the mediastinum to the cervical esophageal remnant."
+    negative:
+      - "There is no surgical gastric conduit."
+      - "The esophagus and stomach are in normal anatomic position without a gastric conduit."
+      - "No gastric pull-up or surgical conduit formation is identified."
+
+  - question: "Are there any gastric foreign bodies (not related to medical devices or post-surgical changes)?"
+    positive:
+      - "A gastric foreign body is present within the stomach lumen."
+      - "There is a radiopaque foreign body identified within the gastric lumen unrelated to medical devices."
+      - "A non-surgical, non-device foreign body is seen within the stomach."
+    negative:
+      - "There are no gastric foreign bodies."
+      - "The gastric lumen is clear without foreign bodies unrelated to medical devices."
+      - "No ingested foreign bodies are identified within the stomach."
+
+  - question: "Is there any evidence of enteric contrast leak suggestive of postoperative leakage/fistula after surgery?"
+    positive:
+      - "Enteric contrast leak is present, suggesting postoperative anastomotic leakage or fistula."
+      - "There is extraluminal contrast extravasation adjacent to a surgical anastomosis, consistent with a postoperative leak."
+      - "Oral contrast is seen tracking outside the bowel lumen at the operative site, indicating an enteric fistula or anastomotic dehiscence."
+    negative:
+      - "There is no evidence of enteric contrast leak or postoperative fistula."
+      - "Oral contrast remains entirely intraluminal without extravasation at the surgical site."
+      - "No extraluminal contrast leakage suggestive of postoperative anastomotic leak or fistula is identified."
+
+  - question: "Are there any gastric carcinomas?"
+    positive:
+      - "A gastric carcinoma is present as an irregular mass arising from the gastric wall."
+      - "There is an enhancing gastric wall mass with associated lymphadenopathy, consistent with gastric carcinoma."
+      - "An irregular, lobulated soft tissue mass is seen within the stomach with transmural extension indicating gastric carcinoma."
+    negative:
+      - "There are no gastric carcinomas."
+      - "The gastric wall is normal without mass or focal thickening to suggest carcinoma."
+      - "No gastric masses or wall irregularities suggestive of gastric carcinoma are identified."
+
+  - question: "Are there any esophageal carcinomas?"
+    positive:
+      - "An esophageal carcinoma is present with circumferential wall thickening and luminal narrowing."
+      - "There is an irregular esophageal mass with associated mediastinal lymphadenopathy, consistent with esophageal carcinoma."
+      - "Asymmetric esophageal wall thickening with soft tissue mass and upstream dilation is seen, suggesting esophageal carcinoma."
+    negative:
+      - "There are no esophageal carcinomas."
+      - "The esophagus is normal in caliber and wall thickness without evidence of carcinoma."
+      - "No esophageal masses or wall thickening suggestive of esophageal carcinoma are identified."
+
+  - question: "Are there any duodenal carcinomas?"
+    positive:
+      - "A duodenal carcinoma is present as an irregular mass in the duodenal wall."
+      - "There is an enhancing mass arising from the duodenum with luminal narrowing, consistent with duodenal carcinoma."
+      - "An irregular soft tissue mass is seen within the duodenal lumen causing partial obstruction, suggestive of duodenal carcinoma."
+    negative:
+      - "There are no duodenal carcinomas."
+      - "The duodenum is normal without mass or focal wall thickening to suggest carcinoma."
+      - "No duodenal masses or wall irregularities suggestive of duodenal carcinoma are identified."
+
+  - question: "Are there any colonic carcinomas?"
+    positive:
+      - "A colonic carcinoma is present as an irregular, enhancing mass within the colon."
+      - "There is an annular colonic mass causing luminal narrowing with regional lymphadenopathy, consistent with colonic carcinoma."
+      - "An irregular soft tissue mass is seen arising from the colonic wall with adjacent fat infiltration, suggestive of colonic carcinoma."
+    negative:
+      - "There are no colonic carcinomas."
+      - "The colon is normal throughout without mass or focal wall thickening to suggest carcinoma."
+      - "No colonic masses or wall irregularities suggestive of colonic carcinoma are identified."
+
+  - question: "Are there any rectal carcinomas?"
+    positive:
+      - "A rectal carcinoma is present as an irregular mass within the rectum."
+      - "There is an enhancing rectal mass with perirectal fat infiltration and lymphadenopathy, consistent with rectal carcinoma."
+      - "An irregular soft tissue mass is seen arising from the rectal wall with extension into the mesorectal fat, suggestive of rectal carcinoma."
+    negative:
+      - "There are no rectal carcinomas."
+      - "The rectum is normal without mass or wall thickening to suggest carcinoma."
+      - "No rectal masses or wall irregularities suggestive of rectal carcinoma are identified."
+
+  - question: "Are there any gastrointestinal stromal tumors (GISTs)?"
+    positive:
+      - "A gastrointestinal stromal tumor is present as a well-circumscribed submucosal mass."
+      - "There is a well-defined, heterogeneously enhancing submucosal mass arising from the bowel wall, consistent with a GIST."
+      - "A round, exophytic soft tissue mass with central necrosis is seen arising from the gastric or small bowel wall, suggestive of a gastrointestinal stromal tumor."
+    negative:
+      - "There are no gastrointestinal stromal tumors."
+      - "The bowel walls are smooth without submucosal or exophytic masses to suggest GIST."
+      - "No well-defined submucosal masses or exophytic lesions suggestive of gastrointestinal stromal tumors are identified."
+
+  - question: "Is there gastrointestinal lymphoma?"
+    positive:
+      - "Gastrointestinal lymphoma is present with diffuse bowel wall thickening and bulky lymphadenopathy."
+      - "There is marked circumferential bowel wall thickening with homogeneous enhancement and mesenteric lymphadenopathy, consistent with gastrointestinal lymphoma."
+      - "Diffuse aneurysmal dilation of the bowel lumen with wall thickening and associated lymph node enlargement is seen, suggestive of gastrointestinal lymphoma."
+    negative:
+      - "There is no gastrointestinal lymphoma."
+      - "The bowel wall is normal in thickness without features of lymphoma."
+      - "No diffuse bowel wall thickening or lymphadenopathy suggestive of gastrointestinal lymphoma is identified."

@@ -1,0 +1,20 @@
+{
+    "Medical material": ["q0228", "q0229", "q0242", "q0243", "q0244", "q0245", "q0246", "q0247", "q0248", "q0304", "q0308"],
+    "Arterial wall calcification": ["q0227", "q0298", "q0313"],
+    "Cardiomegaly": ["q0230", "q0231"],
+    "Pericardial effusion": ["q0235", "q0236"],
+    "Coronary artery wall calcification": ["q0227"],
+    "Hiatal hernia": ["q0294"],
+    "Lymphadenopathy": ["q0293", "q0309", "q0312"],
+    "Emphysema": ["q0251", "q0252"],
+    "Atelectasis": ["q0249"],
+    "Lung nodule": ["q0270", "q0272", "q0273"],
+    "Lung opacity": ["q0250", "q0259", "q0260", "q0267"],
+    "Pulmonary fibrotic sequela": ["q0280", "q0282"],
+    "Pleural effusion": ["q0284"],
+    "Mosaic attenuation pattern": ["q0281"],
+    "Peribronchial thickening": ["q0275"],
+    "Consolidation": ["q0250"],
+    "Bronchiectasis": ["q0274"],
+    "Interlobular septal thickening": ["q0283"]
+}

@@ -1,0 +1,62 @@
+category: "Visible Abdomen"
+description: "Abdominal-related findings visible in chest CT"
+prompts:
+  - question: "Are there any liver masses?"
+    positive:
+      - "A hepatic mass is identified within the liver."
+      - "Liver mass noted."
+      - "There is a focal lesion within the hepatic parenchyma consistent with a mass."
+    negative:
+      - "No liver masses are identified."
+      - "The visualized liver is unremarkable without focal mass."
+      - "There are no focal mass lesions within the hepatic parenchyma."
+
+  - question: "Are there any liver cysts?"
+    positive:
+      - "Hepatic cysts are present within the liver."
+      - "Liver cysts noted."
+      - "There are well-defined hypoattenuating lesions within the liver consistent with simple cysts."
+    negative:
+      - "No liver cysts are identified."
+      - "The visualized liver shows no cystic lesions."
+      - "There are no well-defined hypoattenuating lesions in the liver to suggest cysts."
+
+  - question: "Is diffuse fatty liver / steatosis suspected based on the imaging findings?"
+    positive:
+      - "Hepatic steatosis is suspected based on diffusely decreased liver attenuation."
+      - "Findings suggest diffuse fatty infiltration of the liver."
+      - "The liver demonstrates diffusely reduced attenuation compared to the spleen, consistent with steatosis."
+    negative:
+      - "No hepatic steatosis is suspected."
+      - "The liver attenuation is normal without evidence of fatty infiltration."
+      - "There is no reduction in hepatic attenuation to suggest steatosis."
+
+  - question: "Is cirrhosis suspected based on the imaging findings?"
+    positive:
+      - "Cirrhosis is suspected based on morphologic changes of the liver."
+      - "Findings suggestive of hepatic cirrhosis noted."
+      - "The liver demonstrates a nodular contour with caudate lobe hypertrophy and signs of portal hypertension consistent with cirrhosis."
+    negative:
+      - "No findings to suggest cirrhosis are present."
+      - "The liver morphology is normal without cirrhotic changes."
+      - "There is no nodular contour or volume redistribution of the liver to suggest cirrhosis."
+
+  - question: "Is chronic pancreatitis suspected based on the imaging findings?"
+    positive:
+      - "Chronic pancreatitis is suspected based on pancreatic calcifications and morphologic changes."
+      - "Findings consistent with chronic pancreatitis noted."
+      - "The pancreas demonstrates parenchymal calcifications and ductal irregularity suggestive of chronic pancreatitis."
+    negative:
+      - "No findings to suggest chronic pancreatitis are present."
+      - "The visualized pancreas appears unremarkable."
+      - "There are no pancreatic calcifications or ductal changes to suggest chronic pancreatitis."
+
+  - question: "Is splenomegaly present?"
+    positive:
+      - "Splenomegaly is present with enlargement of the spleen."
+      - "Splenomegaly noted."
+      - "The spleen is enlarged beyond normal dimensions, consistent with splenomegaly."
+    negative:
+      - "No splenomegaly is identified."
+      - "The spleen is normal in size."
+      - "There is no enlargement of the spleen."

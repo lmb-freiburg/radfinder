@@ -1,0 +1,94 @@
+qid,category,question
+q0227,Heart,Is there coronary atherosclerosis?
+q0228,Heart,Are there any coronary artery stents?
+q0229,Heart,Are there any post-coronary artery bypass grafts?
+q0230,Heart,Is cardiomegaly or cardiac enlargement suspected based on the imaging findings?
+q0231,Heart,Is dilated cardiomyopathy suspected based on the imaging findings?
+q0232,Heart,Is hypertrophic cardiomyopathy suspected based on the imaging findings?
+q0233,Heart,Is ischemic cardiomyopathy suspected based on the imaging findings?
+q0234,Heart,Is pulmonary hypertension suspected based on the imaging findings?
+q0235,Heart,Is pericardial effusion present?
+q0236,Heart,Is cardiac tamponade suspected based on the imaging findings?
+q0237,Heart,Are there any heart/cardiac valve calcifications?
+q0238,Heart,Are there any coronary soft plaques?
+q0239,Heart,Is there a single coronary artery (a congenital anomaly where only one coronary artery arises from a single coronary ostium to supply the entire heart)?
+q0240,Heart,Are there any myxomas?
+q0241,Heart,Is aortic dissection present?
+q0242,Devices in the Thorax,Is heart valve replacement present?
+q0243,Devices in the Thorax,Are there any pace-makers or defibrillators?
+q0244,Devices in the Thorax,Is Extra Corporeal Membrane Oxygenation (ECMO) debice present?
+q0245,Devices in the Thorax,Is nasogastric tube present?
+q0246,Devices in the Thorax,Is endotracheal tube present?
+q0247,Devices in the Thorax,Are there any chest tubes?
+q0248,Devices in the Thorax,Is central venous catheter present?
+q0249,Lungs,Is there any atelectasis?
+q0250,Lungs,Is there any consolidation in the lung?
+q0251,Lungs,Is there any centrilobular emphysema?
+q0252,Lungs,Is there any paraseptal emphysema?
+q0253,Lungs,Is there any cavitation in the lung?
+q0254,Lungs,"Is there any bulla, bleb, or pneumatocele?"
+q0255,Lungs,Is there any atypical cyst in the lung?
+q0256,Lungs,Is there any post-lung resection scar?
+q0257,Lungs,Is there any calcification in the lung?
+q0258,Lungs,Is there any pneumoconiosis?
+q0259,Lungs,Is there any ground-glass opacity?
+q0260,Lungs,Is pulmonary edema suspected based on the imaging findings?
+q0261,Lungs,Is primary tuberculosis suspected based on the imaging findings?
+q0262,Lungs,Is miliary tuberculosis suspected based on the imaging findings?
+q0263,Lungs,Is non-tuberculous mycobacterial infection suspected based on the imaging findings?
+q0264,Lungs,Is COVID-19 suspected based on the imaging findings?
+q0265,Lungs,Is aspergillosis suspected based on the imaging findings?
+q0266,Lungs,Is aspiration pneumonia suspected based on the imaging findings?
+q0267,Lungs,Is there any crazy paving pattern?
+q0268,Lungs,Is sarcoidosis suspected based on the imaging findings?
+q0269,Lungs,Is radiation pneumonitis suspected based on the imaging findings?
+q0270,Lung Nodule,Is there any solid nodules in the lung?
+q0271,Lung Nodule,Is there any mass in the lung?
+q0272,Lung Nodule,Is there any part-solid nodules in the lung?
+q0273,Lung Nodule,Is there any ground-glass nodules in the lung?
+q0274,Bronchial Tree,Is bronchiectasis present?
+q0275,Bronchial Tree,Is there peribronchial thickening?
+q0276,Bronchial Tree,Is there any mucous plugging?
+q0277,Bronchial Tree,Is tree-in-bud or focal bronchiolitis present?
+q0278,Bronchial Tree,Is panbronchiolitis present?
+q0279,Bronchial Tree,Are there any tracheal masses?
+q0280,Interstitial Lung Disease,Is there any reticulation or reticular pattern?
+q0281,Interstitial Lung Disease,Is there any mosaic attenuation?
+q0282,Interstitial Lung Disease,Is there any honeycombing?
+q0283,Interstitial Lung Disease,Is there any interlobular septal thickening?
+q0284,Pleura,Is there any pleural effusion?
+q0285,Pleura,Is there any pleural thickening?
+q0286,Pleura,Is there any hemothorax?
+q0287,Pleura,Is there any pneumothorax?
+q0288,Pleura,Is there any pleural plaques?
+q0289,Pleura,Is there any empyema?
+q0290,Mediastinum,Is there any mediastinal mass?
+q0291,Mediastinum,Is there any teratoma?
+q0292,Mediastinum,Is there any thymoma?
+q0293,Mediastinum,Is there any lymphadenopathy in mediastinum or hila?
+q0294,Mediastinum,Is there any hiatal hernia?
+q0295,Mediastinum,Is there any pneumomediastinum?
+q0296,Great Vessels in the Thorax,Is aortic aneurysm present?
+q0297,Great Vessels in the Thorax,Is there any aberrant subclavian artery?
+q0298,Great Vessels in the Thorax,Is there any aortic atherosclerosis?
+q0299,Great Vessels in the Thorax,Is pulmonary embolism suspected?
+q0300,Bones,Are there any fractures of rib or clavicle?
+q0301,Bones,Are there any fractures of spine?
+q0302,Bones,Is there any osteopenia?
+q0303,Bones,Is there any arthritis?
+q0304,Bones,Is there any sternotomy?
+q0305,Bones,Are there any osteolytic lesions?
+q0306,Bones,Are there any osteosclerotic lesions?
+q0307,Breast,Are there any breast masses?
+q0308,Breast,Are there any breast implants?
+q0309,Breast,Is there any lymphadenopathy in axilla?
+q0310,Visible Neck,Is there any goiter?
+q0311,Visible Neck,Is there any thyroid nodule?
+q0312,Visible Neck,Is there any lymphadenopathy in neck?
+q0313,Visible Neck,Is there any carotid atherosclerosis?
+q0314,Visible Abdomen,Are there any liver masses?
+q0315,Visible Abdomen,Are there any liver cysts?
+q0316,Visible Abdomen,Is diffuse fatty liver / steatosis suspected based on the imaging findings?
+q0317,Visible Abdomen,Is cirrhosis suspected based on the imaging findings?
+q0318,Visible Abdomen,Is chronic pancreatitis suspected based on the imaging findings?
+q0319,Visible Abdomen,Is splenomegaly present?

@@ -1,0 +1,42 @@
+category: "Great Vessels"
+description: "Great vessels-related findings"
+prompts:
+  - question: "Is aortic aneurysm present?"
+    positive:
+      - "An aortic aneurysm is present with focal dilatation of the aorta."
+      - "Aortic aneurysm noted."
+      - "There is abnormal dilatation of the aorta exceeding the expected diameter, consistent with an aneurysm."
+    negative:
+      - "No aortic aneurysm is identified."
+      - "The aorta is normal in caliber without aneurysmal dilatation."
+      - "There is no focal or diffuse dilatation of the aorta to suggest an aneurysm."
+
+  - question: "Is there any aberrant subclavian artery?"
+    positive:
+      - "An aberrant subclavian artery is present with anomalous vascular course."
+      - "Aberrant right subclavian artery (arteria lusoria) noted."
+      - "There is an anomalous origin of the subclavian artery coursing posterior to the esophagus."
+    negative:
+      - "No aberrant subclavian artery is identified."
+      - "The subclavian arteries arise normally from the aortic arch."
+      - "There is no anomalous origin or course of the subclavian arteries."
+
+  - question: "Is there any aortic atherosclerosis?"
+    positive:
+      - "Aortic atherosclerosis is present with calcified plaques along the aortic wall."
+      - "Atherosclerotic changes of the aorta noted."
+      - "There are mural calcifications and intimal irregularities of the aorta consistent with atherosclerosis."
+    negative:
+      - "No aortic atherosclerosis is identified."
+      - "The aorta shows no atherosclerotic calcification."
+      - "There are no mural calcifications or intimal plaques along the aorta."
+
+  - question: "Is pulmonary embolism suspected?"
+    positive:
+      - "Pulmonary embolism is suspected with filling defects in the pulmonary arteries."
+      - "Findings suggestive of pulmonary embolism noted."
+      - "There are intraluminal filling defects within the pulmonary arterial vasculature consistent with pulmonary embolism."
+    negative:
+      - "No pulmonary embolism is suspected."
+      - "The pulmonary arteries are patent without filling defect."
+      - "There are no intraluminal filling defects in the pulmonary arteries to suggest embolism."

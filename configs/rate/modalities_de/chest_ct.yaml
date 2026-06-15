@@ -1,0 +1,134 @@
+"modality": "chest-ct"
+"categories":
+  "Herz":
+    "description": "Herzbezogene Befunde (z. B. koronare Herzkrankheit, Kardiomyopathie, Perikarderguss, Herzklappenerkrankung, kardiale Geräte)"
+    "questions":
+    - "question": "Liegt eine koronare Atherosklerose vor?"
+    - "question": "Gibt es Koronarstents?"
+    - "question": "Gibt es Hinweise auf einen Zustand nach koronararteriellem Bypass (Bypass-Grafts)?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Kardiomegalie bzw. Herzvergrößerung?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine dilatative Kardiomyopathie?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine hypertrophe Kardiomyopathie?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine ischämische Kardiomyopathie?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine pulmonale Hypertonie?"
+    - "question": "Liegt ein Perikarderguss vor?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Herztamponade?"
+    - "question": "Gibt es Verkalkungen des Herzens/der Herzklappen?"
+    - "question": "Gibt es weiche Plaques der Koronararterien?"
+    - "question": "Liegt eine einzelne Koronararterie vor (eine kongenitale Anomalie, bei der nur eine Koronararterie aus einem einzelnen Koronarostium entspringt und das gesamte Herz versorgt)?"
+    - "question": "Gibt es Myxome?"
+    - "question": "Liegt eine Aortendissektion vor?"
+  "Geräte im Thorax":
+    "description": "Medizinische Geräte im Thorax (z. B. Schrittmacher, Defibrillator, ECMO, Magensonde, Endotrachealtubus, Thoraxdrainage, zentralvenöser Katheter)"
+    "questions":
+    - "question": "Liegt ein Herzklappenersatz vor?"
+    - "question": "Gibt es Schrittmacher oder Defibrillatoren?"
+    - "question": "Ist ein Gerät zur extrakorporalen Membranoxygenierung (ECMO) vorhanden?"
+    - "question": "Ist eine Magensonde vorhanden?"
+    - "question": "Ist ein Endotrachealtubus vorhanden?"
+    - "question": "Gibt es Thoraxdrainagen?"
+    - "question": "Ist ein zentralvenöser Katheter vorhanden?"
+  "Lungen":
+    "description": "Lungenbezogene Befunde (z. B. Pneumonie, Lungenrundherde, Bronchiektasen, interstitielle Lungenerkrankung, Pleuraerguss, Pneumothorax)"
+    "questions":
+    - "question": "Gibt es Atelektasen?"
+    - "question": "Gibt es Konsolidierungen in der Lunge?"
+    - "question": "Gibt es ein zentrolobuläres Emphysem?"
+    - "question": "Gibt es ein paraseptales Emphysem?"
+    - "question": "Gibt es Kavitationen in der Lunge?"
+    - "question": "Gibt es Bullae, Blebs oder Pneumatozelen?"
+    - "question": "Gibt es atypische Zysten in der Lunge?"
+    - "question": "Gibt es eine Narbe nach Lungenresektion?"
+    - "question": "Gibt es Verkalkungen in der Lunge?"
+    - "question": "Gibt es eine Pneumokoniose?"
+    - "question": "Gibt es Milchglastrübungen?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf ein Lungenödem?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Primärtuberkulose?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine miliäre Tuberkulose?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine nichttuberkulöse mykobakterielle Infektion?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf COVID-19?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Aspergillose?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Aspirationspneumonie?"
+    - "question": "Liegt ein Crazy-Paving-Muster vor?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Sarkoidose?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Strahlenpneumonitis?"
+  "Lungenrundherd":
+    "description": "Lungenrundherd-bezogene Befunde (z. B. solider Rundherd, Masse, teils-solider Rundherd, Milchglasrundherd)"
+    "questions":
+    - "question": "Gibt es solide Lungenrundherde?"
+    - "question": "Gibt es eine Masse in der Lunge?"
+    - "question": "Gibt es teils-solide Lungenrundherde?"
+    - "question": "Gibt es Milchglasrundherde in der Lunge?"
+  "Bronchialbaum":
+    "description": "Bronchialbaum-bezogene Befunde (z. B. Bronchiektasen, peribronchiale Wandverdickung, Schleimpfropfen, Tree-in-bud oder fokale Bronchiolitis, Panbronchiolitis, Trachealmassen)"
+    "questions":
+    - "question": "Liegen Bronchiektasen vor?"
+    - "question": "Gibt es eine peribronchiale Wandverdickung?"
+    - "question": "Gibt es Schleimpfropfen?"
+    - "question": "Liegt ein Tree-in-bud-Muster oder eine fokale Bronchiolitis vor?"
+    - "question": "Liegt eine Panbronchiolitis vor?"
+    - "question": "Gibt es Trachealmassen?"
+  "Interstitielle Lungenerkrankung":
+    "description": "Befunde einer interstitiellen Lungenerkrankung (z. B. retikuläres Muster, Mosaikattenuierung, Honigwabenmuster, interlobuläre Septenverdickung)"
+    "questions":
+    - "question": "Gibt es Retikulationen oder ein retikuläres Muster?"
+    - "question": "Gibt es eine Mosaikattenuierung?"
+    - "question": "Gibt es ein Honigwabenmuster?"
+    - "question": "Gibt es eine interlobuläre Septenverdickung?"
+  "Pleura":
+    "description": "Pleura-bezogene Befunde (z. B. Pleuraerguss, Pleuraverdickung, Hämatothorax, Pneumothorax, Pleuraplaques, Empyem)"
+    "questions":
+    - "question": "Gibt es einen Pleuraerguss?"
+    - "question": "Gibt es eine Pleuraverdickung?"
+    - "question": "Gibt es einen Hämatothorax?"
+    - "question": "Gibt es einen Pneumothorax?"
+    - "question": "Gibt es Pleuraplaques?"
+    - "question": "Gibt es ein Empyem?"
+  "Mediastinum":
+    "description": "Mediastinale Befunde (z. B. mediastinale Masse, Teratom, Thymom, Lymphadenopathie im Mediastinum oder in den Hili, Hiatushernie, Pneumomediastinum)"
+    "questions":
+    - "question": "Gibt es eine mediastinale Masse?"
+    - "question": "Gibt es ein Teratom?"
+    - "question": "Gibt es ein Thymom?"
+    - "question": "Gibt es eine Lymphadenopathie im Mediastinum oder in den Hili?"
+    - "question": "Gibt es eine Hiatushernie?"
+    - "question": "Gibt es ein Pneumomediastinum?"
+  "Große Gefäße im Thorax":
+    "description": "Befunde der großen Gefäße im Thorax (z. B. Aortenaneurysma, aberrante A. subclavia, Aortenatherosklerose, Lungenembolie)"
+    "questions":
+    - "question": "Liegt ein Aortenaneurysma vor?"
+    - "question": "Gibt es eine aberrante A. subclavia?"
+    - "question": "Gibt es eine Aortenatherosklerose?"
+    - "question": "Besteht der Verdacht auf eine Lungenembolie?"
+  "Knochen":
+    "description": "Knochenbezogene Befunde (z. B. Fraktur, Osteopenie, Arthritis, Sternotomie, osteolytische Läsion, osteosklerotische Läsion)"
+    "questions":
+    - "question": "Gibt es Frakturen der Rippen oder der Klavikula?"
+    - "question": "Gibt es Frakturen der Wirbelsäule?"
+    - "question": "Gibt es eine Osteopenie?"
+    - "question": "Gibt es eine Arthritis?"
+    - "question": "Gibt es eine Sternotomie?"
+    - "question": "Gibt es osteolytische Läsionen?"
+    - "question": "Gibt es osteosklerotische Läsionen?"
+  "Brust":
+    "description": "Brustbezogene Befunde (z. B. Brustmasse, Brustimplantat, Lymphadenopathie in der Axilla)"
+    "questions":
+    - "question": "Gibt es Brustmassen?"
+    - "question": "Gibt es Brustimplantate?"
+    - "question": "Gibt es eine axilläre Lymphadenopathie?"
+  "Sichtbarer Hals":
+    "description": "Halsbezogene Befunde (z. B. Struma, Schilddrüsenknoten, Lymphadenopathie am Hals, Karotisatherosklerose)"
+    "questions":
+    - "question": "Gibt es eine Struma?"
+    - "question": "Gibt es einen Schilddrüsenknoten?"
+    - "question": "Gibt es eine zervikale Lymphadenopathie?"
+    - "question": "Gibt es eine Karotisatherosklerose?"
+  "Sichtbares Abdomen":
+    "description": "Abdomenbezogene Befunde (z. B. Leberraumforderung, Leberzyste, diffuse Fettleber/Steatose, Zirrhose, chronische Pankreatitis, Splenomegalie)"
+    "questions":
+    - "question": "Gibt es Leberraumforderungen?"
+    - "question": "Gibt es Leberzysten?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine diffuse Fettleber/Steatose?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine Zirrhose?"
+    - "question": "Besteht anhand der Bildbefunde der Verdacht auf eine chronische Pankreatitis?"
+    - "question": "Liegt eine Splenomegalie vor?"

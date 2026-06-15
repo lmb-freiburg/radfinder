@@ -1,0 +1,122 @@
+category: "Devices in the Abdomen"
+description: "Medical devices/hardware/implants in the abdomen"
+prompts:
+  - question: "Are there any nasogastric tubes?"
+    positive:
+      - "A nasogastric tube is in place."
+      - "A nasogastric tube is identified with its tip projecting over the stomach."
+      - "A radiopaque tube is seen coursing from the esophagus into the stomach, consistent with a nasogastric tube."
+    negative:
+      - "There is no nasogastric tube."
+      - "No nasogastric tube is identified."
+      - "No enteric tube is visualized within the esophagus or stomach."
+
+  - question: "Are there any gastrostomy tubes?"
+    positive:
+      - "A gastrostomy tube is in place."
+      - "A percutaneous gastrostomy tube is identified entering the anterior abdominal wall and terminating within the gastric lumen."
+      - "A tube is seen traversing the abdominal wall into the stomach, consistent with a gastrostomy tube."
+    negative:
+      - "There is no gastrostomy tube."
+      - "No gastrostomy tube is identified."
+      - "No tube or device is seen traversing the anterior abdominal wall into the stomach."
+
+  - question: "Are there any drainage catheters?"
+    positive:
+      - "An abdominal drainage catheter is in place."
+      - "A percutaneous drainage catheter is identified within the abdomen."
+      - "A pigtail catheter is seen within the abdominal cavity, positioned for fluid drainage."
+    negative:
+      - "There are no abdominal drainage catheters."
+      - "No percutaneous drainage catheters are identified in the abdomen."
+      - "No drain tubes or catheter devices are visualized within the abdominal cavity."
+
+  - question: "Are there any biliary stents?"
+    positive:
+      - "A biliary stent is in place."
+      - "A metallic biliary stent is identified within the common bile duct."
+      - "A tubular stent is seen within the biliary system, maintaining ductal patency."
+    negative:
+      - "There are no biliary stents."
+      - "No biliary stents are identified."
+      - "The biliary system does not contain any stent devices."
+
+  - question: "Are there any transjugular intrahepatic portosystemic shunts?"
+    positive:
+      - "A transjugular intrahepatic portosystemic shunt is in place."
+      - "A TIPS stent is identified extending from the hepatic vein to the portal vein through the hepatic parenchyma."
+      - "A metallic shunt traverses the liver parenchyma connecting the portal venous and hepatic venous systems, consistent with a TIPS."
+    negative:
+      - "There is no transjugular intrahepatic portosystemic shunt."
+      - "No TIPS is identified."
+      - "No metallic shunt device is seen traversing the hepatic parenchyma between the portal and hepatic venous systems."
+
+  - question: "Are there any Foley catheters?"
+    positive:
+      - "A Foley catheter is in place."
+      - "A Foley catheter is identified with its balloon inflated within the urinary bladder."
+      - "A urinary catheter with a visible inflated balloon is seen within the bladder lumen."
+    negative:
+      - "There is no Foley catheter."
+      - "No Foley catheter is identified."
+      - "No urinary catheter or balloon device is visualized within the bladder."
+
+  - question: "Are there any percutaneous nephrostomy tubes/catheters?"
+    positive:
+      - "A percutaneous nephrostomy tube is in place."
+      - "A nephrostomy catheter is identified entering the flank and terminating within the renal collecting system."
+      - "A drainage catheter is seen traversing the posterior abdominal wall into the renal pelvis, consistent with a percutaneous nephrostomy."
+    negative:
+      - "There are no percutaneous nephrostomy tubes."
+      - "No nephrostomy catheters are identified."
+      - "No drainage catheter is visualized within the renal collecting system or extending through the flank."
+
+  - question: "Are there any ureteral double-J catheters/stents?"
+    positive:
+      - "A ureteral double-J stent is in place."
+      - "A double-J ureteral stent is identified extending from the renal pelvis to the urinary bladder."
+      - "A curled stent is seen with its proximal coil in the renal pelvis and distal coil in the bladder, consistent with a ureteral double-J catheter."
+    negative:
+      - "There are no ureteral double-J stents."
+      - "No ureteral stents are identified."
+      - "No stent device is visualized along the course of the ureters."
+
+  - question: "Are there any intra-uterine devices?"
+    positive:
+      - "An intra-uterine device is in place."
+      - "An IUD is identified within the uterine cavity."
+      - "A small T-shaped or curvilinear radiopaque device is seen within the endometrial cavity, consistent with an intra-uterine device."
+    negative:
+      - "There is no intra-uterine device."
+      - "No IUD is identified."
+      - "No radiopaque device is visualized within the uterine cavity."
+
+  - question: "Are there any extracorporeal membrane oxygenation (ECMO) devices?"
+    positive:
+      - "An ECMO device is in place."
+      - "ECMO cannulae are identified within the great vessels."
+      - "Large-bore cannulae consistent with extracorporeal membrane oxygenation are seen within the venous and/or arterial vasculature."
+    negative:
+      - "There are no ECMO devices."
+      - "No ECMO cannulae are identified."
+      - "No large-bore extracorporeal membrane oxygenation cannulae are visualized within the vasculature."
+
+  - question: "Are there any central venous catheters?"
+    positive:
+      - "A central venous catheter is in place."
+      - "A central venous catheter is identified with its tip in the expected location near the cavoatrial junction."
+      - "A vascular access catheter is seen coursing through a central vein with its distal tip projecting over the superior vena cava or right atrium."
+    negative:
+      - "There are no central venous catheters."
+      - "No central venous catheter is identified."
+      - "No central line or vascular access device is visualized within the central venous system."
+
+  - question: "Are there any aortic stents?"
+    positive:
+      - "An aortic stent graft is in place."
+      - "An endovascular aortic stent graft is identified within the abdominal aorta."
+      - "A metallic stent graft is seen within the aortic lumen, consistent with prior endovascular aortic repair."
+    negative:
+      - "There are no aortic stents."
+      - "No aortic stent graft is identified."
+      - "The aorta does not contain any endovascular stent graft device."

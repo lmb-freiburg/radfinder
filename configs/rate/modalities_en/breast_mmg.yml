@@ -1,0 +1,89 @@
+modality: "breast-mmg"
+
+categories:
+  Composition:
+    description: "Breast composition (density) per BI-RADS"
+    questions:
+      - question: "Is the breast composition category A (almost entirely fatty)?"
+      - question: "Is the breast composition category B (scattered areas of fibroglandular density)?"
+      - question: "Is the breast composition category C (heterogeneously dense)?"
+      - question: "Is the breast composition category D (extremely dense)?"
+
+  Cancer:
+    description: "Cancer suspected"
+     - question: "Is breast cancer suspected based on imaging findings?"
+     
+  Mass:
+    description: "Mass lesions in the breast (descriptors)"
+    questions:
+      - question: "Are any masses present?"
+      - question: "Is the mass shape round?"
+      - question: "Is the mass shape oval?"
+      - question: "Is the mass shape irregular?"
+      - question: "Is the mass margin circumscribed?"
+      - question: "Is the mass margin indistinct?"
+      - question: "Is the mass margin obscured?"
+      - question: "Is the mass margin microlobulated?"
+      - question: "Is the mass margin spiculated?"
+      - question: "Are there any fat-containing masses?"
+     
+ Additional findings:
+     description: "Associated findings (e.g. skin retraction, nipple retraction, skin thickening, trabecular thickening)"
+      - question: "Is there skin retraction?"
+      - question: "Is there nipple retraction or inversion?"
+      - question: "Is there skin thickening?"
+      - question: "Is there trabecular thickening?"
+
+  Architectural Distortion:
+    description: "Areas of architectural distortion"
+    questions:
+      - question: "Is architectural distortion present?"
+
+  Asymmetry:
+    description: "Non‑mass density asymmetries"
+    questions:
+      - question: "Is global asymmetry present?"
+      - question: "Is focal asymmetry present?"
+      - question: "Is developing asymmetry present?"
+
+  Microcalcification:
+    description: "Microcalcifications in the breast (diagnostic descriptors)"
+    questions:
+      - question: "Are there any microcalcifications present in the breast?"
+      - question: "Are the microcalcifications suspicious in morphology (e.g. amorphous, coarse heterogenous, fine pleomorphic, fine linear or fine linear branching)?"
+      - question: "Are the microcalcifications benign in morphology (e.g. round, rim, punctate, skin, vascular, 'popcorn', large rod-like, dystrophic, milk-of-calcium)?
+      - question: "Are the suspicious microcalcifications in a grouped distribution?"
+      - question: "Are the suspicious microcalcifications in a linear distribution?"
+      - question: "Are the suspicious microcalcifications in a segmental distribution?"
+      - question: "Are the suspicious microcalcifications in a regional distribution?"
+    
+
+  Axillary Region:
+    description: "Axillary findings"
+    questions:
+      - question: "Is axillary lymphadenopathy present?"
+
+  Hardware Device:
+    description: "Implants, clips and other hardware"
+    questions:
+      - question: "Are there any biopsy clips?"
+      - question: "Are there any surgical clips?"
+      - question: "Are there any Magseeds?"
+      - question: "Are there any Savi-scouts?"
+      - question: "Are there any BioZorbs?"
+      - question: "Is there any infusion port?"
+      - question: "Is there any central venous catheter?"
+      - question: "Are there any saline implants?"
+      - question: "Are there any silicone implants?"
+
+  Post Surgery Specific Lesion:
+    description: "Post-surgery findings and specific lesion"
+    questions:
+      - question: "Is intra-mammary lymph node suspected based on the imaging findings?"
+      - question: "Is solitary dilated duct suspected based on the imaging findings?"
+      - question: "Is post-surgical scarring suspected based on imaging findings?"
+      - question: "Is seroma suspected based on imaging findings?"
+      - question: "Is fat necrosis or oil cyst suspected based on imaging findings?"
+      - question: "Is autologous flap reconstruction suspected based on imaging findings?"
+
+

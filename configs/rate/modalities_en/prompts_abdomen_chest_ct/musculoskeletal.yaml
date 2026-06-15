@@ -1,0 +1,102 @@
+category: "Musculoskeletal"
+description: "Musculoskeletal findings"
+prompts:
+  - question: "Is osteopenia suspected based on the imaging findings?"
+    positive:
+      - "Osteopenia is suspected based on the imaging findings."
+      - "Diffuse osseous demineralization is noted, suggestive of osteopenia."
+      - "The bones demonstrate reduced attenuation and cortical thinning, consistent with decreased bone mineral density."
+    negative:
+      - "Osteopenia is not suspected based on the imaging findings."
+      - "No evidence of osteopenia is identified."
+      - "The bones demonstrate normal attenuation and cortical thickness without features of demineralization."
+
+  - question: "Are there any fractures (general)?"
+    positive:
+      - "A fracture is present."
+      - "A cortical disruption with associated fracture line is identified."
+      - "A lucent line extending through the cortex is seen, consistent with a fracture."
+    negative:
+      - "There are no fractures."
+      - "No fractures are identified."
+      - "The osseous structures are intact without cortical disruption or fracture lines."
+
+  - question: "Are there any spinal fractures?"
+    positive:
+      - "A spinal fracture is present."
+      - "A vertebral body fracture is identified with loss of height."
+      - "A compression deformity of a vertebral body is seen with cortical disruption and height loss, consistent with a spinal fracture."
+    negative:
+      - "There are no spinal fractures."
+      - "No spinal fractures are identified."
+      - "The vertebral bodies maintain normal height and alignment without fracture lines or compression deformities."
+
+  - question: "Are there any fractures of the pelvic girdle or sacrum?"
+    positive:
+      - "A fracture of the pelvic girdle or sacrum is present."
+      - "A fracture line is identified involving the pelvis or sacrum."
+      - "A cortical disruption with associated lucency is seen in the pelvic bones or sacrum, consistent with a fracture."
+    negative:
+      - "There are no fractures of the pelvic girdle or sacrum."
+      - "No pelvic or sacral fractures are identified."
+      - "The pelvic ring and sacrum are intact without cortical disruption or fracture lines."
+
+  - question: "Are there any femoral fractures?"
+    positive:
+      - "A femoral fracture is present."
+      - "A fracture of the femur is identified."
+      - "A cortical disruption with fracture line is seen involving the femur."
+    negative:
+      - "There are no femoral fractures."
+      - "No femoral fractures are identified."
+      - "The visualized portions of the femora are intact without cortical disruption or fracture lines."
+
+  - question: "Are there any rib fractures?"
+    positive:
+      - "Rib fractures are present."
+      - "One or more rib fractures are identified."
+      - "Cortical disruptions are seen along the ribs, consistent with acute or chronic rib fractures."
+    negative:
+      - "There are no rib fractures."
+      - "No rib fractures are identified."
+      - "The ribs are intact bilaterally without cortical disruption or callus formation."
+
+  - question: "Are there any osteolytic lesions?"
+    positive:
+      - "Osteolytic lesions are present."
+      - "Focal areas of bone destruction with lytic morphology are identified."
+      - "Well-defined or permeative lucent lesions are seen within the osseous structures, consistent with osteolytic disease."
+    negative:
+      - "There are no osteolytic lesions."
+      - "No osteolytic lesions are identified."
+      - "The osseous structures show no focal areas of lucency or bone destruction suggestive of lytic lesions."
+
+  - question: "Are there any osteosclerotic lesions?"
+    positive:
+      - "Osteosclerotic lesions are present."
+      - "Focal areas of increased bone density are identified, consistent with osteosclerotic lesions."
+      - "Well-defined or diffuse sclerotic foci are seen within the osseous structures, indicating osteosclerotic disease."
+    negative:
+      - "There are no osteosclerotic lesions."
+      - "No osteosclerotic lesions are identified."
+      - "The osseous structures show no focal areas of abnormal sclerosis."
+
+  - question: "Are there any iliopsoas muscle abscesses?"
+    positive:
+      - "An iliopsoas abscess is present."
+      - "A rim-enhancing fluid collection within the iliopsoas muscle is identified, consistent with an abscess."
+      - "An ill-defined, hypoattenuating lesion with peripheral enhancement is seen within the iliopsoas compartment, compatible with an intramuscular abscess."
+    negative:
+      - "There are no iliopsoas abscesses."
+      - "No iliopsoas abscess is identified."
+      - "The iliopsoas muscles are symmetric and normal in attenuation without fluid collections or inflammatory changes."
+
+  - question: "Is there Fournier's gangrene / necrotizing fasciitis?"
+    positive:
+      - "Fournier's gangrene is present."
+      - "Necrotizing fasciitis of the perineum is identified with subcutaneous gas and inflammatory fat stranding."
+      - "Extensive soft tissue gas tracking along the fascial planes of the perineum and scrotum or labia is observed with surrounding inflammatory changes, consistent with Fournier's gangrene."
+    negative:
+      - "There is no Fournier's gangrene or necrotizing fasciitis."
+      - "No necrotizing fasciitis of the perineum is identified."
+      - "The perineal soft tissues show no subcutaneous gas, fascial thickening, or inflammatory changes suggestive of necrotizing fasciitis."

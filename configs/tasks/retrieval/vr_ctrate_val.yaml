@@ -1,0 +1,6 @@
+task_type: volume_retrieval
+dataset_name: ctrate
+split: val
+max_datapoints: null
+language: en
+ctrate_filter_mode: first_all

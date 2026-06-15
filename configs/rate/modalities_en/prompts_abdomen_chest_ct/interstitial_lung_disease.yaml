@@ -1,0 +1,42 @@
+category: "Interstitial Lung Disease"
+description: "Interstitial lung disease-related findings"
+prompts:
+  - question: "Is there any reticulation or reticular pattern?"
+    positive:
+      - "Reticulation is present within the lung parenchyma, suggesting interstitial disease."
+      - "Reticular pattern identified in the lungs."
+      - "There are fine linear interstitial opacities forming a reticular network in the lung."
+    negative:
+      - "No reticulation or reticular pattern is identified."
+      - "The lung parenchyma shows no reticular interstitial changes."
+      - "There is no evidence of reticular opacities within the lungs."
+
+  - question: "Is there any mosaic attenuation?"
+    positive:
+      - "Mosaic attenuation is present with geographic areas of differing lung density."
+      - "Mosaic attenuation pattern noted in the lungs."
+      - "There are sharply demarcated regions of heterogeneous lung attenuation consistent with mosaic pattern."
+    negative:
+      - "No mosaic attenuation is identified."
+      - "The lung parenchyma demonstrates homogeneous attenuation without mosaic pattern."
+      - "There is no geographic variation in lung density to suggest mosaic attenuation."
+
+  - question: "Is there any honeycombing?"
+    positive:
+      - "Honeycombing is present, indicating end-stage fibrotic lung disease."
+      - "Honeycombing noted in the lungs."
+      - "There are clustered thick-walled cystic airspaces in a subpleural distribution consistent with honeycombing."
+    negative:
+      - "No honeycombing is seen in the lungs."
+      - "The lungs show no evidence of honeycombing."
+      - "There are no clustered subpleural cystic airspaces to suggest honeycombing."
+
+  - question: "Is there any interlobular septal thickening?"
+    positive:
+      - "Interlobular septal thickening is present in the lungs."
+      - "Smooth interlobular septal thickening noted."
+      - "There are thickened interlobular septa visible as fine linear opacities outlining the secondary pulmonary lobules."
+    negative:
+      - "No interlobular septal thickening is identified."
+      - "The interlobular septa are normal in thickness."
+      - "There is no evidence of interlobular septal thickening in the lungs."

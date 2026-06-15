@@ -1,0 +1,152 @@
+category: "Heart"
+description: "Heart-related findings"
+prompts:
+  - question: "Is there coronary atherosclerosis?"
+    positive:
+      - "Coronary atherosclerosis is present."
+      - "Atherosclerotic calcifications are identified within the coronary arteries."
+      - "The coronary arteries demonstrate mural calcified plaques consistent with atherosclerotic disease."
+    negative:
+      - "There is no coronary atherosclerosis."
+      - "No coronary artery atherosclerosis is identified."
+      - "The coronary arteries are free of atherosclerotic calcifications."
+
+  - question: "Are there any coronary artery stents?"
+    positive:
+      - "Coronary artery stents are present."
+      - "Metallic coronary artery stents are identified."
+      - "High-density tubular structures are seen within the coronary arteries, consistent with coronary stents."
+    negative:
+      - "There are no coronary artery stents."
+      - "No coronary artery stents are identified."
+      - "The coronary arteries do not contain any metallic stents."
+
+  - question: "Are there any post-coronary artery bypass grafts?"
+    positive:
+      - "Coronary artery bypass grafts are present."
+      - "Post-surgical changes of coronary artery bypass grafting are noted, with graft vessels identified."
+      - "Bypass graft conduits are seen extending from the aorta to the coronary circulation, indicating prior CABG surgery."
+    negative:
+      - "There are no coronary artery bypass grafts."
+      - "No evidence of prior coronary artery bypass grafting is identified."
+      - "No bypass graft vessels or surgical clips suggestive of prior CABG are observed."
+
+  - question: "Is cardiomegaly or cardiac enlargement suspected based on the imaging findings?"
+    positive:
+      - "Cardiomegaly is present."
+      - "The heart is enlarged, consistent with cardiomegaly."
+      - "The heart is significantly increased in size on cross-sectional imaging, indicating cardiac enlargement."
+    negative:
+      - "There is no cardiomegaly."
+      - "No cardiac enlargement is identified."
+      - "The heart is normal in size without evidence of cardiomegaly."
+
+  - question: "Is dilated cardiomyopathy suspected based on the imaging findings?"
+    positive:
+      - "Dilated cardiomyopathy is suspected."
+      - "The cardiac chambers are globally dilated with thinning of the myocardial walls, suggestive of dilated cardiomyopathy."
+      - "Biventricular dilatation with reduced wall thickness is observed, consistent with dilated cardiomyopathy."
+    negative:
+      - "There is no evidence of dilated cardiomyopathy."
+      - "No dilated cardiomyopathy is suspected."
+      - "The cardiac chambers are of normal caliber without myocardial thinning to suggest dilated cardiomyopathy."
+
+  - question: "Is hypertrophic cardiomyopathy suspected based on the imaging findings?"
+    positive:
+      - "Hypertrophic cardiomyopathy is suspected."
+      - "Asymmetric myocardial hypertrophy, particularly of the interventricular septum, is noted, suggestive of hypertrophic cardiomyopathy."
+      - "The left ventricular wall is abnormally thickened with asymmetric septal prominence, consistent with hypertrophic cardiomyopathy."
+    negative:
+      - "There is no evidence of hypertrophic cardiomyopathy."
+      - "No hypertrophic cardiomyopathy is suspected."
+      - "The myocardial wall thickness is within normal limits without asymmetric hypertrophy."
+
+  - question: "Is ischemic cardiomyopathy suspected based on the imaging findings?"
+    positive:
+      - "Ischemic cardiomyopathy is suspected."
+      - "Findings of myocardial thinning and fatty replacement in a coronary artery distribution are consistent with ischemic cardiomyopathy."
+      - "Regional wall thinning with subendocardial hypoattenuation and coronary calcifications are observed, suggestive of chronic ischemic cardiomyopathy."
+    negative:
+      - "There is no evidence of ischemic cardiomyopathy."
+      - "No ischemic cardiomyopathy is suspected."
+      - "The myocardium shows normal attenuation and thickness without regional thinning or fatty replacement to suggest ischemic cardiomyopathy."
+
+  - question: "Is pulmonary hypertension suspected based on the imaging findings?"
+    positive:
+      - "Pulmonary hypertension is suspected."
+      - "The main pulmonary artery is dilated, exceeding the diameter of the ascending aorta, suggestive of pulmonary hypertension."
+      - "An enlarged main pulmonary artery with right ventricular dilatation is observed, consistent with pulmonary hypertension."
+    negative:
+      - "There is no evidence of pulmonary hypertension."
+      - "No pulmonary hypertension is suspected."
+      - "The main pulmonary artery is normal in caliber and the right ventricle is of normal size, without signs of pulmonary hypertension."
+
+  - question: "Is pericardial effusion present?"
+    positive:
+      - "Pericardial effusion is present."
+      - "Fluid is identified within the pericardial space, consistent with pericardial effusion."
+      - "A layer of low-attenuation fluid surrounds the heart within the pericardial sac."
+    negative:
+      - "There is no pericardial effusion."
+      - "No pericardial effusion is identified."
+      - "The pericardial space is free of fluid."
+
+  - question: "Is cardiac tamponade suspected based on the imaging findings?"
+    positive:
+      - "Cardiac tamponade is suspected."
+      - "A large pericardial effusion with compression of the right-sided cardiac chambers is identified, raising concern for cardiac tamponade."
+      - "The pericardial effusion is causing flattening and inward bowing of the right atrial and ventricular walls, suggestive of tamponade physiology."
+    negative:
+      - "There is no evidence of cardiac tamponade."
+      - "No cardiac tamponade is suspected."
+      - "There is no pericardial effusion or chamber compression to suggest tamponade."
+
+  - question: "Are there any heart/cardiac valve calcifications?"
+    positive:
+      - "Cardiac valve calcifications are present."
+      - "Calcifications are identified involving the cardiac valves."
+      - "Dense calcific deposits are seen along the valve annuli and leaflets of the heart."
+    negative:
+      - "There are no cardiac valve calcifications."
+      - "No heart valve calcifications are identified."
+      - "The cardiac valve structures are free of calcification."
+
+  - question: "Are there any coronary soft plaques?"
+    positive:
+      - "Coronary soft plaques are present."
+      - "Non-calcified soft plaques are identified within the coronary arteries."
+      - "Low-attenuation atherosclerotic plaques are seen along the coronary artery walls, representing soft or vulnerable plaques."
+    negative:
+      - "There are no coronary soft plaques."
+      - "No coronary soft plaques are identified."
+      - "The coronary arteries do not demonstrate non-calcified soft tissue plaque."
+
+  - question: "Is there a single coronary artery (a congenital anomaly where only one coronary artery arises from a single coronary ostium to supply the entire heart)?"
+    positive:
+      - "A single coronary artery anomaly is present."
+      - "Only one coronary artery is identified originating from a single ostium, consistent with single coronary artery anomaly."
+      - "The entire coronary circulation arises from a solitary coronary ostium, indicating the congenital variant of single coronary artery."
+    negative:
+      - "There is no single coronary artery anomaly."
+      - "No single coronary artery anomaly is identified."
+      - "The coronary arteries arise normally from separate ostia in the aortic root."
+
+  - question: "Are there any myxomas?"
+    positive:
+      - "A cardiac myxoma is present."
+      - "An intracardiac mass consistent with a myxoma is identified."
+      - "A well-defined pedunculated mass is seen within the cardiac chamber, attached to the interatrial septum, characteristic of a myxoma."
+    negative:
+      - "There are no cardiac myxomas."
+      - "No intracardiac myxoma is identified."
+      - "The cardiac chambers are free of intraluminal masses or myxomas."
+
+  - question: "Is aortic dissection present?"
+    positive:
+      - "Aortic dissection is present."
+      - "An intimal flap is identified within the aorta, consistent with aortic dissection."
+      - "A linear intimal flap dividing the aortic lumen into true and false channels is observed, indicating aortic dissection."
+    negative:
+      - "There is no aortic dissection."
+      - "No aortic dissection is identified."
+      - "The aortic wall is intact without evidence of an intimal flap or dissection."

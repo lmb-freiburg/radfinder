@@ -1,0 +1,60 @@
+model_name: spectre-large-pretrained
+feature_comb_embed_dim: 1080
+feature_comb_num_layers: 4
+feature_comb_num_heads: 12
+projection_dim: 512
+#################### text backbone ####################
+text_tokenizer: Qwen/Qwen3-Embedding-0.6B
+text_weights: "spectre_qwen3_embedding_0.6B_lora.pt"
+text_backbone_kwargs:
+    tokenizer_max_length: 4096
+    use_lora: true
+    lora_r: 16
+    lora_alpha: 64.0
+    lora_dropout: 0.05
+    lora_target_keywords:
+        - q_proj
+        - k_proj
+        - v_proj
+        - o_proj
+    grad_checkpoint: false
+#################### text projector ####################
+text_hidden_size: 1024
+text_projection_weights: "SigLIP_projection_head_text.pt"
+#################### image local network ####################
+backbone: vit_large_patch16_128
+# https://huggingface.co/cclaess/SPECTRE/resolve/main/spectre_backbone_vit_large_patch16_128.pt?download=true
+backbone_checkpoint_path_or_url: spectre_backbone_vit_large_patch16_128.pt
+train_img_size: [384, 384, 256]  # must be multiple of sliding_window_size
+backbone_kwargs:
+    grad_checkpoint_every: 0
+    sliding_window_size: [128, 128, 64]  # will be passed to dataloader
+    min_area_for_padding: 0.0
+    pixdim: [0.75, 0.75, 1.5]  # will be passed to dataloader
+    patch_size: [16, 16, 8]
+    embed_dim: 1080
+    half_patch_embed: false  # keep [16, 16, 8] patch size
+    depth: 24
+    num_heads: 12
+    mlp_ratio: 4
+    qkv_bias: true
+    num_classes: 0
+    global_pool: ""
+    pos_embed: rope
+    rope_kwargs:
+        base: 1000.0
+    init_values: 1.0
+#################### image global network (feature combiner) ####################
+# https://huggingface.co/cclaess/SPECTRE/resolve/main/spectre_combiner_feature_vit_large.pt?download=true
+image_backbone_embed_dim: 1080
+feature_combiner: feat_vit_large
+feature_combiner_checkpoint_path_or_url: spectre_combiner_feature_vit_large.pt
+feature_combiner_kwargs:
+    num_classes: 0
+    global_pool: ""
+    pos_embed: rope
+    rope_kwargs:
+        base: 100.0
+    init_values: 1.0
+#################### image projector ####################
+image_projection_weights: "SigLIP_projection_head_image.pt"

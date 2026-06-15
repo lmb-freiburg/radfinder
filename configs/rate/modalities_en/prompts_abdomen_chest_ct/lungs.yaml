@@ -1,0 +1,212 @@
+category: "Lungs"
+description: "Lung-related findings"
+prompts:
+  - question: "Is there any atelectasis?"
+    positive:
+      - "Atelectasis is present."
+      - "Areas of atelectasis are identified in the lung."
+      - "Band-like or wedge-shaped opacities with volume loss are seen in the lung parenchyma, consistent with atelectasis."
+    negative:
+      - "There is no atelectasis."
+      - "No atelectasis is identified."
+      - "The lungs are fully expanded without areas of volume loss or atelectatic change."
+
+  - question: "Is there any consolidation in the lung?"
+    positive:
+      - "Pulmonary consolidation is present."
+      - "An area of consolidation is identified in the lung parenchyma."
+      - "A region of increased attenuation with air bronchograms obscuring the underlying pulmonary vasculature is observed, consistent with consolidation."
+    negative:
+      - "There is no pulmonary consolidation."
+      - "No consolidation is identified in the lungs."
+      - "The lung parenchyma is clear without areas of consolidation or airspace opacification."
+
+  - question: "Is there any centrilobular emphysema?"
+    positive:
+      - "Centrilobular emphysema is present."
+      - "Centrilobular emphysematous changes are identified in the lungs."
+      - "Multiple small round areas of low attenuation are seen in the center of secondary pulmonary lobules without visible walls, consistent with centrilobular emphysema."
+    negative:
+      - "There is no centrilobular emphysema."
+      - "No centrilobular emphysema is identified."
+      - "The lung parenchyma does not demonstrate centrilobular lucencies or emphysematous destruction."
+
+  - question: "Is there any paraseptal emphysema?"
+    positive:
+      - "Paraseptal emphysema is present."
+      - "Paraseptal emphysematous changes are identified along the pleural surfaces."
+      - "Rows of subpleural lucent spaces are seen along the interlobular septa and pleural surfaces, consistent with paraseptal emphysema."
+    negative:
+      - "There is no paraseptal emphysema."
+      - "No paraseptal emphysema is identified."
+      - "The subpleural lung parenchyma is intact without paraseptal emphysematous changes."
+
+  - question: "Is there any cavitation in the lung?"
+    positive:
+      - "Pulmonary cavitation is present."
+      - "A cavitary lesion is identified within the lung."
+      - "A thick-walled gas-filled space is seen within an area of pulmonary consolidation or a mass, consistent with cavitation."
+    negative:
+      - "There is no pulmonary cavitation."
+      - "No cavitary lesions are identified in the lungs."
+      - "The lung parenchyma does not contain cavities or cavitating lesions."
+
+  - question: "Is there any bulla, bleb, or pneumatocele?"
+    positive:
+      - "A pulmonary bulla, bleb, or pneumatocele is present."
+      - "Thin-walled air-filled spaces are identified in the lung, consistent with bullae, blebs, or pneumatoceles."
+      - "Well-defined thin-walled lucent spaces greater than one centimeter are seen in the lung parenchyma, representing bullous or pneumatocele formation."
+    negative:
+      - "There are no bullae, blebs, or pneumatoceles."
+      - "No bullae, blebs, or pneumatoceles are identified."
+      - "The lungs do not contain thin-walled cystic air spaces suggestive of bullae, blebs, or pneumatoceles."
+
+  - question: "Is there any atypical cyst in the lung?"
+    positive:
+      - "An atypical pulmonary cyst is present."
+      - "An atypical cystic lesion is identified in the lung, with irregular walls or associated soft tissue."
+      - "A cystic airspace with irregular thickening or nodularity of its wall is seen in the lung, representing an atypical cyst."
+    negative:
+      - "There are no atypical pulmonary cysts."
+      - "No atypical lung cysts are identified."
+      - "The lungs do not contain cystic spaces with irregular or suspicious morphology."
+
+  - question: "Is there any post-lung resection scar?"
+    positive:
+      - "Post-lung resection scarring is present."
+      - "Post-surgical changes consistent with prior lung resection are identified."
+      - "Linear parenchymal opacities and volume loss are seen at a prior surgical site, indicative of post-lung resection scarring."
+    negative:
+      - "There is no post-lung resection scar."
+      - "No evidence of prior lung resection is identified."
+      - "The lungs show no surgical scarring or volume loss to suggest prior resection."
+
+  - question: "Is there any calcification in the lung?"
+    positive:
+      - "Pulmonary calcifications are present."
+      - "Calcifications are identified within the lung parenchyma."
+      - "Foci of high attenuation are seen within the lungs, consistent with pulmonary calcifications."
+    negative:
+      - "There are no pulmonary calcifications."
+      - "No calcifications are identified within the lung parenchyma."
+      - "The lungs are free of calcified foci or granulomata."
+
+  - question: "Is there any pneumoconiosis?"
+    positive:
+      - "Pneumoconiosis is present."
+      - "Findings consistent with pneumoconiosis are identified, including diffuse nodular opacities in the lungs."
+      - "Multiple small, well-defined nodules are seen diffusely throughout the lungs with upper lobe predominance, suggestive of pneumoconiosis."
+    negative:
+      - "There is no pneumoconiosis."
+      - "No findings of pneumoconiosis are identified."
+      - "The lungs do not demonstrate diffuse nodular opacities or progressive massive fibrosis associated with pneumoconiosis."
+
+  - question: "Is there any ground-glass opacity?"
+    positive:
+      - "Ground-glass opacity is present."
+      - "Areas of ground-glass opacity are identified in the lungs."
+      - "Hazy increased attenuation is seen in the lung parenchyma that does not obscure the underlying bronchial and vascular structures, consistent with ground-glass opacity."
+    negative:
+      - "There is no ground-glass opacity."
+      - "No ground-glass opacities are identified."
+      - "The lung parenchyma is clear without areas of hazy increased attenuation suggestive of ground-glass opacity."
+
+  - question: "Is pulmonary edema suspected based on the imaging findings?"
+    positive:
+      - "Pulmonary edema is suspected."
+      - "Findings of pulmonary edema are identified, including bilateral perihilar ground-glass opacities and interlobular septal thickening."
+      - "Bilateral dependent ground-glass opacities with smooth septal thickening and bilateral pleural effusions are observed, consistent with pulmonary edema."
+    negative:
+      - "There is no evidence of pulmonary edema."
+      - "No pulmonary edema is suspected."
+      - "The lungs do not demonstrate perihilar opacities, septal thickening, or other features of pulmonary edema."
+
+  - question: "Is primary tuberculosis suspected based on the imaging findings?"
+    positive:
+      - "Primary tuberculosis is suspected."
+      - "Findings suggestive of primary tuberculosis are identified, including a focal consolidation with ipsilateral hilar lymphadenopathy."
+      - "A parenchymal focus of consolidation with enlarged ipsilateral hilar and mediastinal lymph nodes is observed, consistent with primary tuberculosis."
+    negative:
+      - "There is no evidence of primary tuberculosis."
+      - "No primary tuberculosis is suspected."
+      - "The lungs show no focal consolidation or associated lymphadenopathy to suggest primary tuberculosis."
+
+  - question: "Is miliary tuberculosis suspected based on the imaging findings?"
+    positive:
+      - "Miliary tuberculosis is suspected."
+      - "Innumerable tiny nodules are diffusely distributed throughout both lungs, suggestive of miliary tuberculosis."
+      - "A diffuse, uniform pattern of 1 to 3 millimeter micronodules is seen in a random distribution throughout the lungs, consistent with miliary tuberculosis."
+    negative:
+      - "There is no evidence of miliary tuberculosis."
+      - "No miliary tuberculosis is suspected."
+      - "The lungs do not demonstrate the diffuse micronodular pattern characteristic of miliary tuberculosis."
+
+  - question: "Is non-tuberculous mycobacterial infection suspected based on the imaging findings?"
+    positive:
+      - "Non-tuberculous mycobacterial infection is suspected."
+      - "Bronchiectasis with centrilobular nodules and tree-in-bud opacities, particularly in the right middle lobe and lingula, are suggestive of non-tuberculous mycobacterial infection."
+      - "Clustered small nodules with associated cylindrical bronchiectasis in the middle lobe and lingula are observed, consistent with non-tuberculous mycobacterial infection."
+    negative:
+      - "There is no evidence of non-tuberculous mycobacterial infection."
+      - "No non-tuberculous mycobacterial infection is suspected."
+      - "The lungs lack the combination of bronchiectasis and centrilobular nodularity typical of non-tuberculous mycobacterial infection."
+
+  - question: "Is COVID-19 suspected based on the imaging findings?"
+    positive:
+      - "COVID-19 pneumonia is suspected."
+      - "Bilateral, peripheral, and basal predominant ground-glass opacities are identified, consistent with COVID-19 pneumonia."
+      - "Multifocal peripheral ground-glass opacities with or without consolidation are seen in a distribution typical of COVID-19 infection."
+    negative:
+      - "There is no evidence of COVID-19 pneumonia."
+      - "No COVID-19 is suspected based on the imaging."
+      - "The lungs do not demonstrate the bilateral peripheral ground-glass opacities characteristic of COVID-19."
+
+  - question: "Is aspergillosis suspected based on the imaging findings?"
+    positive:
+      - "Aspergillosis is suspected."
+      - "Findings suggestive of aspergillosis are identified, including a cavitary lesion with an intracavitary mass or nodules with surrounding ground-glass halo."
+      - "A soft tissue mass within a pre-existing cavity creating an air crescent sign is observed, consistent with aspergilloma, or nodules with surrounding ground-glass halos suggest invasive aspergillosis."
+    negative:
+      - "There is no evidence of aspergillosis."
+      - "No aspergillosis is suspected."
+      - "The lungs do not contain intracavitary masses, halo signs, or other findings suggestive of aspergillosis."
+
+  - question: "Is aspiration pneumonia suspected based on the imaging findings?"
+    positive:
+      - "Aspiration pneumonia is suspected."
+      - "Consolidation in the dependent lung segments is identified, suggestive of aspiration pneumonia."
+      - "Patchy consolidation and ground-glass opacities are seen in the posterior segments of the upper lobes or superior segments of the lower lobes, consistent with aspiration pneumonia."
+    negative:
+      - "There is no evidence of aspiration pneumonia."
+      - "No aspiration pneumonia is suspected."
+      - "The dependent lung segments are clear without consolidation or opacities to suggest aspiration pneumonia."
+
+  - question: "Is there any crazy paving pattern?"
+    positive:
+      - "A crazy paving pattern is present in the lungs."
+      - "Ground-glass opacity with superimposed interlobular septal thickening and intralobular lines is identified, consistent with a crazy paving pattern."
+      - "The lung parenchyma demonstrates scattered regions of ground-glass attenuation overlaid with a network of thickened interlobular septa, creating a crazy paving appearance."
+    negative:
+      - "There is no crazy paving pattern."
+      - "No crazy paving pattern is identified."
+      - "The lungs do not demonstrate ground-glass opacity with superimposed septal thickening suggestive of a crazy paving pattern."
+
+  - question: "Is sarcoidosis suspected based on the imaging findings?"
+    positive:
+      - "Sarcoidosis is suspected."
+      - "Bilateral symmetric hilar and mediastinal lymphadenopathy with perilymphatic micronodules is identified, suggestive of sarcoidosis."
+      - "Symmetric bilateral hilar lymphadenopathy and upper lobe predominant micronodules along the bronchovascular bundles and fissures are observed, consistent with sarcoidosis."
+    negative:
+      - "There is no evidence of sarcoidosis."
+      - "No sarcoidosis is suspected."
+      - "The lungs and mediastinum do not demonstrate bilateral hilar lymphadenopathy or perilymphatic nodularity suggestive of sarcoidosis."
+
+  - question: "Is radiation pneumonitis suspected based on the imaging findings?"
+    positive:
+      - "Radiation pneumonitis is suspected."
+      - "Ground-glass opacity and consolidation confined to a geometric radiation port field are identified, consistent with radiation pneumonitis."
+      - "A sharply demarcated area of ground-glass opacity and consolidation that does not follow anatomical boundaries is seen, corresponding to a prior radiation field and suggestive of radiation pneumonitis."
+    negative:
+      - "There is no evidence of radiation pneumonitis."
+      - "No radiation pneumonitis is suspected."
+      - "The lungs do not demonstrate non-anatomically bounded opacities or other findings suggestive of radiation pneumonitis."

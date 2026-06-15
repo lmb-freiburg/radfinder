@@ -1,0 +1,7 @@
+task_type: binary_zs
+dataset_name: ctrate
+split: val
+max_datapoints: null
+language: en
+ctrate_filter_mode: first_all
+prompt_mode: mean7

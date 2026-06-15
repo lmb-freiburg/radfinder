@@ -1,0 +1,272 @@
+category: "Genitourinary"
+description: "Kidney and urinary tract findings"
+prompts:
+  - question: "Is there hydronephrosis?"
+    positive:
+      - "There is hydronephrosis with dilatation of the renal collecting system."
+      - "Hydronephrosis is noted, with distension of the renal pelvis and calyces."
+      - "The kidney demonstrates a dilated pelvicalyceal system consistent with hydronephrosis."
+    negative:
+      - "There is no hydronephrosis."
+      - "No hydronephrosis is identified; the collecting systems are normal in caliber."
+      - "The renal pelvis and calyces are not dilated, with no evidence of hydronephrosis."
+
+  - question: "Are there any renal hypodensities?"
+    positive:
+      - "There are hypodense lesions within the renal parenchyma."
+      - "Renal hypodensities are present, requiring further characterization."
+      - "Low-attenuation foci are seen within the kidneys."
+    negative:
+      - "There are no renal hypodensities."
+      - "No hypodense lesions are identified within the kidneys."
+      - "The renal parenchyma demonstrates homogeneous attenuation without focal hypodensities."
+
+  - question: "Are there any simple renal cysts?"
+    positive:
+      - "Simple renal cysts are present."
+      - "Well-defined, homogeneous, water-attenuation renal cysts are noted, consistent with simple cysts."
+      - "The kidneys contain thin-walled, non-enhancing cystic lesions characteristic of simple cysts."
+    negative:
+      - "There are no simple renal cysts."
+      - "No simple renal cysts are identified."
+      - "The kidneys are free of simple cystic lesions."
+
+  - question: "Are there any complex renal cysts?"
+    positive:
+      - "Complex renal cysts are present with internal septations or calcifications."
+      - "Renal cystic lesions with complex features such as thick walls, septations, or solid components are noted."
+      - "The kidneys contain cysts with heterogeneous contents and enhancing components, classified as complex."
+    negative:
+      - "There are no complex renal cysts."
+      - "No complex cystic renal lesions are identified."
+      - "The renal cysts, if present, lack internal complexity such as septations, nodularity, or wall thickening."
+
+  - question: "Is there nephritis?"
+    positive:
+      - "There are findings consistent with nephritis."
+      - "Nephritis is suggested by striated nephrogram and perinephric fat stranding."
+      - "The kidney shows patchy enhancement and parenchymal swelling indicative of an inflammatory process consistent with nephritis."
+    negative:
+      - "There is no evidence of nephritis."
+      - "No findings suggestive of nephritis are identified."
+      - "The renal parenchyma enhances homogeneously without signs of inflammation or nephritis."
+
+  - question: "Are there any renal abscesses?"
+    positive:
+      - "There is a renal abscess with a rim-enhancing fluid collection within the kidney."
+      - "A renal abscess is identified, appearing as a low-attenuation lesion with peripheral enhancement."
+      - "The kidney contains a walled-off collection with surrounding inflammatory changes consistent with abscess formation."
+    negative:
+      - "There are no renal abscesses."
+      - "No renal abscess is identified."
+      - "The kidneys show no rim-enhancing collections or findings to suggest abscess."
+
+  - question: "Is there xanthogranulomatous pyelonephritis?"
+    positive:
+      - "There are findings consistent with xanthogranulomatous pyelonephritis."
+      - "Xanthogranulomatous pyelonephritis is suggested by an enlarged, non-functioning kidney with calculi and replacement of parenchyma by low-attenuation tissue."
+      - "The kidney is enlarged with a central calculus and multiple low-density areas replacing the parenchyma, characteristic of xanthogranulomatous pyelonephritis."
+    negative:
+      - "There is no xanthogranulomatous pyelonephritis."
+      - "No findings suggestive of xanthogranulomatous pyelonephritis are identified."
+      - "The kidneys do not demonstrate the parenchymal destruction or staghorn calculi pattern associated with xanthogranulomatous pyelonephritis."
+
+  - question: "Are there any renal stones / nephrolithiasis?"
+    positive:
+      - "There is nephrolithiasis with calculi identified within the kidney."
+      - "Renal stones are present, seen as hyperdense foci within the renal collecting system."
+      - "High-attenuation calcific densities are noted within the renal pelvis or calyces consistent with nephrolithiasis."
+    negative:
+      - "There is no nephrolithiasis."
+      - "No renal calculi are identified."
+      - "The kidneys are free of radiopaque stones or calcific densities within the collecting systems."
+
+  - question: "Are there any ureteral stones?"
+    positive:
+      - "There are ureteral stones identified within the ureter."
+      - "A ureteral calculus is identified as a hyperdense focus within the ureter."
+      - "A high-attenuation calcification is lodged within the ureter, consistent with a ureteral stone."
+    negative:
+      - "There are no ureteral stones."
+      - "No ureteral calculi are identified."
+      - "The ureters are free of obstructing or non-obstructing calculi."
+
+  - question: "Are there any bladder stones?"
+    positive:
+      - "There are bladder stones present within the urinary bladder."
+      - "Vesical calculi are identified as hyperdense foci within the bladder lumen."
+      - "High-attenuation calcific densities are seen within the bladder, consistent with bladder stones."
+    negative:
+      - "There are no bladder stones."
+      - "No vesical calculi are identified."
+      - "The bladder lumen is free of calcific densities or stones."
+
+  - question: "Is there nephrocalcinosis?"
+    positive:
+      - "There is nephrocalcinosis with diffuse calcification of the renal parenchyma."
+      - "Nephrocalcinosis is noted, with calcific deposits within the renal medulla or cortex."
+      - "The kidneys demonstrate diffuse parenchymal calcifications consistent with nephrocalcinosis."
+    negative:
+      - "There is no nephrocalcinosis."
+      - "No nephrocalcinosis is identified."
+      - "The renal parenchyma is free of diffuse calcific deposits, with no evidence of nephrocalcinosis."
+
+  - question: "Is there polycystic kidney disease?"
+    positive:
+      - "There is polycystic kidney disease with bilateral enlarged kidneys replaced by innumerable cysts."
+      - "Polycystic kidney disease is identified, with markedly enlarged kidneys containing multiple cysts of varying sizes."
+      - "Both kidneys are diffusely enlarged and replaced by numerous cysts of varying size, consistent with polycystic kidney disease."
+    negative:
+      - "There is no polycystic kidney disease."
+      - "No findings suggestive of polycystic kidney disease are present."
+      - "The kidneys are normal in size and morphology without the multiple bilateral cysts characteristic of polycystic kidney disease."
+
+  - question: "Is there horseshoe kidney?"
+    positive:
+      - "There is a horseshoe kidney with fusion of the lower poles across the midline."
+      - "A horseshoe kidney is identified, with an isthmus of renal tissue bridging the lower poles anterior to the aorta."
+      - "The kidneys are fused at their inferior poles by a parenchymal or fibrous isthmus, consistent with horseshoe kidney."
+    negative:
+      - "There is no horseshoe kidney."
+      - "No horseshoe kidney is identified; the kidneys are separate and normally positioned."
+      - "The kidneys demonstrate normal anatomic separation without lower pole fusion or midline isthmus."
+
+  - question: "Are there any ureteroceles?"
+    positive:
+      - "There is a ureterocele with cystic dilatation of the distal intravesical ureter."
+      - "A ureterocele is noted, seen as a thin-walled cystic structure protruding into the bladder lumen at the ureteral orifice."
+      - "The distal ureter demonstrates a cobra-head appearance within the bladder, consistent with a ureterocele."
+    negative:
+      - "There are no ureteroceles."
+      - "No ureteroceles are identified."
+      - "The distal ureters insert normally into the bladder without cystic dilatation or cobra-head deformity."
+
+  - question: "Are there any urachal diverticula?"
+    positive:
+      - "There is a urachal diverticulum arising from the dome of the bladder."
+      - "A urachal diverticulum is identified as a midline outpouching from the anterosuperior bladder wall."
+      - "A tubular or saccular structure extends from the bladder dome toward the umbilicus, consistent with a urachal diverticulum."
+    negative:
+      - "There are no urachal diverticula."
+      - "No urachal diverticulum is identified."
+      - "The bladder dome and anterior wall are smooth without midline outpouchings suggestive of a urachal remnant."
+
+  - question: "Are there any renal cell carcinomas?"
+    positive:
+      - "There is a renal cell carcinoma presenting as an enhancing solid renal mass."
+      - "A heterogeneously enhancing renal mass is identified, suspicious for renal cell carcinoma."
+      - "The kidney contains a solid, avidly enhancing mass with areas of necrosis, consistent with renal cell carcinoma."
+    negative:
+      - "There are no renal cell carcinomas."
+      - "No enhancing solid renal masses suggestive of renal cell carcinoma are identified."
+      - "The kidneys are free of suspicious solid masses or lesions concerning for renal cell carcinoma."
+
+  - question: "Are there any oncocytomas?"
+    positive:
+      - "There is a renal oncocytoma presenting as a well-defined solid mass with a central stellate scar."
+      - "A renal mass with features suggestive of oncocytoma is identified, including homogeneous enhancement and a central scar."
+      - "The kidney contains a well-circumscribed, homogeneously enhancing mass with a central low-attenuation scar, characteristic of an oncocytoma."
+    negative:
+      - "There are no renal oncocytomas."
+      - "No renal masses with features of oncocytoma are identified."
+      - "The kidneys do not contain well-defined solid masses with central stellate scars suggestive of oncocytoma."
+
+  - question: "Is there renal lymphoma?"
+    positive:
+      - "There is renal lymphoma manifesting as infiltrative renal masses."
+      - "Renal involvement by lymphoma is identified, with multiple homogeneous soft-tissue masses within the kidneys."
+      - "The kidneys demonstrate multiple low-attenuation masses or diffuse infiltrative enlargement consistent with lymphomatous involvement."
+    negative:
+      - "There is no renal lymphoma."
+      - "No findings suggestive of renal lymphoma are identified."
+      - "The kidneys are free of infiltrative masses or homogeneous soft-tissue lesions that would suggest lymphomatous involvement."
+
+  - question: "Are there any Wilms tumors?"
+    positive:
+      - "There is a Wilms tumor presenting as a large heterogeneous renal mass."
+      - "A large, heterogeneous intrarenal mass is identified, consistent with Wilms tumor (nephroblastoma)."
+      - "The kidney contains a bulky, mixed solid and cystic mass with areas of hemorrhage and necrosis, characteristic of a Wilms tumor."
+    negative:
+      - "There are no Wilms tumors."
+      - "No masses suggestive of Wilms tumor are identified."
+      - "The kidneys do not contain large heterogeneous masses characteristic of nephroblastoma."
+
+  - question: "Are there any angiomyolipomas?"
+    positive:
+      - "There is a renal angiomyolipoma identified by the presence of macroscopic fat within the lesion."
+      - "A fat-containing renal mass is noted, consistent with angiomyolipoma."
+      - "The kidney contains a well-defined mass with intralesional fat attenuation, diagnostic of angiomyolipoma."
+    negative:
+      - "There are no renal angiomyolipomas."
+      - "No fat-containing renal masses suggestive of angiomyolipoma are identified."
+      - "The kidneys are free of lesions demonstrating macroscopic fat content characteristic of angiomyolipoma."
+
+  - question: "Are there any bladder transitional cell carcinomas?"
+    positive:
+      - "There is a bladder transitional cell carcinoma presenting as an enhancing intraluminal mass."
+      - "An enhancing papillary mass arising from the bladder wall is identified, consistent with transitional cell carcinoma (urothelial carcinoma)."
+      - "The bladder demonstrates a solid, enhancing mural mass protruding into the lumen, suspicious for urothelial carcinoma."
+    negative:
+      - "There are no bladder transitional cell carcinomas."
+      - "No intraluminal masses suggestive of urothelial carcinoma are identified within the bladder."
+      - "The bladder wall is smooth and uniform without enhancing masses or papillary lesions to suggest transitional cell carcinoma."
+
+  - question: "Are there any post-nephrectomy changes?"
+    positive:
+      - "There are post-nephrectomy changes with absence of a kidney in the renal fossa."
+      - "Post-nephrectomy changes are noted, with an empty renal fossa and compensatory hypertrophy of the contralateral kidney."
+      - "One kidney is surgically absent, and the remaining kidney is enlarged, consistent with prior nephrectomy."
+    negative:
+      - "There are no post-nephrectomy changes."
+      - "No post-nephrectomy changes are identified; both kidneys are present."
+      - "Both kidneys are present in their expected locations without evidence of prior surgical removal."
+
+  - question: "Are there any post-renal transplantation changes?"
+    positive:
+      - "There are post-renal transplantation changes with a transplant kidney in the iliac fossa."
+      - "A transplanted kidney is identified in the pelvis, consistent with prior renal transplantation."
+      - "A kidney allograft is present in the iliac fossa with a vascular anastomosis to the iliac vessels, indicating prior renal transplantation."
+    negative:
+      - "There are no post-renal transplantation changes."
+      - "No transplant kidney is identified."
+      - "The pelvis and iliac fossae do not contain a renal allograft, with no evidence of prior renal transplantation."
+
+  - question: "Are there any subcapsular hemorrhages?"
+    positive:
+      - "There is a renal subcapsular hemorrhage with a crescentic hyperdense collection beneath the renal capsule."
+      - "A subcapsular renal hematoma is identified, compressing the underlying parenchyma."
+      - "A high-attenuation crescentic fluid collection is seen between the renal capsule and parenchyma, consistent with subcapsular hemorrhage."
+    negative:
+      - "There are no renal subcapsular hemorrhages."
+      - "No subcapsular hematomas are identified in the kidneys."
+      - "The renal capsules are intact without subcapsular fluid collections or hemorrhage."
+
+  - question: "Are there any renal lacerations?"
+    positive:
+      - "There is a renal laceration with a linear defect extending through the renal parenchyma."
+      - "A renal laceration is identified as a hypoattenuating cleft through the kidney parenchyma."
+      - "The kidney demonstrates a linear, non-enhancing defect within the parenchyma, consistent with a laceration."
+    negative:
+      - "There are no renal lacerations."
+      - "No renal lacerations are identified."
+      - "The renal parenchyma is intact without linear defects or lacerations."
+
+  - question: "Are there any renal infarcts?"
+    positive:
+      - "There is a renal infarct with a wedge-shaped area of non-enhancement in the kidney."
+      - "A renal infarct is identified as a peripheral, wedge-shaped hypodense region."
+      - "The kidney demonstrates a well-demarcated, non-enhancing wedge-shaped defect extending to the cortex, consistent with infarction."
+    negative:
+      - "There are no renal infarcts."
+      - "No renal infarcts are identified."
+      - "The kidneys enhance homogeneously without wedge-shaped perfusion defects suggestive of infarction."
+
+  - question: "Is there bladder rupture?"
+    positive:
+      - "There is bladder rupture with extravasation of fluid from the urinary bladder."
+      - "Bladder rupture is identified, with discontinuity of the bladder wall and free pelvic fluid."
+      - "The bladder wall demonstrates a defect with adjacent fluid tracking into the peritoneal cavity or perivesical space, consistent with rupture."
+    negative:
+      - "There is no bladder rupture."
+      - "No bladder rupture is identified; the bladder wall is intact."
+      - "The urinary bladder wall is continuous and well-distended without evidence of perforation or extravasation."

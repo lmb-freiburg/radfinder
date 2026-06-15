@@ -1,0 +1,320 @@
+qid,category,question
+q0001,Pancreas,Is there pancreatic atrophy?
+q0002,Pancreas,Is chronic pancreatitis suspected based on imaging findings?
+q0003,Pancreas,Is there acute pancreatitis?
+q0004,Pancreas,Is there necrotizing pancreatitis?
+q0005,Pancreas,Is there autoimmune pancreatitis?
+q0006,Pancreas,Is there groove pancreatitis?
+q0007,Pancreas,Is there any pancreatic pseudocysts?
+q0008,Pancreas,Are there any pancreatic tumors?
+q0009,Pancreas,Are there any intraductal papillary mucinous neoplasms (IPMN)?
+q0010,Pancreas,Are there any intraductal papillary mucinous neoplasms with worrisome features?
+q0011,Pancreas,Are there any serous cystic neoplasms?
+q0012,Pancreas,Are there any mucinous cystic neoplasms?
+q0013,Pancreas,Are there any solid pseudopapillary tumors?
+q0014,Pancreas,Are there any ductal pancreatic carcinomas?
+q0015,Pancreas,Are there any neuroendocrine tumors?
+q0016,Pancreas,Is there main pancreatic duct dilatation?
+q0017,Pancreas,Is there an annular pancreas?
+q0018,Pancreas,Is cystic fibrosis suspected based on the pancreatic imaging findings?
+q0019,Spleen,Is there splenomegaly?
+q0020,Spleen,Are there any epithelial cysts?
+q0021,Spleen,Are there any splenic pseudocysts?
+q0022,Spleen,Are there any splenic hamartomas?
+q0023,Spleen,Is splenic lymphoma present?
+q0024,Spleen,Are there any splenic abscesses?
+q0025,Spleen,Are there any splenic lacerations?
+q0026,Spleen,Are there any splenic infarcts?
+q0027,Spleen,Is the spleen surgically absent? Are there any post-splenectomy changes?
+q0028,Spleen,Are there any accessory spleens?
+q0029,Biliary Tree,Is there any intrahepatic biliary ductal dilation?
+q0030,Biliary Tree,is there any extrahepatic biliary ductal dilation?
+q0031,Biliary Tree,Are there any intra-hepatic stones?
+q0032,Biliary Tree,Is there ascending cholangitis?
+q0033,Biliary Tree,Is there primary sclerosing cholangitis?
+q0034,Biliary Tree,Is there periductal/intraductal cholangiocarcinoma?
+q0035,Biliary Tree,Are there any biliary cystadenomas?
+q0036,Biliary Tree,Are there any biliary hamartomas?
+q0037,Liver,Is there hepatomegaly?
+q0038,Liver,"Is hepatic steatosis, fatty liver, focal fatty infiltration suspected based on the imaging findings?"
+q0039,Liver,Is there cirrhosis?
+q0040,Liver,Is there cirrhosis with portal hypertension?
+q0041,Liver,Is there cirrhosis with decompensation?
+q0042,Liver,Are there any esophageal or gastric varices?
+q0043,Liver,Are there any hepatic regenerative nodules?
+q0044,Liver,Are there any dysplastic nodules?
+q0045,Liver,Is polycystic liver disease present?
+q0046,Liver,Is there viral hepatitis?
+q0047,Liver,Are there any hepatic abscesses?
+q0048,Liver,Is there hemochromatosis?
+q0049,Liver,Are there any hepatic cysts?
+q0050,Liver,Are there any hepatic hemangiomas?
+q0051,Liver,Are there any hepatic focal nodular hyperplasias?
+q0052,Liver,Are there any hepatic adenomas?
+q0053,Liver,Are there any hepatic masses?
+q0054,Liver,Is there hepatocellular carcinoma?
+q0055,Liver,Is there hepatoblastoma?
+q0056,Liver,Is there cholangiocarcinoma?
+q0057,Liver,Are there any hepatic metastases?
+q0058,Liver,Is there hepatic lymphoma?
+q0059,Liver,Is there angiosarcoma?
+q0060,Liver,Is there epithelioid hemangioendothelioma?
+q0061,Liver,Is there fibrolamellar carcinoma?
+q0062,Liver,Are there any liver lacerations?
+q0063,Liver,Are there any sites of active extravasation in the liver?
+q0064,Liver,Are there any hepatic infarcts?
+q0065,Liver,Are there any hepatic changes post-resection?
+q0066,Liver,Are there any hepatic changes post-transplantation?
+q0067,Liver,Is there portal venous occlusion?
+q0068,Liver,Is there any portal venous gas?
+q0069,Gallbladder,Are there any gallbladder stones or cholelithiasis?
+q0070,Gallbladder,Is the gallbladder surgically absent?
+q0071,Gallbladder,Are there any choledochal cysts?
+q0072,Gallbladder,Is there acute cholecystitis?
+q0073,Gallbladder,Is there acute cholecystitis with rupture?
+q0074,Gallbladder,Is there emphysematous cholecystitis?
+q0075,Gallbladder,Is there porcelain gallbladder?
+q0076,Gallbladder,Is there pneumobilia?
+q0077,Gallbladder,Is there gallbladder wall thickening?
+q0078,Gallbladder,Is there gallbladder adenomyomatosis?
+q0079,Gallbladder,Are there any gallbladder polyps?
+q0080,Gallbladder,Is there gallbladder cancer?
+q0081,Genitourinary,Is there hydronephrosis?
+q0082,Genitourinary,Are there any renal hypodensities?
+q0083,Genitourinary,Are there any simple renal cysts?
+q0084,Genitourinary,Are there any complex renal cysts?
+q0085,Genitourinary,Is there nephritis?
+q0086,Genitourinary,Are there any renal abscesses?
+q0087,Genitourinary,Is there xanthogranulomatous pyelonephritis?
+q0088,Genitourinary,Are there any renal stones / nephrolithiasis?
+q0089,Genitourinary,Are there any ureteral stones?
+q0090,Genitourinary,Are there any bladder stones?
+q0091,Genitourinary,Is there nephrocalcinosis?
+q0092,Genitourinary,Is there polycystic kidney disease?
+q0093,Genitourinary,Is there horseshoe kidney?
+q0094,Genitourinary,Are there any ureteroceles?
+q0095,Genitourinary,Are there any urachal diverticula?
+q0096,Genitourinary,Are there any renal cell carcinomas?
+q0097,Genitourinary,Are there any oncocytomas?
+q0098,Genitourinary,Is there renal lymphomas?
+q0099,Genitourinary,Are there any Wilms tumors?
+q0100,Genitourinary,Are there any angiomyolipomas?
+q0101,Genitourinary,Are there any bladder transitional cell carcinomas?
+q0102,Genitourinary,Are there any post-nephrectomy changes?
+q0103,Genitourinary,Are there any post-renal transplantation changes?
+q0104,Genitourinary,Are there any subcapsular hemorrhages?
+q0105,Genitourinary,Are there any renal lacerations?
+q0106,Genitourinary,Are there any renal infarcts?
+q0107,Genitourinary,Is there bladder rupture?
+q0108,Adrenal gland,Are there any adrenal masses?
+q0109,Adrenal gland,Are there any adrenal adenomas?
+q0110,Adrenal gland,Are there any pheochromocytomas?
+q0111,Adrenal gland,Are there any adrenal myelolipomas?
+q0112,Adrenal gland,Is there adrenal hyperplasia?
+q0113,Adrenal gland,Are there any adrenal hemorrhages?
+q0114,Adrenal gland,Are there any adrenal infarcts?
+q0115,Gastrointestinal,Is appendicitis suspected based on the imaging findings?
+q0116,Gastrointestinal,"Is there submucosal edema, enterocolitis, or gastritis?"
+q0117,Gastrointestinal,Is bowel obstruction present?
+q0118,Gastrointestinal,Is hiatal hernia present?
+q0119,Gastrointestinal,Is there pneumatosis intestinalis?
+q0120,Gastrointestinal,Is there inflammatory bowel disease?
+q0121,Gastrointestinal,Is there pseudomembranous colitis?
+q0122,Gastrointestinal,Is there diverticulitis?
+q0123,Gastrointestinal,Is there bowel obstruction?
+q0124,Gastrointestinal,Is there small bowel obstruction?
+q0125,Gastrointestinal,Is there ileus?
+q0126,Gastrointestinal,Is there volvulus?
+q0127,Gastrointestinal,Is there large bowel obstruction?
+q0128,Gastrointestinal,Is there hiatal hernia?
+q0129,Gastrointestinal,Is there intussusception?
+q0130,Gastrointestinal,Are there any enteric duplication cysts?
+q0131,Gastrointestinal,Is there achalasia or scleroderma suspected based on gastrointestinal imaging findings?
+q0132,Gastrointestinal,Are there any enteric diverticula?
+q0133,Gastrointestinal,Is there gastric volvulus?
+q0134,Gastrointestinal,Are there any inguinal hernias?
+q0135,Gastrointestinal,Are there any femoral/ventral/Spigelian hernias?
+q0136,Gastrointestinal,Is there evidence of sleeve gastrectomy or fundoplication?
+q0137,Gastrointestinal,Is there a surgical gastric conduit?
+q0138,Gastrointestinal,Are there any gastric foreign bodies (not related to medical devices or post-surgical changes)?
+q0139,Gastrointestinal,Is there any evidence of enteric contrast leak suggestive of postoperative leakage/fistula after surgery?
+q0140,Gastrointestinal,Are there any gastric carcinomas?
+q0141,Gastrointestinal,Are there any esophageal carcinomas?
+q0142,Gastrointestinal,Are there any duodenal carcinomas?
+q0143,Gastrointestinal,Are there any colonic carcinomas?
+q0144,Gastrointestinal,Are there any rectal carcinomas?
+q0145,Gastrointestinal,Are there any gastrointestinal stromal tumors (GISTs)?
+q0146,Gastrointestinal,Is there gastrointestinal lymphoma?
+q0147,Devices in the Abdomen,Are there any nasogastric tubes?
+q0148,Devices in the Abdomen,Are there any gastrostomy tubes?
+q0149,Devices in the Abdomen,Are there any drainage catheters?
+q0150,Devices in the Abdomen,Are there any biliary stents?
+q0151,Devices in the Abdomen,Are there any transjugular intrahepatic portosystemic shunts?
+q0152,Devices in the Abdomen,Are there any Foley catheters?
+q0153,Devices in the Abdomen,Are there any percutaneous nephrostomy tubes/catheters?
+q0154,Devices in the Abdomen,Are there any ureteral double-J catheters/stents?
+q0155,Devices in the Abdomen,Are there any intra-uterine devices?
+q0156,Devices in the Abdomen,Are there any extracorporeal membrane oxygenation (ECMO) devices?
+q0157,Devices in the Abdomen,Are there any central venous catheters?
+q0158,Devices in the Abdomen,Are there any aortic stents?
+q0159,Peritoneum,Is there any ascites?
+q0160,Peritoneum,Is there any free air or pneumoperitoneum?
+q0161,Peritoneum,Is there pseudomyxoma peritonei?
+q0162,Peritoneum,Is there peritoneal carcinomatosis or omental caking?
+q0163,Peritoneum,Is there mesenteric carcinoid tumor?
+q0164,Great Vessels in the Abdomen,Is abdominal aortic aneurysm suspected based on the imaging findings?
+q0165,Great Vessels in the Abdomen,Is arterial or aortic thrombosis suspected based on the imaging findings?
+q0166,Great Vessels in the Abdomen,Is aortic atherosclerosis suspected based on the imaging findings?
+q0167,Great Vessels in the Abdomen,Are there any aortic stents?
+q0168,Great Vessels in the Abdomen,Are there any deep venous thromboses?
+q0169,Great Vessels in the Abdomen,Are there any aortic dissections?
+q0170,Great Vessels in the Abdomen,Are there any aortic intramural hematomas?
+q0171,Great Vessels in the Abdomen,Are there any penetrating atherosclerotic aortic ulcers?
+q0172,Retroperitoneum,"Is there any lymphadenopathy in retroperitoneum, peritoneum or pelvis?"
+q0173,Retroperitoneum,Is there retroperitoneal fibrosis?
+q0174,Retroperitoneum,Is there retroperitoneal hemorrhage or retroperitoneal hematomas?
+q0175,Retroperitoneum,Is there retroperitoneal liposarcoma?
+q0176,Multi Organs,Is metastatic disease suspected based on the imaging findings?
+q0177,Multi Organs,Is anasarca suspected based on the imaging findings?
+q0178,Male Pelvis,Is there prostatomegaly or prostatic hyperplasia?
+q0179,Male Pelvis,Is there prostatitis?
+q0180,Male Pelvis,Is there prostate cancer?
+q0181,Male Pelvis,Is there testicular torsion?
+q0182,Male Pelvis,Are there any testicular masses?
+q0183,Male Pelvis,Is there testicular (segmental) infarct?
+q0184,Male Pelvis,Are there any scrotal hematomas?
+q0185,Male Pelvis,Is there epididymitis?
+q0186,Male Pelvis,Are there any hydroceles?
+q0187,Male Pelvis,Are there any varicoceles?
+q0188,Female pelvis,Are there any leiomyomas?
+q0189,Female pelvis,Are there any leiomyosarcomas?
+q0190,Female pelvis,Is there any adenomyosis?
+q0191,Female pelvis,Is there endometrial thickening?
+q0192,Female pelvis,Are there any endometrial polyps?
+q0193,Female pelvis,Are there any uterine malformations?
+q0194,Female pelvis,Are there changes status post hysterectomy?
+q0195,Female pelvis,Are there any cervical masses?
+q0196,Female pelvis,Are there any Nabothian cysts?
+q0197,Female pelvis,Is there adenoma malignum?
+q0198,Female pelvis,Are there any ovarian tumors?
+q0199,Female pelvis,Are there any endometriomas?
+q0200,Female pelvis,Are there any ovarian cancers?
+q0201,Female pelvis,Is there adnexal torsion?
+q0202,Female pelvis,Are there any ovarian teratomas?
+q0203,Female pelvis,Is there polycystic ovarian syndrome?
+q0204,Female pelvis,Is there deep infiltrative endometriosis?
+q0205,Female pelvis,Is there pelvic inflammatory disease?
+q0206,Female pelvis,Are there any Bartholin gland cysts?
+q0207,Female pelvis,Are there any Gartner duct cysts?
+q0208,Female pelvis,Are there any vaginal or vulvar cancers?
+q0209,Musculoskeletal,Is osteopenia suspected based on the imaging findings?
+q0210,Musculoskeletal,Are there any fractures (general)?
+q0211,Musculoskeletal,Are there any spinal fractures?
+q0212,Musculoskeletal,Are there any fractures of the pelvic girdle or sacrum?
+q0213,Musculoskeletal,Are there any femoral fractures?
+q0214,Musculoskeletal,Are there any rib fractures?
+q0215,Musculoskeletal,Are there any osteolytic lesions?
+q0216,Musculoskeletal,Are there any osteosclerotic lesions?
+q0217,Musculoskeletal,Are there any iliopsoas muscle abscesses?
+q0218,Musculoskeletal,Is there Fournier's gangrene / necrotizing fasciitis?
+q0219,Visible Thoracic,Is there any atelectasis in the visible lung?
+q0220,Visible Thoracic,Is there any pleural effusion?
+q0221,Visible Thoracic,Is there cardiomegaly?
+q0222,Visible Thoracic,Are there any aortic valve calcifications?
+q0223,Visible Thoracic,Are there coronary artery calcifications?
+q0224,Visible Thoracic,Is there any consolidation?
+q0225,Visible Thoracic,Are there any lung masses or nodules?
+q0226,Visible Thoracic,Is there any coronary atherosclerosis?
+q0227,Heart,Is there coronary atherosclerosis?
+q0228,Heart,Are there any coronary artery stents?
+q0229,Heart,Are there any post-coronary artery bypass grafts?
+q0230,Heart,Is cardiomegaly or cardiac enlargement suspected based on the imaging findings?
+q0231,Heart,Is dilated cardiomyopathy suspected based on the imaging findings?
+q0232,Heart,Is hypertrophic cardiomyopathy suspected based on the imaging findings?
+q0233,Heart,Is ischemic cardiomyopathy suspected based on the imaging findings?
+q0234,Heart,Is pulmonary hypertension suspected based on the imaging findings?
+q0235,Heart,Is pericardial effusion present?
+q0236,Heart,Is cardiac tamponade suspected based on the imaging findings?
+q0237,Heart,Are there any heart/cardiac valve calcifications?
+q0238,Heart,Are there any coronary soft plaques?
+q0239,Heart,Is there a single coronary artery (a congenital anomaly where only one coronary artery arises from a single coronary ostium to supply the entire heart)?
+q0240,Heart,Are there any myxomas?
+q0241,Heart,Is aortic dissection present?
+q0242,Devices,Is heart valve replacement present?
+q0243,Devices,Are there any pace-makers or defibrillators?
+q0244,Devices,Is Extra Corporeal Membrane Oxygenation (ECMO) debice present?
+q0245,Devices,Is nasogastric tube present?
+q0246,Devices,Is endotracheal tube present?
+q0247,Devices,Are there any chest tubes?
+q0248,Devices,Is central venous catheter present?
+q0249,Lungs,Is there any atelectasis?
+q0250,Lungs,Is there any consolidation in the lung?
+q0251,Lungs,Is there any centrilobular emphysema?
+q0252,Lungs,Is there any paraseptal emphysema?
+q0253,Lungs,Is there any cavitation in the lung?
+q0254,Lungs,"Is there any bulla, bleb, or pneumatocele?"
+q0255,Lungs,Is there any atypical cyst in the lung?
+q0256,Lungs,Is there any post-lung resection scar?
+q0257,Lungs,Is there any calcification in the lung?
+q0258,Lungs,Is there any pneumoconiosis?
+q0259,Lungs,Is there any ground-glass opacity?
+q0260,Lungs,Is pulmonary edema suspected based on the imaging findings?
+q0261,Lungs,Is primary tuberculosis suspected based on the imaging findings?
+q0262,Lungs,Is miliary tuberculosis suspected based on the imaging findings?
+q0263,Lungs,Is non-tuberculous mycobacterial infection suspected based on the imaging findings?
+q0264,Lungs,Is COVID-19 suspected based on the imaging findings?
+q0265,Lungs,Is aspergillosis suspected based on the imaging findings?
+q0266,Lungs,Is aspiration pneumonia suspected based on the imaging findings?
+q0267,Lungs,Is there any crazy paving pattern?
+q0268,Lungs,Is sarcoidosis suspected based on the imaging findings?
+q0269,Lungs,Is radiation pneumonitis suspected based on the imaging findings?
+q0270,Lung Nodule,Is there any solid nodules in the lung?
+q0271,Lung Nodule,Is there any mass in the lung?
+q0272,Lung Nodule,Is there any part-solid nodules in the lung?
+q0273,Lung Nodule,Is there any ground-glass nodules in the lung?
+q0274,Bronchial Tree,Is bronchiectasis present?
+q0275,Bronchial Tree,Is there peribronchial thickening?
+q0276,Bronchial Tree,Is there any mucous plugging?
+q0277,Bronchial Tree,Is tree-in-bud or focal bronchiolitis present?
+q0278,Bronchial Tree,Is panbronchiolitis present?
+q0279,Bronchial Tree,Are there any tracheal masses?
+q0280,Interstitial Lung Disease,Is there any reticulation or reticular pattern?
+q0281,Interstitial Lung Disease,Is there any mosaic attenuation?
+q0282,Interstitial Lung Disease,Is there any honeycombing?
+q0283,Interstitial Lung Disease,Is there any interlobular septal thickening?
+q0284,Pleura,Is there any pleural effusion?
+q0285,Pleura,Is there any pleural thickening?
+q0286,Pleura,Is there any hemothorax?
+q0287,Pleura,Is there any pneumothorax?
+q0288,Pleura,Is there any pleural plaques?
+q0289,Pleura,Is there any empyema?
+q0290,Mediastinum,Is there any mediastinal mass?
+q0291,Mediastinum,Is there any teratoma?
+q0292,Mediastinum,Is there any thymoma?
+q0293,Mediastinum,Is there any lymphadenopathy in mediastinum or hila?
+q0294,Mediastinum,Is there any hiatal hernia?
+q0295,Mediastinum,Is there any pneumomediastinum?
+q0296,Great Vessels,Is aortic aneurysm present?
+q0297,Great Vessels,Is there any aberrant subclavian artery?
+q0298,Great Vessels,Is there any aortic atherosclerosis?
+q0299,Great Vessels,Is pulmonary embolism suspected?
+q0300,Bones,Are there any fractures of rib or clavicle?
+q0301,Bones,Are there any fractures of spine?
+q0302,Bones,Is there any osteopenia?
+q0303,Bones,Is there any arthritis?
+q0304,Bones,Is there any sternotomy?
+q0305,Bones,Are there any osteolytic lesions?
+q0306,Bones,Are there any osteosclerotic lesions?
+q0307,Breast,Are there any breast masses?
+q0308,Breast,Are there any breast implants?
+q0309,Breast,Is there any lymphadenopathy in axilla?
+q0310,Visible Neck,Is there any goiter?
+q0311,Visible Neck,Is there any thyroid nodule?
+q0312,Visible Neck,Is there any lymphadenopathy in neck?
+q0313,Visible Neck,Is there any carotid atherosclerosis?
+q0314,Visible Abdomen,Are there any liver masses?
+q0315,Visible Abdomen,Are there any liver cysts?
+q0316,Visible Abdomen,Is diffuse fatty liver / steatosis suspected based on the imaging findings?
+q0317,Visible Abdomen,Is cirrhosis suspected based on the imaging findings?
+q0318,Visible Abdomen,Is chronic pancreatitis suspected based on the imaging findings?
+q0319,Visible Abdomen,Is splenomegaly present?

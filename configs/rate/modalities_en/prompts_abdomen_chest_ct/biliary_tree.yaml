@@ -1,0 +1,82 @@
+category: "Biliary Tree"
+description: "Biliary tree-related findings"
+prompts:
+  - question: "Is there any intrahepatic biliary ductal dilatation?"
+    positive:
+      - "Intrahepatic biliary ductal dilatation is present."
+      - "The intrahepatic bile ducts are dilated."
+      - "Prominently dilated intrahepatic biliary radicles are seen throughout the liver parenchyma."
+    negative:
+      - "There is no intrahepatic biliary ductal dilatation."
+      - "The intrahepatic bile ducts are normal in caliber."
+      - "The intrahepatic biliary radicles are not dilated and appear within normal limits."
+
+  - question: "Is there any extrahepatic biliary ductal dilatation?"
+    positive:
+      - "Extrahepatic biliary ductal dilatation is present."
+      - "The common bile duct is dilated."
+      - "The extrahepatic bile duct is abnormally widened, exceeding normal caliber."
+    negative:
+      - "There is no extrahepatic biliary ductal dilatation."
+      - "The common bile duct is normal in caliber."
+      - "The extrahepatic bile duct measures within normal limits without evidence of dilatation."
+
+  - question: "Are there any intra-hepatic stones?"
+    positive:
+      - "Intrahepatic biliary stones are present."
+      - "Hyperdense foci within the intrahepatic bile ducts are identified, consistent with hepatolithiasis."
+      - "Calcified densities are seen within the dilated intrahepatic biliary radicles, compatible with intrahepatic stones."
+    negative:
+      - "There are no intrahepatic biliary stones."
+      - "No hepatolithiasis is identified."
+      - "The intrahepatic bile ducts are free of calcified densities or stones."
+
+  - question: "Is there ascending cholangitis?"
+    positive:
+      - "Ascending cholangitis is present."
+      - "Biliary ductal dilatation with periductal enhancement and inflammatory changes is noted, consistent with ascending cholangitis."
+      - "The bile ducts are dilated with thickened, enhancing walls and surrounding hepatic parenchymal changes, indicative of ascending cholangitis."
+    negative:
+      - "There is no ascending cholangitis."
+      - "No evidence of ascending cholangitis is identified."
+      - "The bile ducts show no periductal enhancement, wall thickening, or inflammatory changes to suggest ascending cholangitis."
+
+  - question: "Is there primary sclerosing cholangitis?"
+    positive:
+      - "Primary sclerosing cholangitis is suspected."
+      - "Multifocal strictures and dilatations of the intra- and extrahepatic bile ducts are noted, consistent with primary sclerosing cholangitis."
+      - "The biliary tree demonstrates a beaded appearance with alternating segments of stricture and dilatation, characteristic of primary sclerosing cholangitis."
+    negative:
+      - "There is no primary sclerosing cholangitis."
+      - "No features of primary sclerosing cholangitis are identified."
+      - "The biliary tree shows no multifocal strictures, beading, or other changes suggestive of primary sclerosing cholangitis."
+
+  - question: "Is there periductal/intraductal cholangiocarcinoma?"
+    positive:
+      - "Cholangiocarcinoma is present."
+      - "A periductal or intraductal mass with upstream biliary dilatation is identified, consistent with cholangiocarcinoma."
+      - "An enhancing mass along the bile duct causing ductal obstruction and proximal dilatation is observed, suspicious for cholangiocarcinoma."
+    negative:
+      - "There is no cholangiocarcinoma."
+      - "No periductal or intraductal cholangiocarcinoma is identified."
+      - "The bile ducts show no periductal masses, intraductal lesions, or other findings suggestive of cholangiocarcinoma."
+
+  - question: "Are there any biliary cystadenomas?"
+    positive:
+      - "A biliary cystadenoma is present."
+      - "A multiloculated cystic lesion with internal septations is identified within the liver, consistent with a biliary cystadenoma."
+      - "A large, septated cystic hepatic mass with enhancing internal septa and mural nodularity is seen, compatible with a biliary cystadenoma."
+    negative:
+      - "There are no biliary cystadenomas."
+      - "No biliary cystadenoma is identified."
+      - "The liver does not contain multiloculated cystic lesions with internal septations suggestive of biliary cystadenoma."
+
+  - question: "Are there any biliary hamartomas?"
+    positive:
+      - "Biliary hamartomas are present."
+      - "Multiple small, sub-centimeter cystic lesions scattered throughout the liver are identified, consistent with biliary hamartomas (von Meyenburg complexes)."
+      - "Innumerable tiny hepatic cysts distributed uniformly in both lobes are observed, compatible with biliary hamartomas."
+    negative:
+      - "There are no biliary hamartomas."
+      - "No biliary hamartomas are identified."
+      - "The liver does not demonstrate the diffuse, tiny cystic lesions characteristic of biliary hamartomas."

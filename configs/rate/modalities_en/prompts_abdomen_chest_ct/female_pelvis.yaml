@@ -1,0 +1,212 @@
+category: "Female pelvis"
+description: "Female pelvic findings"
+prompts:
+  - question: "Are there any leiomyomas?"
+    positive:
+      - "Uterine leiomyomas are present."
+      - "One or more well-circumscribed uterine fibroids are identified."
+      - "The uterus demonstrates rounded, well-defined myometrial masses with calcifications, consistent with leiomyomas."
+    negative:
+      - "There are no uterine leiomyomas."
+      - "No uterine fibroids are identified."
+      - "The uterus shows no well-circumscribed myometrial masses or calcified nodules suggestive of leiomyomas."
+
+  - question: "Are there any leiomyosarcomas?"
+    positive:
+      - "A uterine leiomyosarcoma is present."
+      - "A large, heterogeneously enhancing uterine mass with necrosis is identified, suspicious for leiomyosarcoma."
+      - "The uterus contains an irregularly marginated mass with areas of hemorrhage and necrosis, raising concern for leiomyosarcoma."
+    negative:
+      - "There are no uterine leiomyosarcomas."
+      - "No leiomyosarcoma is identified."
+      - "The uterus does not contain heterogeneous masses with necrosis or features suggestive of leiomyosarcoma."
+
+  - question: "Is there any adenomyosis?"
+    positive:
+      - "Adenomyosis is present."
+      - "Diffuse uterine enlargement with heterogeneous myometrial attenuation is noted, consistent with adenomyosis."
+      - "The myometrium appears thickened and heterogeneous with ill-defined low-attenuation foci, suggestive of adenomyosis."
+    negative:
+      - "There is no adenomyosis."
+      - "No adenomyosis is identified."
+      - "The myometrium is homogeneous without thickening or ill-defined foci suggestive of adenomyosis."
+
+  - question: "Is there endometrial thickening?"
+    positive:
+      - "Endometrial thickening is present."
+      - "The endometrium is abnormally thickened."
+      - "The endometrial stripe appears prominent and thickened beyond expected limits."
+    negative:
+      - "There is no endometrial thickening."
+      - "No endometrial thickening is identified."
+      - "The endometrial stripe is within normal thickness."
+
+  - question: "Are there any endometrial polyps?"
+    positive:
+      - "An endometrial polyp is present."
+      - "A focal, well-defined endometrial lesion is identified, consistent with an endometrial polyp."
+      - "A polypoid soft tissue projection is seen arising from the endometrial surface, compatible with a polyp."
+    negative:
+      - "There are no endometrial polyps."
+      - "No endometrial polyps are identified."
+      - "The endometrium shows no focal polypoid projections or intracavitary lesions."
+
+  - question: "Are there any uterine malformations?"
+    positive:
+      - "A uterine malformation is present."
+      - "A congenital uterine anomaly is identified on imaging."
+      - "The uterus demonstrates an abnormal morphology consistent with a Mullerian duct anomaly."
+    negative:
+      - "There are no uterine malformations."
+      - "No congenital uterine anomalies are identified."
+      - "The uterus has a normal morphology without features of Mullerian duct anomaly."
+
+  - question: "Are there changes status post hysterectomy?"
+    positive:
+      - "Post-hysterectomy changes are present."
+      - "Prior hysterectomy is noted with surgical absence of the uterus."
+      - "The uterus is not visualized in its expected location, consistent with prior surgical removal, and a vaginal cuff is observed."
+    negative:
+      - "There are no post-hysterectomy changes."
+      - "No prior hysterectomy. The uterus is present."
+      - "The uterus is visualized in its normal anatomical position without evidence of prior surgical removal."
+
+  - question: "Are there any cervical masses?"
+    positive:
+      - "A cervical mass is present."
+      - "A mass lesion arising from the uterine cervix is identified."
+      - "An enhancing soft tissue mass is seen expanding the cervix, suspicious for a neoplastic process."
+    negative:
+      - "There are no cervical masses."
+      - "No cervical mass is identified."
+      - "The uterine cervix appears normal in size and morphology without focal masses."
+
+  - question: "Are there any Nabothian cysts?"
+    positive:
+      - "Nabothian cysts are present."
+      - "Small, well-defined cystic lesions are identified within the cervix, consistent with Nabothian cysts."
+      - "The cervix contains discrete fluid-attenuation foci representing retention cysts of the cervical glands."
+    negative:
+      - "There are no Nabothian cysts."
+      - "No Nabothian cysts are identified."
+      - "The cervix does not contain small cystic lesions suggestive of Nabothian cysts."
+
+  - question: "Is there adenoma malignum?"
+    positive:
+      - "Adenoma malignum of the cervix is present."
+      - "A multicystic cervical mass with irregular solid components is identified, consistent with adenoma malignum."
+      - "The cervix demonstrates multiple variably sized cystic lesions extending deep into the cervical stroma with irregular solid enhancing components, suspicious for adenoma malignum."
+    negative:
+      - "There is no adenoma malignum."
+      - "No adenoma malignum is identified."
+      - "The cervix does not contain multicystic lesions with deep stromal invasion suggestive of adenoma malignum."
+
+  - question: "Are there any ovarian tumors?"
+    positive:
+      - "An ovarian tumor is present."
+      - "A mass lesion arising from the ovary is identified."
+      - "A solid or complex cystic-solid adnexal mass is seen in the region of the ovary, suspicious for an ovarian neoplasm."
+    negative:
+      - "There are no ovarian tumors."
+      - "No ovarian tumors are identified."
+      - "The ovaries are normal in size and morphology without solid or complex masses."
+
+  - question: "Are there any endometriomas?"
+    positive:
+      - "An ovarian endometrioma is present."
+      - "A homogeneous, high-attenuation adnexal cyst is identified, consistent with an endometrioma."
+      - "A thick-walled cystic lesion with uniformly dense content is seen in the adnexa, compatible with an endometriotic cyst."
+    negative:
+      - "There are no endometriomas."
+      - "No endometriomas are identified."
+      - "The adnexa do not contain thick-walled cystic lesions with dense content suggestive of endometriomas."
+
+  - question: "Are there any ovarian cancers?"
+    positive:
+      - "Ovarian cancer is present."
+      - "A complex adnexal mass with solid components and peritoneal implants is identified, consistent with ovarian malignancy."
+      - "A large, heterogeneous, predominantly solid adnexal mass with associated ascites and omental caking is observed, highly suspicious for ovarian carcinoma."
+    negative:
+      - "There is no ovarian cancer."
+      - "No ovarian malignancy is identified."
+      - "The ovaries show no complex masses, peritoneal implants, or other features suggestive of ovarian carcinoma."
+
+  - question: "Is there adnexal torsion?"
+    positive:
+      - "Adnexal torsion is present."
+      - "The adnexa is enlarged and edematous with a whirlpool sign of the vascular pedicle, consistent with ovarian torsion."
+      - "A unilaterally enlarged ovary with abnormal enhancement and deviation of the uterus toward the affected side is observed, suggestive of adnexal torsion."
+    negative:
+      - "There is no adnexal torsion."
+      - "No adnexal torsion is identified."
+      - "The adnexa appear normal bilaterally without enlargement, edema, or vascular pedicle twisting suggestive of torsion."
+
+  - question: "Are there any ovarian teratomas?"
+    positive:
+      - "An ovarian teratoma is present."
+      - "A predominantly fat-containing adnexal mass with calcification is identified, consistent with a mature cystic teratoma."
+      - "A well-defined adnexal lesion containing fat, calcium, and soft tissue components is seen, characteristic of a dermoid cyst."
+    negative:
+      - "There are no ovarian teratomas."
+      - "No ovarian teratomas are identified."
+      - "The ovaries do not contain fat-containing or calcified lesions suggestive of teratoma."
+
+  - question: "Is there polycystic ovarian syndrome?"
+    positive:
+      - "Imaging findings are consistent with polycystic ovarian syndrome."
+      - "The ovaries are bilaterally enlarged with multiple peripheral follicles, suggestive of polycystic ovarian morphology."
+      - "Both ovaries demonstrate increased volume with numerous small peripheral follicles, consistent with polycystic ovarian morphology."
+    negative:
+      - "There is no evidence of polycystic ovarian syndrome."
+      - "No features of polycystic ovarian morphology are identified."
+      - "The ovaries are normal in size with an unremarkable number and distribution of follicles."
+
+  - question: "Is there deep infiltrative endometriosis?"
+    positive:
+      - "Deep infiltrative endometriosis is present."
+      - "Nodular soft tissue implants extending beyond 5 mm beneath the peritoneal surface are identified, consistent with deep infiltrative endometriosis."
+      - "Irregular enhancing nodular tissue is seen infiltrating the uterosacral ligaments, rectovaginal septum, and adjacent structures, indicative of deep endometriosis."
+    negative:
+      - "There is no deep infiltrative endometriosis."
+      - "No deep infiltrative endometriosis is identified."
+      - "The pelvic peritoneal surfaces, uterosacral ligaments, and rectovaginal septum show no nodular implants or infiltrative changes suggestive of deep endometriosis."
+
+  - question: "Is there pelvic inflammatory disease?"
+    positive:
+      - "Pelvic inflammatory disease is present."
+      - "Thickening and enhancement of the fallopian tubes with surrounding fat stranding are identified, consistent with pelvic inflammatory disease."
+      - "The adnexa demonstrate tubular fluid-filled structures with enhancing walls and adjacent inflammatory changes, indicative of pelvic inflammatory disease with pyosalpinx."
+    negative:
+      - "There is no pelvic inflammatory disease."
+      - "No pelvic inflammatory disease is identified."
+      - "The adnexa and pelvic structures show no tubal thickening, fat stranding, or inflammatory changes suggestive of pelvic inflammatory disease."
+
+  - question: "Are there any Bartholin gland cysts?"
+    positive:
+      - "A Bartholin gland cyst is present."
+      - "A well-defined cystic lesion at the posterolateral aspect of the vaginal introitus is identified, consistent with a Bartholin gland cyst."
+      - "A fluid-attenuation lesion is seen in the region of the Bartholin gland at the posterior labium, compatible with a Bartholin cyst."
+    negative:
+      - "There are no Bartholin gland cysts."
+      - "No Bartholin gland cysts are identified."
+      - "No cystic lesions are observed in the region of the Bartholin glands."
+
+  - question: "Are there any Gartner duct cysts?"
+    positive:
+      - "A Gartner duct cyst is present."
+      - "A well-defined cystic lesion along the anterolateral vaginal wall is identified, consistent with a Gartner duct cyst."
+      - "A small, thin-walled cyst is seen along the lateral aspect of the vagina, representing a Gartner duct remnant cyst."
+    negative:
+      - "There are no Gartner duct cysts."
+      - "No Gartner duct cysts are identified."
+      - "The vaginal walls show no cystic lesions suggestive of Gartner duct cysts."
+
+  - question: "Are there any vaginal or vulvar cancers?"
+    positive:
+      - "A vaginal or vulvar malignancy is present."
+      - "An enhancing mass involving the vagina or vulva is identified, suspicious for malignancy."
+      - "An irregular soft tissue mass with invasion of adjacent structures is seen arising from the vaginal or vulvar region, consistent with carcinoma."
+    negative:
+      - "There are no vaginal or vulvar cancers."
+      - "No vaginal or vulvar malignancy is identified."
+      - "The vagina and vulvar region appear normal without masses or infiltrative changes suggestive of carcinoma."

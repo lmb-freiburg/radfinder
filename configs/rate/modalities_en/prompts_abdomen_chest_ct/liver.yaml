@@ -1,0 +1,322 @@
+category: "Liver"
+description: "Liver-related findings"
+prompts:
+  - question: "Is there hepatomegaly?"
+    positive:
+      - "The liver is enlarged, consistent with hepatomegaly."
+      - "Hepatomegaly is noted with the liver extending below the costal margin."
+      - "The liver demonstrates increased craniocaudal span indicating hepatomegaly."
+    negative:
+      - "The liver is normal in size without hepatomegaly."
+      - "No hepatomegaly is identified."
+      - "The liver measures within normal limits and does not appear enlarged."
+
+  - question: "Is hepatic steatosis, fatty liver, focal fatty infiltration suspected based on the imaging findings?"
+    positive:
+      - "The liver demonstrates decreased attenuation consistent with hepatic steatosis."
+      - "Diffuse fatty infiltration of the liver is suspected, with hepatic parenchyma hypodense relative to the spleen."
+      - "There are areas of geographic hypoattenuation in the liver suggestive of focal fatty infiltration."
+    negative:
+      - "The liver shows normal attenuation with no evidence of hepatic steatosis."
+      - "No fatty infiltration of the liver is identified."
+      - "The hepatic parenchyma is homogeneous without signs of focal or diffuse fatty change."
+
+  - question: "Is there cirrhosis?"
+    positive:
+      - "The liver demonstrates a nodular contour and morphological changes consistent with cirrhosis."
+      - "Cirrhosis is present, with caudate lobe hypertrophy and right lobe volume loss."
+      - "The liver surface is irregular and lobulated, indicating established cirrhosis."
+    negative:
+      - "The liver shows a smooth contour with no evidence of cirrhosis."
+      - "No cirrhotic changes are identified."
+      - "The hepatic parenchyma appears homogeneous without morphological features of cirrhosis."
+
+  - question: "Is there cirrhosis with portal hypertension?"
+    positive:
+      - "Cirrhosis is present with associated signs of portal hypertension including splenomegaly and portosystemic collaterals."
+      - "Findings of cirrhosis with portal hypertension are noted, including a dilated portal vein and ascites."
+      - "The cirrhotic liver is accompanied by portal hypertension evidenced by varices and splenomegaly."
+    negative:
+      - "There is no evidence of cirrhosis or portal hypertension."
+      - "No signs of portal hypertension are identified."
+      - "The portal venous system is normal in caliber without features suggesting portal hypertension."
+
+  - question: "Is there cirrhosis with decompensation?"
+    positive:
+      - "Decompensated cirrhosis is present with ascites, portosystemic shunting, and pleural effusions."
+      - "Findings indicate decompensated liver cirrhosis with large-volume ascites and varices."
+      - "The cirrhotic liver shows signs of decompensation including peritoneal fluid and edema."
+    negative:
+      - "There is no evidence of decompensated cirrhosis."
+      - "No features of hepatic decompensation are identified."
+      - "The liver shows no ascites, varices, or other signs of decompensated cirrhosis."
+
+  - question: "Are there any esophageal or gastric varices?"
+    positive:
+      - "Esophageal and gastric varices are present, consistent with portal hypertension."
+      - "Prominent varices are identified along the esophagus and gastric fundus."
+      - "Serpiginous enhancing vessels along the esophageal and gastric walls indicate varices."
+    negative:
+      - "No esophageal or gastric varices are identified."
+      - "There is no evidence of varices along the esophagus or stomach."
+      - "The esophageal and gastric walls appear normal without variceal distension."
+
+  - question: "Are there any hepatic regenerative nodules?"
+    positive:
+      - "Multiple regenerative nodules are seen within the cirrhotic liver."
+      - "Hepatic regenerative nodules are present, appearing as small isoattenuating to hyperattenuating foci throughout the cirrhotic liver parenchyma."
+      - "The liver contains numerous small nodules consistent with regenerative nodules in the setting of cirrhosis."
+    negative:
+      - "No hepatic regenerative nodules are identified."
+      - "There is no evidence of regenerative nodules within the liver."
+      - "The hepatic parenchyma is free of discrete regenerative nodules."
+
+  - question: "Are there any dysplastic nodules?"
+    positive:
+      - "Dysplastic nodules are identified within the cirrhotic liver, raising concern for premalignant change."
+      - "Hepatic dysplastic nodules are present, demonstrating atypical enhancement patterns."
+      - "The liver contains nodules with imaging features suggestive of high-grade dysplasia."
+    negative:
+      - "No dysplastic nodules are identified in the liver."
+      - "There is no evidence of hepatic dysplastic nodules."
+      - "The liver shows no nodules suspicious for dysplastic change."
+
+  - question: "Is polycystic liver disease present?"
+    positive:
+      - "Polycystic liver disease is present with innumerable cysts replacing much of the hepatic parenchyma."
+      - "The liver is diffusely replaced by numerous cysts consistent with polycystic liver disease."
+      - "Extensive hepatic cystic involvement is seen, compatible with polycystic liver disease."
+    negative:
+      - "There is no evidence of polycystic liver disease."
+      - "No polycystic liver disease is identified."
+      - "The liver parenchyma shows no diffuse cystic replacement to suggest polycystic liver disease."
+
+  - question: "Is there viral hepatitis?"
+    positive:
+      - "Imaging findings are consistent with viral hepatitis, including periportal edema and heterogeneous liver enhancement."
+      - "Viral hepatitis is suspected based on hepatomegaly, periportal tracking, and gallbladder wall thickening."
+      - "The liver shows diffuse parenchymal heterogeneity and periportal lymphadenopathy suggestive of viral hepatitis."
+    negative:
+      - "There is no imaging evidence of viral hepatitis."
+      - "No features suggestive of viral hepatitis are identified."
+      - "The liver parenchyma is homogeneous without periportal edema or other signs of hepatitis."
+
+  - question: "Are there any hepatic abscesses?"
+    positive:
+      - "A rim-enhancing hypodense hepatic lesion is present, consistent with a hepatic abscess."
+      - "Hepatic abscess is identified with surrounding perilesional edema and internal debris."
+      - "There is a multiloculated fluid collection in the liver parenchyma compatible with an abscess."
+    negative:
+      - "No hepatic abscesses are identified."
+      - "There is no evidence of abscess formation within the liver."
+      - "The liver parenchyma shows no rim-enhancing collections or features of hepatic abscess."
+
+  - question: "Is there hemochromatosis?"
+    positive:
+      - "The liver demonstrates markedly increased attenuation consistent with hemochromatosis."
+      - "Hemochromatosis is suspected based on diffusely hyperdense hepatic parenchyma on unenhanced images."
+      - "The liver shows abnormally high density relative to the spleen, suggestive of iron overload from hemochromatosis."
+    negative:
+      - "There is no evidence of hemochromatosis."
+      - "No findings of hepatic iron overload or hemochromatosis are identified."
+      - "The liver attenuation is within normal range with no features suggesting hemochromatosis."
+
+  - question: "Are there any hepatic cysts?"
+    positive:
+      - "Simple hepatic cysts are present within the liver parenchyma."
+      - "Well-defined hypoattenuating hepatic cysts are noted, measuring water density without enhancement."
+      - "The liver contains thin-walled, non-enhancing cystic lesions consistent with simple cysts."
+    negative:
+      - "No hepatic cysts are identified."
+      - "There is no evidence of cystic lesions within the liver."
+      - "The liver parenchyma is free of cysts."
+
+  - question: "Are there any hepatic hemangiomas?"
+    positive:
+      - "A hepatic hemangioma is present, demonstrating peripheral nodular enhancement with progressive centripetal fill-in."
+      - "Hepatic hemangioma is identified with characteristic discontinuous peripheral enhancement."
+      - "There is a well-circumscribed hypodense liver lesion with imaging features typical of a hemangioma."
+    negative:
+      - "No hepatic hemangiomas are identified."
+      - "There is no evidence of hemangioma within the liver."
+      - "The liver shows no lesions with enhancement patterns suggestive of hemangioma."
+
+  - question: "Are there any hepatic focal nodular hyperplasias?"
+    positive:
+      - "A hepatic focal nodular hyperplasia is present with a central scar and homogeneous arterial enhancement."
+      - "Focal nodular hyperplasia is identified in the liver, showing characteristic early arterial hyperenhancement and a stellate central scar."
+      - "There is a well-defined hypervascular liver lesion with a central scar consistent with focal nodular hyperplasia."
+    negative:
+      - "No hepatic focal nodular hyperplasia is identified."
+      - "There is no evidence of focal nodular hyperplasia in the liver."
+      - "The liver shows no lesions with features suggestive of focal nodular hyperplasia."
+
+  - question: "Are there any hepatic adenomas?"
+    positive:
+      - "A hepatic adenoma is present, appearing as a well-defined enhancing lesion with areas of intralesional hemorrhage."
+      - "Hepatic adenoma is identified, demonstrating arterial hyperenhancement and heterogeneous attenuation."
+      - "There is a solitary hepatic lesion with imaging features consistent with a hepatocellular adenoma."
+    negative:
+      - "No hepatic adenomas are identified."
+      - "There is no evidence of hepatic adenoma."
+      - "The liver shows no lesions with features suggestive of hepatocellular adenoma."
+
+  - question: "Are there any hepatic masses?"
+    positive:
+      - "A hepatic mass is identified within the liver parenchyma."
+      - "There is a focal hepatic mass lesion that requires further characterization."
+      - "The liver contains a solid mass with indeterminate imaging characteristics."
+    negative:
+      - "No hepatic masses are identified."
+      - "There is no evidence of mass lesions within the liver."
+      - "The liver parenchyma is homogeneous without focal masses."
+
+  - question: "Is there hepatocellular carcinoma?"
+    positive:
+      - "Hepatocellular carcinoma is present, demonstrating arterial hyperenhancement with washout on portal venous phase."
+      - "A lesion with imaging hallmarks of hepatocellular carcinoma is identified, including arterial phase hyperenhancement and an enhancing capsule."
+      - "There is a hepatic mass showing classic features of hepatocellular carcinoma with APHE and delayed washout."
+    negative:
+      - "No hepatocellular carcinoma is identified."
+      - "There is no evidence of hepatocellular carcinoma."
+      - "The liver shows no masses with the enhancement pattern typical of hepatocellular carcinoma."
+
+  - question: "Is there hepatoblastoma?"
+    positive:
+      - "Hepatoblastoma is present, appearing as a large heterogeneous hepatic mass with calcifications."
+      - "A large solid hepatic mass is identified with features consistent with hepatoblastoma."
+      - "There is a bulky, heterogeneously enhancing liver mass with internal calcifications suggestive of hepatoblastoma."
+    negative:
+      - "No hepatoblastoma is identified."
+      - "There is no evidence of hepatoblastoma."
+      - "The liver shows no mass lesions suggestive of hepatoblastoma."
+
+  - question: "Is there cholangiocarcinoma?"
+    positive:
+      - "Cholangiocarcinoma is present, with a mass-forming lesion causing biliary ductal dilatation."
+      - "An intrahepatic cholangiocarcinoma is identified, showing peripheral enhancement with delayed central enhancement."
+      - "There is a hepatic mass with associated capsular retraction and upstream biliary dilatation consistent with cholangiocarcinoma."
+    negative:
+      - "No cholangiocarcinoma is identified."
+      - "There is no evidence of cholangiocarcinoma."
+      - "The liver and biliary system show no mass lesions suggestive of cholangiocarcinoma."
+
+  - question: "Are there any hepatic metastases?"
+    positive:
+      - "Hepatic metastases are present, appearing as multiple hypodense lesions scattered throughout the liver."
+      - "Multiple hepatic metastases are identified with ring enhancement and central necrosis."
+      - "The liver contains numerous lesions consistent with metastatic disease."
+    negative:
+      - "No hepatic metastases are identified."
+      - "There is no evidence of metastatic disease in the liver."
+      - "The liver parenchyma is free of focal lesions suspicious for metastases."
+
+  - question: "Is there hepatic lymphoma?"
+    positive:
+      - "Hepatic lymphoma is present, with diffuse infiltration or discrete hypodense lesions in the liver."
+      - "Hepatic involvement by lymphoma is identified, manifesting as multiple hypoattenuating masses."
+      - "The liver shows homogeneous hypodense lesions without significant enhancement, consistent with lymphomatous involvement."
+    negative:
+      - "No hepatic lymphoma is identified."
+      - "There is no evidence of lymphomatous involvement of the liver."
+      - "The liver parenchyma is homogeneous without lesions suggestive of lymphoma."
+
+  - question: "Is there angiosarcoma?"
+    positive:
+      - "Hepatic angiosarcoma is present, appearing as a heterogeneous hypervascular mass with areas of hemorrhage."
+      - "An angiosarcoma of the liver is identified with progressive centripetal enhancement and internal hemorrhage."
+      - "There is a large heterogeneous hepatic mass with avid arterial enhancement and necrosis suggestive of angiosarcoma."
+    negative:
+      - "No hepatic angiosarcoma is identified."
+      - "There is no evidence of angiosarcoma in the liver."
+      - "The liver shows no masses with features suggestive of angiosarcoma."
+
+  - question: "Is there epithelioid hemangioendothelioma?"
+    positive:
+      - "Epithelioid hemangioendothelioma is present with peripheral hepatic lesions showing a target-like appearance."
+      - "Hepatic epithelioid hemangioendothelioma is identified, with subcapsular coalescent nodules and capsular retraction."
+      - "There are multiple peripheral hepatic lesions with a lollipop sign and concentric enhancement rings consistent with epithelioid hemangioendothelioma."
+    negative:
+      - "No epithelioid hemangioendothelioma is identified."
+      - "There is no evidence of epithelioid hemangioendothelioma in the liver."
+      - "The liver shows no peripheral target-like lesions suggestive of epithelioid hemangioendothelioma."
+
+  - question: "Is there fibrolamellar carcinoma?"
+    positive:
+      - "Fibrolamellar carcinoma is present, appearing as a large well-defined hepatic mass with a central calcified scar."
+      - "A fibrolamellar hepatocellular carcinoma is identified, with a heterogeneous mass and characteristic central scar."
+      - "There is a large lobulated hepatic mass with a stellate calcified central scar in a non-cirrhotic liver, consistent with fibrolamellar carcinoma."
+    negative:
+      - "No fibrolamellar carcinoma is identified."
+      - "There is no evidence of fibrolamellar carcinoma."
+      - "The liver shows no masses with features suggestive of fibrolamellar carcinoma."
+
+  - question: "Are there any liver lacerations?"
+    positive:
+      - "Liver lacerations are present, appearing as linear hypoattenuating defects within the hepatic parenchyma."
+      - "Hepatic lacerations are identified with associated subcapsular and perihepatic hematoma."
+      - "There are irregular linear low-density regions traversing the liver parenchyma consistent with lacerations."
+    negative:
+      - "No liver lacerations are identified."
+      - "There is no evidence of hepatic laceration."
+      - "The liver parenchyma is intact without traumatic injury or laceration."
+
+  - question: "Are there any sites of active extravasation in the liver?"
+    positive:
+      - "Active extravasation is identified within the liver, indicating ongoing hepatic hemorrhage."
+      - "A focus of active contrast extravasation is present in the liver parenchyma."
+      - "There is a jet of contrast material pooling within the hepatic parenchyma consistent with active bleeding."
+    negative:
+      - "No active extravasation is identified in the liver."
+      - "There is no evidence of active hepatic hemorrhage."
+      - "The liver shows no foci of contrast extravasation to suggest active bleeding."
+
+  - question: "Are there any hepatic infarcts?"
+    positive:
+      - "Hepatic infarction is present, with a wedge-shaped area of non-enhancement in the liver parenchyma."
+      - "A hepatic infarct is identified, appearing as a peripheral wedge-shaped hypoattenuating region."
+      - "There is a geographic, non-enhancing area in the liver consistent with hepatic infarction."
+    negative:
+      - "No hepatic infarcts are identified."
+      - "There is no evidence of hepatic infarction."
+      - "The liver parenchyma enhances homogeneously without wedge-shaped defects to suggest infarction."
+
+  - question: "Are there any hepatic changes post-resection?"
+    positive:
+      - "Post-resection changes are seen in the liver with volume loss and compensatory hypertrophy of the remaining parenchyma."
+      - "Hepatic post-surgical changes are noted following partial hepatectomy with expected surgical bed alterations."
+      - "The liver shows surgical clips and parenchymal volume loss consistent with prior hepatic resection."
+    negative:
+      - "No post-resection changes are identified in the liver."
+      - "There is no evidence of prior hepatic resection."
+      - "The liver appears intact without surgical changes or signs of prior resection."
+
+  - question: "Are there any hepatic changes post-transplantation?"
+    positive:
+      - "The liver demonstrates post-transplantation changes with surgical anastomoses and altered hepatic vascular anatomy."
+      - "Post-liver transplant changes are noted with a biliary-enteric anastomosis and vascular reconstructions."
+      - "The liver shows features consistent with prior transplantation, including a surgical anastomosis at the hepatic hilum."
+    negative:
+      - "No post-transplantation changes are identified in the liver."
+      - "There is no evidence of prior liver transplantation."
+      - "The liver and hepatic vasculature appear native without transplant-related surgical changes."
+
+  - question: "Is there portal venous occlusion?"
+    positive:
+      - "Portal venous occlusion is present with a filling defect in the main portal vein."
+      - "Portal vein thrombosis is identified, with non-opacification of the portal venous lumen."
+      - "There is an occlusive thrombus within the portal vein with associated cavernous transformation and collateral formation."
+    negative:
+      - "No portal venous occlusion is identified."
+      - "There is no evidence of portal vein thrombosis."
+      - "The portal vein is patent and opacifies normally without filling defects."
+
+  - question: "Is there any portal venous gas?"
+    positive:
+      - "Portal venous gas is present, with linear branching gas lucencies extending to the liver periphery."
+      - "Hepatic portal venous gas is identified, seen as peripheral branching hypodensities within the liver."
+      - "There are tubular gas collections following the portal venous distribution in the liver consistent with portal venous gas."
+    negative:
+      - "No portal venous gas is identified."
+      - "There is no evidence of gas within the portal venous system."
+      - "The portal venous system and hepatic parenchyma show no branching gas lucencies."

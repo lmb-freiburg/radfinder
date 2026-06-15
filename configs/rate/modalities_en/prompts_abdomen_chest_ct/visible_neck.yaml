@@ -1,0 +1,42 @@
+category: "Visible Neck"
+description: "Neck-related findings"
+prompts:
+  - question: "Is there any goiter?"
+    positive:
+      - "A goiter is present with diffuse enlargement of the thyroid gland."
+      - "Thyroid goiter noted."
+      - "There is diffuse thyroid gland enlargement, possibly with substernal extension, consistent with goiter."
+    negative:
+      - "No goiter is identified."
+      - "The thyroid gland is normal in size without goiter."
+      - "There is no diffuse enlargement of the thyroid gland."
+
+  - question: "Is there any thyroid nodule?"
+    positive:
+      - "A thyroid nodule is present within the thyroid gland."
+      - "Thyroid nodule noted."
+      - "There is a focal lesion within the thyroid parenchyma consistent with a thyroid nodule."
+    negative:
+      - "No thyroid nodules are identified."
+      - "The thyroid gland is homogeneous without nodules."
+      - "There are no focal lesions within the thyroid parenchyma."
+
+  - question: "Is there any lymphadenopathy in neck?"
+    positive:
+      - "Cervical lymphadenopathy is present with enlarged neck lymph nodes."
+      - "Enlarged cervical lymph nodes noted."
+      - "There are pathologically enlarged lymph nodes in the cervical region."
+    negative:
+      - "No cervical lymphadenopathy is identified."
+      - "Cervical lymph nodes are within normal limits."
+      - "There are no pathologically enlarged lymph nodes in the neck."
+
+  - question: "Is there any carotid atherosclerosis?"
+    positive:
+      - "Carotid atherosclerosis is present with calcified plaques in the carotid arteries."
+      - "Atherosclerotic changes of the carotid arteries noted."
+      - "There are mural calcifications within the carotid arteries consistent with atherosclerosis."
+    negative:
+      - "No carotid atherosclerosis is identified."
+      - "The carotid arteries show no atherosclerotic calcification."
+      - "There are no mural calcifications or intimal plaques in the carotid arteries."

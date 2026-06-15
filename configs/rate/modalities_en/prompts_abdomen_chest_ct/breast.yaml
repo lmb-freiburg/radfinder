@@ -1,0 +1,32 @@
+category: "Breast"
+description: "Breast-related findings"
+prompts:
+  - question: "Are there any breast masses?"
+    positive:
+      - "A breast mass is identified on the CT images."
+      - "Breast mass noted."
+      - "There is a soft tissue density lesion within the breast parenchyma."
+    negative:
+      - "No breast masses are identified."
+      - "The breast tissue is unremarkable without mass."
+      - "There is no focal soft tissue lesion within the visualized breast parenchyma."
+
+  - question: "Are there any breast implants?"
+    positive:
+      - "Breast implants are present bilaterally or unilaterally."
+      - "Breast implants noted."
+      - "There are prosthetic implants within the breast tissue."
+    negative:
+      - "No breast implants are identified."
+      - "The breasts show no implants."
+      - "There are no prosthetic devices within the breast tissue."
+
+  - question: "Is there any lymphadenopathy in axilla?"
+    positive:
+      - "Axillary lymphadenopathy is present with enlarged axillary lymph nodes."
+      - "Enlarged axillary lymph nodes noted."
+      - "There are pathologically enlarged lymph nodes in the axillary region."
+    negative:
+      - "No axillary lymphadenopathy is identified."
+      - "Axillary lymph nodes are within normal limits."
+      - "There are no pathologically enlarged lymph nodes in the axillae."

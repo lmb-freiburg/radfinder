@@ -1,0 +1,5 @@
+task_type: pool_retrieval
+dataset_name: merlin
+split: test
+max_datapoints: null
+language: en

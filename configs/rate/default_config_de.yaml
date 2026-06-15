@@ -1,0 +1,34 @@
+# Server settings
+server:
+  port: 8000
+  base_url: "http://127.0.0.1"
+  autohost: null
+
+# Processing settings
+processing:
+  validation:
+    enabled: true
+  storage:
+    atomic_writes: true
+    validate_csv: true
+
+# Generic processing steps that apply to all modalities
+prompt_templates:
+  remove_comparison: null  # not translated yet
+  extract_findings: null  # not translated yet
+  findings_question: |
+    Basierend auf dem folgenden radiologischen Befund:
+    {report}
+
+    {question} Antworte ausschließlich mit „Ja“ oder „Nein“.
+
+  map_category_findings: |
+    Gegeben sind die folgenden Befunde aus einem radiologischen Bericht:
+    {findings}
+
+    Extrahiere und fasse alle Befunde zusammen, die für die Kategorie {category} relevant sind.
+    Kategoriebeschreibung: {description}
+
+    Wenn es keine für diese Kategorie relevanten Befunde gibt, gib „Keine relevanten Befunde“ aus.
+    Andernfalls liefere eine knappe Zusammenfassung der Befunde, die spezifisch für diese Kategorie sind.
+    Übernimm die Formulierungen aus dem Bericht so wörtlich wie möglich. Füge keine weiteren Kommentare hinzu.

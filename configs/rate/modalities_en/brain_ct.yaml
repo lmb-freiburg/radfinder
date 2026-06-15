@@ -1,0 +1,63 @@
+modality: "brain-ct"
+
+categories:
+  Hemorrhage:
+    description: "Intra-cranial hemorrhage and subtypes (e.g. ICH, IPH, IVH, SAH, SDH, EDH)"
+    questions:
+      - question: "Is intra-cranial hemorrhage (ICH) present?"
+      - question: "Is intra-parenchymal hemorrhage (IPH) present?"
+      - question: "Is intra-ventricular hemorrhage (IVH) present?"
+      - question: "Is subarachnoid hemorrhage (SAH) present?"
+      - question: "Is subdural hemorrhage (SDH) present?"
+      - question: "Is epidural hemorrhage (EDH) present?"
+
+  Stroke:
+    description: "Stroke, stage and hemorrhagic transformation (e.g. acute infarct, chronic infarct, hemorrhagic transformation)"
+    questions:
+      - question: "Is there any loss of the gray-white matter junction?"
+      - question: "Is acute infarct suspected based on the imaging findings?"
+      - question: "Is chronic infarct suspected based on the imaging findings?"
+      - question: "Is hemorrhagic transformation of infarct present?"
+
+  Ventricles Cisterns Sulci:
+    description: "Ventricles, cisterns, and sulci (e.g. hydrocephalus, brain edema, brain atrophy)"
+    questions:
+      - question: "Is hydrocephalus present?"
+      - question: "Is cerebral edema present ?"
+      - question: "Is there any brain atrophy?"
+
+  Midline:
+    description: "Midline, falx, and tentorium structures"
+    questions:
+      - question: "Is there midline shift?"
+      - question: "Is there cerebral / cerebellar herniation?"
+      - question: "Is there subfalcine herniation?"
+      - question: "Is there transtentorial herniation?"
+
+  Mass:
+    description: "Mass lesions and metastases"
+    questions:
+      - question: "Is mass effect present?"
+      - question: "Are there any brain tumors?"
+      - question: "Is intra-cranial metastasis suspected based on the imaging findings?"
+      - question: "Is meningioma suspected based on the imaging findings?"
+
+  Post Treatment:
+    description: "Post treatment changes"
+    questions:
+      - question: "Are there any post-craniotomy changes?"
+      - question: "Are any post-craniectomy changes?"
+      - question: "Are there any post-radiotherapy changes?"
+
+  Device:
+    description: "Devices involving the brain"
+    questions:
+      - question: "Is external ventricular drainage (EVD) present?"
+      - question: "Is there any deep brain stimulation (DBS) device present?"
+
+  Musculoskeletal:
+    description: "Musculoskeletal lesions and fractures"
+    questions:
+      - question: "Are there any fractures of skull vault (calvarial fracture)?"
+      - question: "Are there any osteolytic lesions?"
+      - question: "Are there any osteosclerotic lesions?"

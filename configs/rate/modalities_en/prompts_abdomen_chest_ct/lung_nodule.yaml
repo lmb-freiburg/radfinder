@@ -1,0 +1,42 @@
+category: "Lung Nodule"
+description: "Lung nodule-related findings"
+prompts:
+  - question: "Is there any solid nodules in the lung?"
+    positive:
+      - "A solid pulmonary nodule is identified in the lung parenchyma."
+      - "Solid nodule noted in the lung."
+      - "There is a discrete solid-density nodular opacity within the lung."
+    negative:
+      - "No solid pulmonary nodules are present."
+      - "The lungs are free of solid nodules."
+      - "No solid nodular opacities are identified within the lung parenchyma."
+
+  - question: "Is there any mass in the lung?"
+    positive:
+      - "A pulmonary mass is present in the lung."
+      - "Lung mass identified."
+      - "There is a large soft tissue density lesion within the lung parenchyma consistent with a mass."
+    negative:
+      - "No pulmonary mass is identified."
+      - "The lungs show no evidence of a mass."
+      - "There is no focal mass lesion within the lung parenchyma."
+
+  - question: "Is there any part-solid nodules in the lung?"
+    positive:
+      - "A part-solid pulmonary nodule is present, containing both ground-glass and solid components."
+      - "Part-solid nodule identified in the lung."
+      - "There is a subsolid nodule with a measurable solid component within the lung."
+    negative:
+      - "No part-solid pulmonary nodules are seen."
+      - "The lungs are free of part-solid nodules."
+      - "There are no subsolid nodules with mixed ground-glass and solid components in the lung."
+
+  - question: "Is there any ground-glass nodules in the lung?"
+    positive:
+      - "A pure ground-glass nodule is identified in the lung."
+      - "Ground-glass nodule noted in the lung."
+      - "There is a focal area of hazy increased attenuation in the lung forming a ground-glass nodule."
+    negative:
+      - "No ground-glass nodules are present in the lungs."
+      - "The lungs show no ground-glass nodules."
+      - "There are no focal ground-glass opacity nodules within the lung parenchyma."

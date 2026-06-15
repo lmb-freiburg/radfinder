@@ -1,0 +1,82 @@
+category: "Visible Thoracic"
+description: "Findings visible in the lower thorax"
+prompts:
+  - question: "Is there any atelectasis in the visible lung?"
+    positive:
+      - "Atelectasis is present in the visible lung."
+      - "Dependent atelectasis is noted in the visualized lung bases."
+      - "Band-like or wedge-shaped opacities with volume loss are seen in the included lower lung fields, consistent with atelectasis."
+    negative:
+      - "There is no atelectasis in the visible lung."
+      - "No atelectasis is identified in the visualized lung bases."
+      - "The included lung fields are clear without volume loss or opacities suggestive of atelectasis."
+
+  - question: "Is there any pleural effusion?"
+    positive:
+      - "Pleural effusion is present."
+      - "Fluid layering in the dependent pleural space is identified."
+      - "Dependent fluid-attenuation material is seen in the pleural spaces, consistent with pleural effusion."
+    negative:
+      - "There is no pleural effusion."
+      - "No pleural effusion is identified."
+      - "The pleural spaces are clear without fluid accumulation."
+
+  - question: "Is there cardiomegaly?"
+    positive:
+      - "Cardiomegaly is present."
+      - "The cardiac silhouette is enlarged."
+      - "The heart is increased in size with a cardiothoracic ratio exceeding normal limits, consistent with cardiomegaly."
+    negative:
+      - "There is no cardiomegaly."
+      - "No cardiomegaly is identified."
+      - "The heart is normal in size with a cardiothoracic ratio within normal limits."
+
+  - question: "Are there any aortic valve calcifications?"
+    positive:
+      - "Aortic valve calcifications are present."
+      - "Calcification of the aortic valve leaflets is identified."
+      - "Dense calcific deposits are seen along the aortic valve cusps, consistent with aortic valve calcification."
+    negative:
+      - "There are no aortic valve calcifications."
+      - "No aortic valve calcifications are identified."
+      - "The aortic valve leaflets show no calcific deposits."
+
+  - question: "Are there coronary artery calcifications?"
+    positive:
+      - "Coronary artery calcifications are present."
+      - "Calcifications are identified along the course of the coronary arteries."
+      - "Dense calcific plaques are seen within the coronary artery walls, consistent with coronary atherosclerotic calcification."
+    negative:
+      - "There are no coronary artery calcifications."
+      - "No coronary artery calcifications are identified."
+      - "The coronary arteries show no visible calcific deposits."
+
+  - question: "Is there any consolidation?"
+    positive:
+      - "Pulmonary consolidation is present."
+      - "An area of airspace opacification is identified in the visualized lung."
+      - "A dense opacity obscuring the underlying vascular markings is seen in the included lung parenchyma, consistent with consolidation."
+    negative:
+      - "There is no pulmonary consolidation."
+      - "No consolidation is identified in the visualized lung."
+      - "The included lung parenchyma shows no areas of airspace opacification or consolidation."
+
+  - question: "Are there any lung masses or nodules?"
+    positive:
+      - "Lung masses or nodules are present."
+      - "One or more pulmonary nodules or masses are identified in the visualized lung."
+      - "Focal rounded opacities are seen within the included lung parenchyma, consistent with pulmonary nodules or masses."
+    negative:
+      - "There are no lung masses or nodules."
+      - "No pulmonary nodules or masses are identified in the visualized lung."
+      - "The included lung parenchyma is clear without focal rounded opacities or masses."
+
+  - question: "Is there any coronary atherosclerosis?"
+    positive:
+      - "Coronary atherosclerosis is present."
+      - "Atherosclerotic changes of the coronary arteries are identified, including calcified and non-calcified plaques."
+      - "The coronary arteries demonstrate wall thickening and plaque formation, consistent with atherosclerotic disease."
+    negative:
+      - "There is no coronary atherosclerosis."
+      - "No coronary atherosclerosis is identified."
+      - "The coronary arteries appear normal without wall thickening, plaque, or other features of atherosclerotic disease."

@@ -1,0 +1,22 @@
+category: "Multi Organs"
+description: "Findings affecting multiple organ systems"
+prompts:
+  - question: "Is metastatic disease suspected based on the imaging findings?"
+    positive:
+      - "Metastatic disease is present."
+      - "Multiple lesions in various organs are identified, consistent with metastatic disease."
+      - "Scattered enhancing lesions are seen in multiple organ systems with imaging characteristics suggestive of widespread metastatic involvement."
+    negative:
+      - "There is no evidence of metastatic disease."
+      - "No metastatic disease is identified."
+      - "No focal lesions suspicious for metastases are visualized in the imaged organs."
+
+  - question: "Is anasarca suspected based on the imaging findings?"
+    positive:
+      - "Anasarca is present."
+      - "Diffuse subcutaneous edema and body cavity effusions are identified, consistent with anasarca."
+      - "Generalized soft tissue edema is seen throughout the subcutaneous tissues with associated pleural effusions and ascites, indicating anasarca."
+    negative:
+      - "There is no anasarca."
+      - "No anasarca is identified."
+      - "The subcutaneous tissues are normal without diffuse edema or findings suggestive of anasarca."

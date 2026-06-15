@@ -1,0 +1,62 @@
+category: "Pleura"
+description: "Pleural-related findings"
+prompts:
+  - question: "Is there any pleural effusion?"
+    positive:
+      - "Pleural effusion is present in the thorax."
+      - "Pleural effusion noted."
+      - "There is dependent layering fluid within the pleural space."
+    negative:
+      - "No pleural effusion is identified."
+      - "The pleural spaces are clear without effusion."
+      - "There is no fluid collection within the pleural space."
+
+  - question: "Is there any pleural thickening?"
+    positive:
+      - "Pleural thickening is present along the pleural surface."
+      - "Pleural thickening noted."
+      - "There is abnormal thickening of the pleural lining visible on imaging."
+    negative:
+      - "No pleural thickening is seen."
+      - "The pleura is smooth and of normal thickness."
+      - "There is no evidence of pleural thickening."
+
+  - question: "Is there any hemothorax?"
+    positive:
+      - "Hemothorax is present with high-attenuation fluid in the pleural space."
+      - "Hemothorax identified."
+      - "There is hyperdense pleural fluid consistent with hemothorax."
+    negative:
+      - "No hemothorax is identified."
+      - "The pleural spaces show no evidence of hemothorax."
+      - "There is no high-attenuation pleural fluid to suggest hemothorax."
+
+  - question: "Is there any pneumothorax?"
+    positive:
+      - "Pneumothorax is present with air in the pleural space."
+      - "Pneumothorax noted."
+      - "There is free air within the pleural cavity separating the visceral and parietal pleura."
+    negative:
+      - "No pneumothorax is identified."
+      - "The pleural spaces show no pneumothorax."
+      - "There is no free air in the pleural space to indicate pneumothorax."
+
+  - question: "Is there any pleural plaques?"
+    positive:
+      - "Pleural plaques are present, consistent with prior asbestos exposure."
+      - "Calcified pleural plaques noted."
+      - "There are focal areas of pleural calcification or thickening representing pleural plaques."
+    negative:
+      - "No pleural plaques are identified."
+      - "The pleura shows no evidence of plaques."
+      - "There are no focal calcified or noncalcified pleural plaques."
+
+  - question: "Is there any empyema?"
+    positive:
+      - "Empyema is present with a loculated pleural fluid collection and thickened pleura."
+      - "Findings consistent with empyema noted."
+      - "There is a loculated pleural collection with thickened pleural membranes suggestive of empyema."
+    negative:
+      - "No empyema is identified."
+      - "The pleural spaces show no evidence of empyema."
+      - "There is no loculated pleural collection or pleural thickening to suggest empyema."

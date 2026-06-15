@@ -1,0 +1,109 @@
+train:
+    image_feat_mode: frozen_local
+    text_feat_mode: full
+    batch_size: 16
+    val_batch_size: 16    
+    accum_steps: 256
+    accum_cpu_offload: false
+    datasets:
+        ctrate:
+            split: trainnodev
+            ctrate_filter_mode: first_all
+        inspect:
+            split: train
+        merlin:
+            split: train
+    sample_scan_per_dedup_report: true
+    language: en
+    data_fraction: 1
+    saveckp_freq: 1
+    resume_ckp: true
+    seed: 42
+    workers: 4
+    val_workers: 4
+    prefetch_factor: 1  # Reduced from 2 to save memory (workers * prefetch = batches in memory)
+    load_fp16: true
+    mixed_precision: bf16  # "no", "fp16", "bf16", or "fp8"
+    pin_memory: true
+    persistent_workers: false  # Set to false to prevent memory accumulation in workers
+    drop_last: true
+    use_gds: false
+    log_freq: 1
+    log_grad_freq: 100
+    val_freq: 1
+    val_first: 0
+    random_flip: 0.5
+    random_crop_features: 0.0
+    drop_findings_prob: 0.176
+    no_comp_replace_prob: 0.214
+    do_snippet_alignment:
+        enabled: true
+        projector_mode_image: copy
+        projector_mode_text: copy
+        snippet_mode: axis_localization
+        rope_mode: physical
+        localization_sigma: 2.0
+        localization_tau: 0.1
+        localization_weight: 0.004
+    organ_text:
+        enabled: true
+        replace_prob: 0.15
+    prompt_rate:
+        enabled: true
+        mode: both
+        weight: 0.5
+        pos_weight_cap: 20.0
+        text_grad: true
+        label_smoothing: 0.0
+        prompt_sampling_mode: random_1
+        phase3_batch_size: 256
+        question_group_weights:
+            abdomen: 1.0
+            chest: 1.0
+            ctrate: 5.0
+    validation_tasks:
+        - configs/tasks/retrieval/ctrate_traindev.yaml
+    test_tasks:
+        - configs/tasks/lists/evals.yaml
+optim:
+    epochs: 10
+    weight_decay: 1e-4
+    base_lr: 2.0e-04
+    lr: 0.  # will be set after applying scaling rule
+    warmup_epochs: 1
+    freeze_image_backbone_epochs: 0  # 10 for siglip training after dino  # -1 means fully freeze backbone
+    freeze_patch_embedding: true  # freeze the window-level patch embedding layer
+    freeze_image_projection: false
+    freeze_text_projection: false
+    image_backbone_grad_checkpoint_every: 1
+    text_backbone_grad_checkpoint: true
+    freeze_image_proj_last_layer_epochs: 0
+    freeze_text_proj_last_layer_epochs: 0
+    min_lr: 1.0e-06
+    llrd_factor: 0.9
+    patch_embed_lr_mult: 0  # 0.2
+    projection_head_wd_mult: 1.0
+    clip_grad_norm: 1.0
+    scaling_rule: "constant"
+    adamw_beta1: 0.9
+    adamw_beta2: 0.95
+    optimizer: adamw
+model:
+    pretrained_weights: null
+    learnable_t: true
+    learnable_b: true
+    init_t: 2.3026  # ~log(10)
+    init_b: -10.0
+    normalize: true
+    backbone_kwargs:
+        init_values: 1e-3  # layer scale, will be overwritten by pretrained checkpoint
+        rope_kwargs:
+            base: 1000.0  
+            rescale_coords: 2.0  # rope augmentation, s in [0.5, 2.0]
+    feature_combiner_kwargs:
+        init_values: 1e-3  # layer scale, will be overwritten by pretrained checkpoint
+        rope_kwargs:
+            base: 100.0  
+            rescale_coords: 2.0  # rope augmentation, s in [0.5, 2.0]
+    text_backbone_kwargs:
+        tokenizer_max_length: 1024

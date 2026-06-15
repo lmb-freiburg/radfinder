@@ -1,0 +1,72 @@
+category: "Adrenal gland"
+description: "Adrenal gland findings"
+prompts:
+  - question: "Are there any adrenal masses?"
+    positive:
+      - "There is an adrenal mass identified."
+      - "An adrenal mass is noted, requiring further characterization."
+      - "A focal lesion is seen arising from the adrenal gland, consistent with an adrenal mass."
+    negative:
+      - "There are no adrenal masses."
+      - "No adrenal masses are identified."
+      - "The adrenal glands are normal in size and morphology without focal masses."
+
+  - question: "Are there any adrenal adenomas?"
+    positive:
+      - "There is an adrenal adenoma with low attenuation on unenhanced imaging."
+      - "A lipid-rich adrenal nodule is noted, consistent with an adrenal adenoma."
+      - "The adrenal gland contains a well-defined, homogeneous, low-density nodule characteristic of a benign adenoma."
+    negative:
+      - "There are no adrenal adenomas."
+      - "No adrenal adenomas are identified."
+      - "The adrenal glands do not contain low-attenuation nodules suggestive of adenoma."
+
+  - question: "Are there any pheochromocytomas?"
+    positive:
+      - "There is a pheochromocytoma presenting as a hypervascular adrenal mass."
+      - "A large, heterogeneously enhancing adrenal mass is identified, suspicious for pheochromocytoma."
+      - "The adrenal gland contains a well-defined, avidly enhancing mass with areas of central necrosis, consistent with pheochromocytoma."
+    negative:
+      - "There are no pheochromocytomas."
+      - "No adrenal masses suggestive of pheochromocytoma are identified."
+      - "The adrenal glands are free of hypervascular or heterogeneously enhancing masses that would suggest pheochromocytoma."
+
+  - question: "Are there any adrenal myelolipomas?"
+    positive:
+      - "There is an adrenal myelolipoma containing macroscopic fat."
+      - "A fat-containing adrenal mass is identified, consistent with myelolipoma."
+      - "The adrenal gland demonstrates a well-circumscribed mass with predominant fat attenuation and interspersed soft-tissue elements, characteristic of a myelolipoma."
+    negative:
+      - "There are no adrenal myelolipomas."
+      - "No fat-containing adrenal masses suggestive of myelolipoma are identified."
+      - "The adrenal glands do not contain lesions with macroscopic fat characteristic of myelolipoma."
+
+  - question: "Is there adrenal hyperplasia?"
+    positive:
+      - "There is adrenal hyperplasia with bilateral enlargement of the adrenal glands."
+      - "Adrenal hyperplasia is noted, with diffusely thickened adrenal limbs bilaterally."
+      - "Both adrenal glands appear enlarged with maintained adreniform shape, consistent with bilateral adrenal hyperplasia."
+    negative:
+      - "There is no adrenal hyperplasia."
+      - "No adrenal hyperplasia is identified."
+      - "The adrenal glands are normal in size and thickness without evidence of hyperplasia."
+
+  - question: "Are there any adrenal hemorrhages?"
+    positive:
+      - "There is adrenal hemorrhage with a hyperdense adrenal gland."
+      - "Adrenal hemorrhage is identified, with high-attenuation enlargement of the adrenal gland on unenhanced images."
+      - "The adrenal gland is enlarged and hyperdense, with surrounding fat stranding, consistent with acute adrenal hemorrhage."
+    negative:
+      - "There are no adrenal hemorrhages."
+      - "No adrenal hemorrhage is identified."
+      - "The adrenal glands demonstrate normal attenuation without hyperdense enlargement or surrounding stranding to suggest hemorrhage."
+
+  - question: "Are there any adrenal infarcts?"
+    positive:
+      - "There is an adrenal infarct with non-enhancement of the adrenal gland."
+      - "Adrenal infarction is identified, with a swollen, non-enhancing adrenal gland."
+      - "The adrenal gland demonstrates diffuse non-enhancement and enlargement with surrounding fat stranding, consistent with infarction."
+    negative:
+      - "There are no adrenal infarcts."
+      - "No adrenal infarction is identified."
+      - "The adrenal glands enhance normally without evidence of ischemia or infarction."

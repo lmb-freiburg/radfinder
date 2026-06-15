@@ -1,0 +1,6 @@
+task_type: retrieval
+dataset_name: ctrate
+split: val
+max_datapoints: null
+language: en
+ctrate_filter_mode: dup_all

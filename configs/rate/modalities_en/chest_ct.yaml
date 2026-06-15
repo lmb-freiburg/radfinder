@@ -1,0 +1,147 @@
+modality: "chest-ct"
+
+categories:
+  Heart:
+    description: "Heart-related findings (e.g., coronary artery disease, cardiomyopathy, pericardial effusion, heart valve disease, cardiac devices)"
+    questions:
+      - question: "Is there coronary atherosclerosis?"
+      - question: "Are there any coronary artery stents?"
+      - question: "Are there any post-coronary artery bypass grafts?"
+      - question: "Is cardiomegaly or cardiac enlargement suspected based on the imaging findings?"
+      - question: "Is dilated cardiomyopathy suspected based on the imaging findings?"
+      - question: "Is hypertrophic cardiomyopathy suspected based on the imaging findings?"
+      - question: "Is ischemic cardiomyopathy suspected based on the imaging findings?"
+      - question: "Is pulmonary hypertension suspected based on the imaging findings?"
+      - question: "Is pericardial effusion present?"
+      - question: "Is cardiac tamponade suspected based on the imaging findings?"
+      - question: "Are there any heart/cardiac valve calcifications?"
+      - question: "Are there any coronary soft plaques?"
+      - question: "Is there a single coronary artery (a congenital anomaly where only one coronary artery arises from a single coronary ostium to supply the entire heart)?"
+      - question: "Are there any myxomas?"
+      - question: "Is aortic dissection present?"
+
+  Devices in the Thorax:
+    description: "Medical devices in the thorax (e.g., pacemaker, defibrillator, ECMO, nasogastric tube, endotracheal tube, chest tube, central venous catheter)"
+    questions:
+      - question: "Is heart valve replacement present?"
+      - question: "Are there any pace-makers or defibrillators?"
+      - question: "Is Extra Corporeal Membrane Oxygenation (ECMO) debice present?"
+      - question: "Is nasogastric tube present?"
+      - question: "Is endotracheal tube present?"
+      - question: "Are there any chest tubes?"
+      - question: "Is central venous catheter present?"
+
+  Lungs:
+    description: "Lung-related findings (e.g., pneumonia, lung nodules, bronchiectasis, interstitial lung disease, pleural effusion, pneumothorax)"
+    questions:
+      - question: "Is there any atelectasis?"
+      - question: "Is there any consolidation in the lung?"
+      - question: "Is there any centrilobular emphysema?"
+      - question: "Is there any paraseptal emphysema?"
+      - question: "Is there any cavitation in the lung?"
+      - question: "Is there any bulla, bleb, or pneumatocele?"
+      - question: "Is there any atypical cyst in the lung?"
+      - question: "Is there any post-lung resection scar?"
+      - question: "Is there any calcification in the lung?"
+      - question: "Is there any pneumoconiosis?"
+      - question: "Is there any ground-glass opacity?"
+      - question: "Is pulmonary edema suspected based on the imaging findings?"
+      - question: "Is primary tuberculosis suspected based on the imaging findings?"
+      - question: "Is miliary tuberculosis suspected based on the imaging findings?"
+      - question: "Is non-tuberculous mycobacterial infection suspected based on the imaging findings?"
+      - question: "Is COVID-19 suspected based on the imaging findings?"
+      - question: "Is aspergillosis suspected based on the imaging findings?"
+      - question: "Is aspiration pneumonia suspected based on the imaging findings?"
+      - question: "Is there any crazy paving pattern?"
+      - question: "Is sarcoidosis suspected based on the imaging findings?"
+      - question: "Is radiation pneumonitis suspected based on the imaging findings?"
+
+  Lung Nodule:
+    description: "Lung nodule-related findings (e.g., solid nodule, mass, part-solid nodule, ground-glass nodule)"
+    questions:
+      - question: "Is there any solid nodules in the lung?"
+      - question: "Is there any mass in the lung?"
+      - question: "Is there any part-solid nodules in the lung?"
+      - question: "Is there any ground-glass nodules in the lung?"
+    
+  Bronchial Tree:
+    description: "Bronchial tree-related findings (e.g., bronchiectasis, peribronchial thickening, mucous plugging, tree-in-bud or focal bronchiolitis, panbronchiolitis, tracheal mass)"
+    questions:
+      - question: "Is bronchiectasis present?"
+      - question: "Is there peribronchial thickening?"
+      - question: "Is there any mucous plugging?"
+      - question: "Is tree-in-bud or focal bronchiolitis present?"
+      - question: "Is panbronchiolitis present?"
+      - question: "Are there any tracheal masses?"
+    
+  Interstitial Lung Disease:
+    description: "Interstitial lung disease-related findings (e.g., reticular pattern, mosaic attenuation, honeycombing, interlobular septal thickening)"
+    questions:
+      - question: "Is there any reticulation or reticular pattern?"
+      - question: "Is there any mosaic attenuation?"
+      - question: "Is there any honeycombing?"
+      - question: "Is there any interlobular septal thickening?"
+
+  Pleura:
+    description: "Pleural-related findings (e.g., pleural effusion, pleural thickening, hemothorax, pneumothorax, pleural plaque, empyema)"
+    questions:
+      - question: "Is there any pleural effusion?"
+      - question: "Is there any pleural thickening?"
+      - question: "Is there any hemothorax?"
+      - question: "Is there any pneumothorax?"
+      - question: "Is there any pleural plaques?"
+      - question: "Is there any empyema?"
+
+  Mediastinum:
+    description: "Mediastinal-related findings (e.g., mediastinal mass, teratoma, thymoma, lymphadenopathy in mediastinum or hila, hiatal hernia, pneumomediastinum)"
+    questions:
+      - question: "Is there any mediastinal mass?"
+      - question: "Is there any teratoma?"
+      - question: "Is there any thymoma?"
+      - question: "Is there any lymphadenopathy in mediastinum or hila?"
+      - question: "Is there any hiatal hernia?"
+      - question: "Is there any pneumomediastinum?"
+
+  Great Vessels in the Thorax:
+    description: "Great vessels-related findings in the thorax (e.g. aortic aneurysm, aberrant subclavian artery, aortic atherosclerosis, pulmonary embolism)"
+    questions:
+      - question: "Is aortic aneurysm present?"
+      - question: "Is there any aberrant subclavian artery?"
+      - question: "Is there any aortic atherosclerosis?"
+      - question: "Is pulmonary embolism suspected?"
+
+  Bones:
+    description: "Bone-related findings (e.g., fracture, osteopenia, arthritis, sternotomy, osteolytic lesion, osteosclerotic lesion)"
+    questions:
+      - question: "Are there any fractures of rib or clavicle?"
+      - question: "Are there any fractures of spine?"
+      - question: "Is there any osteopenia?"
+      - question: "Is there any arthritis?"
+      - question: "Is there any sternotomy?"
+      - question: "Are there any osteolytic lesions?"
+      - question: "Are there any osteosclerotic lesions?"
+
+  Breast:
+    description: "Breast-related findings (e.g., breast mass, breast implant, lymphadenopathy in axilla)"
+    questions:
+      - question: "Are there any breast masses?"
+      - question: "Are there any breast implants?"
+      - question: "Is there any lymphadenopathy in axilla?"
+
+  Visible Neck:
+    description: "Neck-related findings (e.g., goiter, thyroid nodule, lymphadenopathy in neck, carotid atherosclerosis)"
+    questions:
+      - question: "Is there any goiter?"
+      - question: "Is there any thyroid nodule?"
+      - question: "Is there any lymphadenopathy in neck?"
+      - question: "Is there any carotid atherosclerosis?"
+
+  Visible Abdomen:
+    description: "Abdominal-related findings (e.g., liver mass, liver cyst, diffuse fatty liver / steatosis, cirrhosis, chronic pancreatitis, splenomegaly)"
+    questions:
+      - question: "Are there any liver masses?"
+      - question: "Are there any liver cysts?"
+      - question: "Is diffuse fatty liver / steatosis suspected based on the imaging findings?"
+      - question: "Is cirrhosis suspected based on the imaging findings?"
+      - question: "Is chronic pancreatitis suspected based on the imaging findings?"
+      - question: "Is splenomegaly present?"

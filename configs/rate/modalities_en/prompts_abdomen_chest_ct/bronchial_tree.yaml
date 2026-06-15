@@ -1,0 +1,62 @@
+category: "Bronchial Tree"
+description: "Bronchial tree-related findings"
+prompts:
+  - question: "Is bronchiectasis present?"
+    positive:
+      - "Bronchiectasis is present with irreversible airway dilatation."
+      - "Bronchiectatic changes are noted."
+      - "There are dilated thick-walled bronchi exceeding the diameter of their accompanying pulmonary arteries."
+    negative:
+      - "No bronchiectasis is identified."
+      - "The airways are normal in caliber without bronchiectasis."
+      - "There is no evidence of abnormal bronchial dilatation."
+
+  - question: "Is there peribronchial thickening?"
+    positive:
+      - "Peribronchial thickening is present along the bronchial walls."
+      - "Peribronchial wall thickening noted."
+      - "There is circumferential soft tissue thickening surrounding the bronchi."
+    negative:
+      - "No peribronchial thickening is seen."
+      - "The bronchial walls are normal in thickness."
+      - "There is no evidence of peribronchial wall thickening."
+
+  - question: "Is there any mucous plugging?"
+    positive:
+      - "Mucous plugging is present within the airways."
+      - "Mucoid impaction noted in the bronchi."
+      - "There are tubular branching opacities within the bronchial lumen consistent with mucous plugging."
+    negative:
+      - "No mucous plugging is identified."
+      - "The airways are patent without mucoid impaction."
+      - "There is no evidence of intraluminal mucous plugging in the bronchi."
+
+  - question: "Is tree-in-bud or focal bronchiolitis present?"
+    positive:
+      - "Tree-in-bud pattern is present, indicating small airway inflammation."
+      - "Tree-in-bud opacities noted, consistent with bronchiolitis."
+      - "There are centrilobular branching nodular opacities in a tree-in-bud configuration."
+    negative:
+      - "No tree-in-bud pattern or bronchiolitis is identified."
+      - "The small airways show no tree-in-bud opacities."
+      - "There is no evidence of centrilobular branching nodularity to suggest bronchiolitis."
+
+  - question: "Is panbronchiolitis present?"
+    positive:
+      - "Diffuse panbronchiolitis is present with widespread small airway disease."
+      - "Findings consistent with panbronchiolitis are noted."
+      - "There are diffuse centrilobular nodules and bronchiolectasis suggestive of panbronchiolitis."
+    negative:
+      - "No findings to suggest panbronchiolitis are present."
+      - "The lungs show no evidence of panbronchiolitis."
+      - "There are no diffuse centrilobular nodules or bronchiolectasis to suggest panbronchiolitis."
+
+  - question: "Are there any tracheal masses?"
+    positive:
+      - "A tracheal mass is identified arising from the tracheal wall."
+      - "Tracheal mass noted with luminal narrowing."
+      - "There is a soft tissue mass lesion within or arising from the trachea."
+    negative:
+      - "No tracheal masses are identified."
+      - "The trachea is patent without intraluminal mass."
+      - "There is no evidence of a mass lesion involving the trachea."

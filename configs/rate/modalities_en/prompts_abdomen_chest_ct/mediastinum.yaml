@@ -1,0 +1,62 @@
+category: "Mediastinum"
+description: "Mediastinal-related findings"
+prompts:
+  - question: "Is there any mediastinal mass?"
+    positive:
+      - "A mediastinal mass is identified."
+      - "Mediastinal mass noted."
+      - "There is a soft tissue mass lesion within the mediastinum."
+    negative:
+      - "No mediastinal mass is identified."
+      - "The mediastinum is unremarkable without mass."
+      - "There is no evidence of a mass lesion in the mediastinum."
+
+  - question: "Is there any teratoma?"
+    positive:
+      - "A mediastinal teratoma is present containing fat, calcification, or soft tissue components."
+      - "Anterior mediastinal mass consistent with teratoma noted."
+      - "There is a heterogeneous anterior mediastinal lesion with fat and calcification suggestive of a teratoma."
+    negative:
+      - "No teratoma is identified."
+      - "The anterior mediastinum shows no mass to suggest teratoma."
+      - "There is no heterogeneous lesion with fat and calcification to indicate teratoma."
+
+  - question: "Is there any thymoma?"
+    positive:
+      - "A thymoma is present in the anterior mediastinum."
+      - "Anterior mediastinal mass consistent with thymoma noted."
+      - "There is a well-defined soft tissue mass in the prevascular space suggestive of thymoma."
+    negative:
+      - "No thymoma is identified."
+      - "The thymus is unremarkable without mass."
+      - "There is no anterior mediastinal soft tissue mass to suggest thymoma."
+
+  - question: "Is there any lymphadenopathy in mediastinum or hila?"
+    positive:
+      - "Mediastinal and/or hilar lymphadenopathy is present."
+      - "Enlarged mediastinal or hilar lymph nodes noted."
+      - "There are pathologically enlarged lymph nodes in the mediastinum or hila exceeding 1 cm in short axis."
+    negative:
+      - "No mediastinal or hilar lymphadenopathy is identified."
+      - "Mediastinal and hilar lymph nodes are within normal limits."
+      - "There are no pathologically enlarged lymph nodes in the mediastinum or hila."
+
+  - question: "Is there any hiatal hernia?"
+    positive:
+      - "A hiatal hernia is present with herniation of the stomach through the esophageal hiatus."
+      - "Hiatal hernia noted."
+      - "There is superior displacement of the gastric fundus through the diaphragmatic hiatus into the thorax."
+    negative:
+      - "No hiatal hernia is identified."
+      - "The gastroesophageal junction is in normal position without hiatal hernia."
+      - "There is no herniation of abdominal contents through the esophageal hiatus."
+
+  - question: "Is there any pneumomediastinum?"
+    positive:
+      - "Pneumomediastinum is present with free air in the mediastinal compartment."
+      - "Pneumomediastinum noted."
+      - "There is extraluminal gas dissecting through the mediastinal soft tissues."
+    negative:
+      - "No pneumomediastinum is identified."
+      - "The mediastinum shows no free air."
+      - "There is no extraluminal gas within the mediastinal soft tissues."

@@ -1,0 +1,102 @@
+category: "Spleen"
+description: "Spleen-related findings"
+prompts:
+  - question: "Is there splenomegaly?"
+    positive:
+      - "Splenomegaly is present."
+      - "The spleen is enlarged, consistent with splenomegaly."
+      - "The spleen is markedly increased in size, exceeding normal dimensions."
+    negative:
+      - "There is no splenomegaly."
+      - "The spleen is normal in size."
+      - "The spleen measures within normal limits without enlargement."
+
+  - question: "Are there any epithelial cysts?"
+    positive:
+      - "A splenic epithelial cyst is present."
+      - "A well-defined, thin-walled cystic lesion in the spleen is identified, consistent with an epithelial cyst."
+      - "A unilocular, homogeneous fluid-attenuation lesion with a smooth thin wall is seen in the spleen, compatible with an epithelial cyst."
+    negative:
+      - "There are no splenic epithelial cysts."
+      - "No epithelial cysts of the spleen are identified."
+      - "The spleen does not contain thin-walled cystic lesions suggestive of epithelial cysts."
+
+  - question: "Are there any splenic pseudocysts?"
+    positive:
+      - "A splenic pseudocyst is present."
+      - "A cystic lesion with peripheral calcification in the spleen is noted, consistent with a pseudocyst."
+      - "A thick-walled fluid collection with mural calcifications is seen within the spleen, compatible with a post-traumatic or post-inflammatory pseudocyst."
+    negative:
+      - "There are no splenic pseudocysts."
+      - "No splenic pseudocysts are identified."
+      - "The spleen does not contain thick-walled cystic lesions or calcified fluid collections suggestive of pseudocysts."
+
+  - question: "Are there any splenic hamartomas?"
+    positive:
+      - "A splenic hamartoma is present."
+      - "A well-defined solid lesion with heterogeneous enhancement is identified in the spleen, consistent with a hamartoma."
+      - "A solid, well-circumscribed splenic mass demonstrating progressive enhancement is observed, suggestive of a splenic hamartoma."
+    negative:
+      - "There are no splenic hamartomas."
+      - "No splenic hamartoma is identified."
+      - "The spleen does not contain well-defined solid lesions with features suggestive of hamartoma."
+
+  - question: "Is splenic lymphoma present?"
+    positive:
+      - "Splenic lymphoma is present."
+      - "Hypoattenuating lesions within the spleen are identified, consistent with lymphomatous involvement."
+      - "The spleen demonstrates multiple focal low-density masses or diffuse infiltrative changes indicative of lymphoma."
+    negative:
+      - "There is no splenic lymphoma."
+      - "No evidence of splenic lymphomatous involvement is identified."
+      - "The spleen shows homogeneous attenuation without focal lesions or infiltrative changes suggestive of lymphoma."
+
+  - question: "Are there any splenic abscesses?"
+    positive:
+      - "A splenic abscess is present."
+      - "A rim-enhancing fluid collection within the spleen is identified, consistent with a splenic abscess."
+      - "An ill-defined, hypoattenuating lesion with peripheral enhancement and surrounding inflammatory changes is seen in the spleen, compatible with an abscess."
+    negative:
+      - "There are no splenic abscesses."
+      - "No splenic abscess is identified."
+      - "The spleen does not contain rim-enhancing fluid collections or inflammatory lesions suggestive of abscess."
+
+  - question: "Are there any splenic lacerations?"
+    positive:
+      - "A splenic laceration is present."
+      - "A linear hypoattenuating defect is identified within the splenic parenchyma, consistent with a laceration."
+      - "The spleen demonstrates a linear parenchymal disruption with surrounding hemoperitoneum, indicative of traumatic laceration."
+    negative:
+      - "There are no splenic lacerations."
+      - "No splenic laceration is identified."
+      - "The splenic parenchyma is intact without linear defects or traumatic injury."
+
+  - question: "Are there any splenic infarcts?"
+    positive:
+      - "A splenic infarct is present."
+      - "A wedge-shaped, peripheral, hypoattenuating area in the spleen is identified, consistent with splenic infarction."
+      - "A non-enhancing, peripherally based wedge-shaped defect is seen in the spleen, characteristic of an infarct."
+    negative:
+      - "There are no splenic infarcts."
+      - "No splenic infarction is identified."
+      - "The spleen enhances homogeneously without wedge-shaped perfusion defects or areas of infarction."
+
+  - question: "Is the spleen surgically absent? Are there any post-splenectomy changes?"
+    positive:
+      - "The spleen is surgically absent, with post-splenectomy changes."
+      - "Prior splenectomy is noted with absence of the spleen in the left upper quadrant."
+      - "The spleen is not visualized in the expected anatomical location, consistent with prior surgical removal, and compensatory changes are observed."
+    negative:
+      - "The spleen is present and there are no post-splenectomy changes."
+      - "No prior splenectomy. The spleen is present in normal anatomical position."
+      - "The spleen is visualized in its expected left upper quadrant location without evidence of surgical removal."
+
+  - question: "Are there any accessory spleens?"
+    positive:
+      - "An accessory spleen is present."
+      - "A small, well-defined, round structure with splenic attenuation is identified near the splenic hilum, consistent with an accessory spleen."
+      - "A nodular focus of tissue enhancing in parallel with the spleen is seen adjacent to the splenic hilum, compatible with an accessory spleen."
+    negative:
+      - "There are no accessory spleens."
+      - "No accessory spleen is identified."
+      - "No nodular foci of splenic tissue are observed near the splenic hilum or elsewhere in the abdomen."

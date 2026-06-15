@@ -1,0 +1,72 @@
+category: "Devices"
+description: "Medical devices in the chest"
+prompts:
+  - question: "Is heart valve replacement present?"
+    positive:
+      - "A prosthetic heart valve replacement is present."
+      - "A mechanical or bioprosthetic valve replacement is identified in the heart."
+      - "A high-density prosthetic device is seen in the expected position of a cardiac valve, consistent with prior valve replacement surgery."
+    negative:
+      - "There is no heart valve replacement."
+      - "No prosthetic heart valve is identified."
+      - "The cardiac valves are native without evidence of surgical replacement."
+
+  - question: "Are there any pace-makers or defibrillators?"
+    positive:
+      - "A cardiac pacemaker or defibrillator is present."
+      - "A cardiac implantable electronic device is identified with a generator in the subcutaneous chest wall and leads extending into the heart."
+      - "A pulse generator is seen in the left infraclavicular region with transvenous leads terminating in the right cardiac chambers, consistent with a pacemaker or defibrillator."
+    negative:
+      - "There are no pacemakers or defibrillators."
+      - "No cardiac implantable electronic device is identified."
+      - "The chest does not contain a pulse generator or transvenous cardiac leads."
+
+  - question: "Is Extra Corporeal Membrane Oxygenation (ECMO) device present?"
+    positive:
+      - "An ECMO device is present."
+      - "Extra Corporeal Membrane Oxygenation cannulae are identified within the central vasculature."
+      - "Large-bore cannulae are seen extending into the great vessels, consistent with ECMO support."
+    negative:
+      - "There is no ECMO device."
+      - "No ECMO cannulae are identified."
+      - "The central vasculature does not contain large-bore cannulae associated with extracorporeal membrane oxygenation."
+
+  - question: "Is nasogastric tube present?"
+    positive:
+      - "A nasogastric tube is present."
+      - "A nasogastric tube is identified coursing through the esophagus into the stomach."
+      - "A radiopaque tubular structure follows the expected course of the esophagus into the gastric lumen, consistent with a nasogastric tube."
+    negative:
+      - "There is no nasogastric tube."
+      - "No nasogastric tube is identified."
+      - "No tubular device is seen within the esophagus or stomach to suggest a nasogastric tube."
+
+  - question: "Is endotracheal tube present?"
+    positive:
+      - "An endotracheal tube is present."
+      - "An endotracheal tube is identified within the tracheal lumen."
+      - "A radiopaque tube is seen within the trachea with its tip positioned above the carina, consistent with endotracheal intubation."
+    negative:
+      - "There is no endotracheal tube."
+      - "No endotracheal tube is identified."
+      - "The airway is unintubated with no endotracheal tube visualized within the trachea."
+
+  - question: "Are there any chest tubes?"
+    positive:
+      - "Chest tubes are present."
+      - "One or more chest tubes are identified within the pleural space."
+      - "Tubular drainage devices are seen traversing the chest wall into the pleural cavity, consistent with chest tube placement."
+    negative:
+      - "There are no chest tubes."
+      - "No chest tubes are identified."
+      - "No drainage tubes are seen within the pleural spaces."
+
+  - question: "Is central venous catheter present?"
+    positive:
+      - "A central venous catheter is present."
+      - "A central venous catheter is identified with its tip projecting over the superior vena cava or cavoatrial junction."
+      - "A vascular access catheter is seen entering via a central vein with its distal tip within the central venous system."
+    negative:
+      - "There is no central venous catheter."
+      - "No central venous catheter is identified."
+      - "No central venous access lines or catheters are visualized."

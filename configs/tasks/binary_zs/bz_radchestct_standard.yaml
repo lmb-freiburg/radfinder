@@ -1,0 +1,8 @@
+task_type: binary_zs
+dataset_name: radchestct
+split: all
+max_datapoints: null
+language: en
+prompt_mode: mean7
+radchestct_label_mapping: standard
+eval_protocol: radchestct_standard

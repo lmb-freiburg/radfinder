@@ -1,0 +1,90 @@
+modality: "chest_xray"
+
+categories:
+  Lung:
+    description: "Lung-related findings (e.g., airspace opacity, atelectasis, infiltration, lung lesion, lung mass, lung nodule, consolidation, pulmonary edema, pulmonary fibrosis, emphysema, calcification in the lung, lung cavity, lung cyst)"
+    questions:
+      - question: "Is there any airspace opacity?"
+      - question: "Is there any atelectasis?"
+      - question: "Is there any infiltration?"
+      - question: "Is there any lung lesion?"
+      - question: "Is there any lung mass?"
+      - question: "Is there any lung nodule?"
+      - question: "Is there any consolidation?"
+      - question: "Is pulmonary edema suspected based on the imaging findings?"
+      - question: "Is pulmonary fibrosis suspected based on the imaging findings?"
+      - question: "Is emphysema suspected based on the imaging findings?"
+      - question: "Is there any calcification in the lung?"
+      - question: "Is there any lung cavity?"
+      - question: "Is there any lung cyst?"
+
+  Pleura:
+    description: "Pleural-related findings (e.g., pneumothorax, pleural effusion, pleural thickening, pleural calcification)"
+    questions:
+      - question: "Is there any pneumothorax?"
+      - question: "Is there any pleural effusion?"
+      - question: "Is there any pleural thickening?"
+      - question: "Is there any pleural calcification?"
+      - question: "Is there any elevation of a hemidiaphragm?"
+
+  Mediastinum:
+    description: "Mediastinal-related findings (e.g., heart, enlarged cardiac silhouette, cardiomegaly, mediastinal widening, tortuous aorta, aortic enlargement, calcification of the aorta or aortic atherosclerosis, hiatal hernia, pneumomediastinum, enlarged pulmonary arteries, mediastinal shift, tracheal deviation)"
+    questions:
+      - question: "Is the cardiac silhouette enlarged or is there cardiomegaly?"
+      - question: "Is there mediastinal widening?"
+      - question: "Is there an tortuous aorta?"
+      - question: "Is aortic enlargement suspected based on the imaging findings?"
+      - question: "Is there any calcification of the aorta or aortic atherosclerosis?"
+      - question: "Is hiatal hernia suspected based on the imaging findings?"
+      - question: "Is pneumomediastinum suspected based on the imaging findings?"
+      - question: "Is enlarged pulmonary arteries suspected based on the imaging findings?"
+      - question: "Is there any mediastinal shift?"
+      - question: "Is there any tracheal deviation?"
+
+  Osseous:
+    description: "Bone-related findings (e.g., fracture, clavicle fracture, rib fracture)"
+    questions:
+      - question: "Is there any fracture (not rib or clavicle)?"
+      - question: "Is there any clavicle fracture?"
+      - question: "Is there any rib fracture?"
+
+  Spine:
+    description: "Spine-related findings (e.g., wedge deformity, compression fracture, scoliosis)"
+    questions:
+      - question: "Is there any vertebral wedge deformity or vertebral compression fracture?"
+      - question: "Is there scoliosis?"
+
+  Chest_wall:
+    description: "Chest wall-related findings (e.g., pectoralis muscle, ribs, sternum, subcutaneous soft tissues)"
+    questions:
+      - question: "Is there subcutaneous emphysema?"
+
+  Abdomen:
+    description: "Abdominal-related findings (e.g., pneumoperitoneum, ileus, bowel dilatation)"
+    questions:
+      - question: "Is there pneumoperitoneum?"
+      - question: "Is there any ileus or bowel dilatation?"
+
+  Devices:
+    description: "Findings related to devices (e.g., endotracheal tube, nasogastric (NG) tube, chest tube, pigtail catheter, breast implant, post-operative metal, central venous catheter (CVC), peripherally inserted central catheter (PICC), foreign body, pacemaker)"
+    questions:
+      - question: "Is there any endotracheal tube?"
+      - question: "Is there any NG tube (nasogastric tube)?"
+      - question: "Is there any chest tube or pigtail catheter?"
+      - question: "Is there any breast implant?"
+      - question: "Is there any post-operative metal (arthroplasty, perthesis, surgical clips)?"
+      - question: "Is there any CVC (central venous catheter)?"
+      - question: "Is there any PICC (peripherally inserted central catheter)?"
+      - question: "Is there any foreign body (unrelated to medical device or hardware)?"
+      - question: "Is there any pacemaker?"
+
+  Global:
+    description: "Global findings (e.g., tuberculosis, chronic obstructive pulmonary disease [COPD], pneumonia, lung cancer, interstitial lung disease)"
+    questions:
+      - question: "Are there any abnormal or remarkable findings in this films (with exception of supporting devices, catheter, tube, wire, clip, prosthesis)?"
+      - question: "Is chronic obstructive pulmonary disease (COPD) suspected based on the imaging findings?"
+      - question: "Is pneumonia suspected based on the imaging findings?"
+      - question: "Does the patient have known lung cancer?"
+      - question: "Does the patient have known interstitial lung disease?" 
+      - question: "Is prior granulomatous infection suspected based on the imaging findings?"
+      - question: "Is active tuberculosis infection suspected based on the imaging findings?"

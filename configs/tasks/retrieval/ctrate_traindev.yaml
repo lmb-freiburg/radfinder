@@ -1,0 +1,6 @@
+task_type: retrieval
+dataset_name: ctrate
+split: traindev
+max_datapoints: null
+language: en
+ctrate_filter_mode: first_all

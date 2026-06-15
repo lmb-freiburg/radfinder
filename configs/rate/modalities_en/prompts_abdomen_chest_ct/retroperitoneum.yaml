@@ -1,0 +1,42 @@
+category: "Retroperitoneum"
+description: "Retroperitoneal space findings"
+prompts:
+  - question: "Is there any lymphadenopathy in retroperitoneum, peritoneum or pelvis?"
+    positive:
+      - "Lymphadenopathy is present in the retroperitoneum, peritoneum, or pelvis."
+      - "Enlarged lymph nodes are identified in the retroperitoneal, peritoneal, or pelvic regions."
+      - "Multiple lymph nodes exceeding the upper limit of normal size are seen in the retroperitoneal, mesenteric, or pelvic nodal stations."
+    negative:
+      - "There is no lymphadenopathy in the retroperitoneum, peritoneum, or pelvis."
+      - "No pathologically enlarged lymph nodes are identified in the retroperitoneal, peritoneal, or pelvic regions."
+      - "The retroperitoneal, mesenteric, and pelvic lymph nodes are within normal size limits."
+
+  - question: "Is there retroperitoneal fibrosis?"
+    positive:
+      - "Retroperitoneal fibrosis is present."
+      - "A soft tissue rind is identified encasing the aorta and inferior vena cava, consistent with retroperitoneal fibrosis."
+      - "A confluent plaque of soft tissue is seen surrounding the retroperitoneal great vessels and ureters, compatible with retroperitoneal fibrosis."
+    negative:
+      - "There is no retroperitoneal fibrosis."
+      - "No retroperitoneal fibrosis is identified."
+      - "The retroperitoneal soft tissues surrounding the great vessels appear normal without fibrotic encasement."
+
+  - question: "Is there retroperitoneal hemorrhage or retroperitoneal hematomas?"
+    positive:
+      - "A retroperitoneal hemorrhage is present."
+      - "A high-attenuation collection is identified in the retroperitoneal space, consistent with a retroperitoneal hematoma."
+      - "Hyperdense fluid or soft tissue is seen within the retroperitoneal compartment, indicating hemorrhage or hematoma."
+    negative:
+      - "There is no retroperitoneal hemorrhage or hematoma."
+      - "No retroperitoneal hematoma is identified."
+      - "The retroperitoneal space shows no high-attenuation collections or evidence of hemorrhage."
+
+  - question: "Is there retroperitoneal liposarcoma?"
+    positive:
+      - "A retroperitoneal liposarcoma is present."
+      - "A large retroperitoneal mass with predominant fat attenuation and enhancing soft tissue components is identified, consistent with liposarcoma."
+      - "A heterogeneous fatty mass with thick septa and nodular non-adipose components is seen in the retroperitoneal space, suspicious for liposarcoma."
+    negative:
+      - "There is no retroperitoneal liposarcoma."
+      - "No retroperitoneal liposarcoma is identified."
+      - "The retroperitoneal fat is homogeneous without large fatty masses or enhancing soft tissue components suggestive of liposarcoma."
