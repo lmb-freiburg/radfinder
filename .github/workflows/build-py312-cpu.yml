@@ -25,6 +25,8 @@ jobs:
       W_CACHE_NUMBER: 0  # increase to reset cache
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2  # stuck cache download should stop after X minutes
       W_CACHE_KILL: 3  # hard kill a stuck cache download after X minutes
+      MEDV_DATA_DIR: /tmp/medv_data  # dummy data root so tests can resolve paths
+      MEDV_OUTPUT_DIR: /tmp/medv_output  # dummy experiment output dir
     steps:
 #
     - name: Checkout code
@@ -134,6 +136,7 @@ jobs:
 #
     - name: Run pytest
       run: |
+        mkdir -p "$MEDV_DATA_DIR" "$MEDV_OUTPUT_DIR"
         python -m pytest tests -m "not cuda" --cov
 #
     - name: Run pylint
