@@ -28,6 +28,7 @@ classification, and slice-level localization at 12 mm resolution.
 <div align="center">
 <img src="assets/figure1.png" alt="Overview of the RadFinder architecture and training pipeline" width="900"/>
 <br/>
+<br/>
 <em>Overview of the RadFinder architecture and training pipeline.</em>
 </div>
 
