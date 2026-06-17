@@ -10,7 +10,8 @@ authors = [
 	{ name = "Simon Ging", email = "gings@cs.uni-freiburg.de" }
 ]
 requires-python = ">=3.9"
-dynamic = ["version", "dependencies"]
+# dynamic = ["version", "dependencies"]
+dynamic = ["version"]
 license = "MIT"
 license-files = ["LICENSE"]
 
@@ -41,7 +42,7 @@ include-package-data = true
 
 [tool.setuptools.dynamic]
 version = { attr = "radfinder.__version__" }
-dependencies = {file = ["requirements.txt"]}
+# dependencies = {file = ["requirements.txt"]}
 
 # ---------- dev settings ----------
 

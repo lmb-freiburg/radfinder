@@ -33,15 +33,16 @@ classification, and slice-level localization at 12 mm resolution.
 
 ## Setup the repository
 
-Tested with Python 3.12 PyTorch 2.12 CUDA 13.0
-
-Set environment variables `MEDV_DATA_DIR` (data root) and `MEDV_OUTPUT_DIR` (experiment outputs)
+- Tested with Python=3.12 PyTorch=2.12 CUDA=13.0
+- Set environment variables `MEDV_DATA_DIR` (data root) and `MEDV_OUTPUT_DIR` (experiment outputs)
+- In case of installation problems, try `pip install -r frozen_pip_requirements.txt` instead.
 
 ```bash
 conda create -n radfinder python=3.12 -y
 conda activate radfinder
 python -m ensurepip
 pip install -U pip setuptools wheel
+pip install -U requirements.txt
 pip install -U -e .
 ```
 
