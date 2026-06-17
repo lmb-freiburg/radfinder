@@ -6,10 +6,6 @@
 <a href="https://arxiv.org/abs/2603.02026">Paper</a> —
 <a href="https://github.com/lmb-freiburg/radfinder">Code</a> —
 <a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a>
-<br/>
-<a href="https://github.com/lmb-freiburg/radfinder/actions/workflows/build-py312-cpu.yml">
-  <img alt="build 3.12 status" title="build 3.12 status" src="https://img.shields.io/github/actions/workflow/status/lmb-freiburg/radfinder/build-py312-cpu.yml?branch=main&label=build%203.12%20cpu" />
-</a>
 </div>
 
 # RadFinder
@@ -22,6 +18,12 @@ A single unified model reaches state-of-the-art retrieval on CT-RATE, competitiv
 classification, and slice-level localization at 12 mm resolution.
 
 **To appear at MICCAI 2026.**
+
+<a href="https://github.com/lmb-freiburg/radfinder/actions/workflows/build-py312-cpu.yml">
+  <img alt="build 3.12 status" title="build 3.12 status" src="https://img.shields.io/github/actions/workflow/status/lmb-freiburg/radfinder/build-py312-cpu.yml?branch=main&label=build%203.12%20cpu" />
+</a>
+
+## Overview
 
 <div align="center">
 <img src="assets/figure1.png" alt="Overview of the RadFinder architecture and training pipeline" width="900"/>
