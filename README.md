@@ -276,6 +276,6 @@ If you use this code, models, or results, please cite:
   series    = {Lecture Notes in Computer Science},
   publisher = {Springer},
   year      = {2026},
-  note      = {To appear},
+  note      = {To appear}
 }
 ```
