@@ -5,6 +5,7 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Callable, List
 
+import numpy as np
 import pandas as pd
 from monai.data import Dataset
 from radfinder.data.ct_rate_splits import CTRATE_TRAINDEV_PATIENTS
@@ -19,17 +20,24 @@ class CTRateFilterMode(Const):
     """Single string switch for CT-RATE volume filtering + per-report dedup.
 
     Format: "<dedup>_<part>" where
-      dedup ∈ {dup, first, smallest}
-        dup       — keep all volumes per report
-        first     — keep first volume per report
-        smallest  — keep volume with smallest in-plane voxel size per report
-      part ∈ {all}
-        all       — keep all body parts
+      dedup ∈ {dup, first, smallestdeduptext}
+        dup               — keep all volumes per report
+        first             — keep first volume per report, deduplicate by report key
+        smallestdeduptext — keep the volume with smallest in-plane voxel size per
+                            report, then drop reports whose Findings_EN text duplicates
+                            another report (the COLIPRI paper's CT-RATE eval set)
+      part ∈ {all, nohead}
+        all       — keep all studies
+        nohead    — drop the entire study if any of its volumes is listed in
+                    dataset/metadata/no_chest_{train,valid}.txt
     """
 
     DUP_ALL = "dup_all"
+    DUP_NOHEAD = "dup_nohead"
     FIRST_ALL = "first_all"
-    SMALLEST_ALL = "smallest_all"
+    FIRST_NOHEAD = "first_nohead"
+    SMALLESTDEDUPTEXT_ALL = "smallestdeduptext_all"
+    SMALLESTDEDUPTEXT_NOHEAD = "smallestdeduptext_nohead"
 
     @classmethod
     def parse(cls, value: str) -> tuple[str, str]:
@@ -98,8 +106,31 @@ class CTRateDataset(Dataset):
         text_path = Path(data_dir) / f"dataset/radiology_text_reports/{csv_split}_reports.csv"
         reports = pd.read_csv(text_path)
 
+        if part_kind == "nohead":
+            # Study-level exclusion: drop every volume of a study if any of that study's
+            # volumes is listed as non-chest. The paper removes these head/non-chest CTs.
+            no_chest = load_no_chest_volumes(data_dir)
+            n_before = len(image_paths)
+            flagged_keys = {extract_report_key(p) for p in image_paths if Path(p).name in no_chest}
+            image_paths = [p for p in image_paths if extract_report_key(p) not in flagged_keys]
+            n_dropped = n_before - len(image_paths)
+            # On the full split there are always non-chest studies to drop, so 0 dropped means
+            # the no_chest basenames don't match the volume naming (format mismatch). A
+            # key_subset (e.g. feature extraction over a slice of scans) may legitimately
+            # contain none, so only enforce this when running over the whole split.
+            assert n_dropped > 0 or key_subset is not None, (
+                f"[{dataset_label}] nohead filter dropped 0/{n_before} volumes — format "
+                f"mismatch? Sample volume name: "
+                f"{Path(image_paths[0]).name if image_paths else '?'}, sample no_chest entry: "
+                f"{next(iter(no_chest)) if no_chest else 'EMPTY SET'}"
+            )
+            log_debug(
+                f"[{dataset_label}] nohead filter: dropped {len(flagged_keys)} studies, "
+                f"{n_before} → {len(image_paths)} volumes"
+            )
+
         onetomany = None
-        if dedup_kind in {"first", "smallest"}:
+        if dedup_kind in {"first", "smallestdeduptext"}:
             df = pd.DataFrame({"image_path": image_paths})
             df["report_key"] = df["image_path"].apply(extract_report_key)
             if dedup_kind == "first":
@@ -124,6 +155,20 @@ class CTRateDataset(Dataset):
                 df_deduplicated = df.sort_values(
                     ["report_key", "xy", "volume_name"]
                 ).drop_duplicates(subset="report_key", keep="first")
+                # After picking one volume per study, collapse studies that share identical
+                # Findings_EN report text (different studies can carry the same report).
+                findings = reports.set_index("VolumeName")["Findings_EN"].to_dict()
+                df_deduplicated["findings_en"] = df_deduplicated["volume_name"].map(findings)
+                n_missing_text = df_deduplicated["findings_en"].isna().sum()
+                assert n_missing_text == 0, (
+                    f"[{dataset_label}] Findings_EN missing for {n_missing_text}/"
+                    f"{len(df_deduplicated)} deduplicated volumes ({text_path}). Sample "
+                    f"volume_name: "
+                    f"{df_deduplicated.loc[df_deduplicated['findings_en'].isna(), 'volume_name'].iloc[0]}"
+                )
+                df_deduplicated = df_deduplicated.drop_duplicates(
+                    subset="findings_en", keep="first"
+                )
             image_paths = df_deduplicated["image_path"].tolist()
             log_debug(
                 f"[{dataset_label}] Deduplicated ({dedup_kind}): {len(image_paths)} images "

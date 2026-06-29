@@ -34,7 +34,7 @@ class RateStructuringArgs:
     )
     config: Optional[str] = add_argument(help="Path to configuration file", default=None)
     host: Optional[str] = add_argument(help="Overwrite config host", default=None)
-    port: Optional[int] = add_argument(help="Overwrite config port", default=None)
+    port: Optional[int] = add_argument(help="Overwrite config port", default=None, type=int)
     autohost: Optional[str] = add_argument(
         help="Automatically read host and port from ~/llmhost/<autohostname>_hostname_* files",
         default=None,

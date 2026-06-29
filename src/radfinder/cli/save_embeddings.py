@@ -22,14 +22,14 @@ from accelerate import Accelerator, DataLoaderConfiguration
 from attr import define
 from attrs import define
 from loguru import logger
-from radfinder.data.ct_rate import CTRateFilterMode
+from radfinder.data.dataloader_args import RetrievalDatasetArgs, retrieval_dataset_args_to_dict
 from radfinder.data.dataloader_retrieval import get_retrieval_dataloader
 from radfinder.data.dataloader_train import get_dataset
 from radfinder.models.load_model import DEFAULT_MODEL_CONFIG_FILE, FeatMode, create_siglip
 from radfinder.paths import get_medv_data_dir
 from radfinder.save_embeddings_lib import forward_pass, save_images
 from radfinder.transforms.load_features import get_features_subdir
-from radfinder.transforms.shared_utils import Language, LoadTextMode
+from radfinder.transforms.shared_utils import LoadTextMode
 from radfinder.utils.config import load_config_without_types, random_seed
 from torch import nn
 
@@ -50,7 +50,7 @@ from visiontext.profiling.code_profiler import (
 
 
 @define
-class Args(VerboseQuietArgs, TaskSplitterArgs):
+class Args(VerboseQuietArgs, TaskSplitterArgs, RetrievalDatasetArgs):
     batch_size: int = add_argument(type=int, default=1, help="Batch size for the dataloader")
     workers: int = add_argument(type=int, default=1, help="Number of workers for the dataloader")
     prefetch_factor: int = add_argument(
@@ -78,19 +78,12 @@ class Args(VerboseQuietArgs, TaskSplitterArgs):
         default=0,
         help="If > 0, show this many indices and their iloc",
     )
-    language: str = add_argument(default=Language.EN, help="Language for report generation")
     ckpt_file: str | None = add_argument(default=None, help="Checkpoint file to load weights from")
     print_transform: bool = add_argument(action="store_true")
     max_datapoints: int | None = add_argument(
         type=int, default=None, help="Maximum number of datapoints to use"
     )
     cpu: bool = add_argument(action="store_true", help="Use CPU even if GPU is available")
-    ctrate_filter_mode: str = add_argument(
-        default=CTRateFilterMode.DUP_ALL,
-        help=(
-            f"CT-RATE volume filter + per-report dedup. One of: {CTRateFilterMode.values_list()}"
-        ),
-    )
 
 
 def main():
@@ -254,8 +247,7 @@ def main():
         image_feat_mode=image_feat_mode_dataset,
         text_feat_mode=text_feat_mode,
         lazy=False,
-        language=args.language,
-        ctrate_filter_mode=args.ctrate_filter_mode,
+        dataset_config=retrieval_dataset_args_to_dict(args),
         load_text=load_text,
         add_slices=False,
     )

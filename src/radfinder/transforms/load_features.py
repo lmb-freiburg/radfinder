@@ -231,6 +231,7 @@ NUMPY_ARRAY_FIELDS = {
     "intent_p3": np.float32,
     "location": np.int64,
     "original_affine": np.float64,
+    "original_pixdim": np.float32,
     "pixdim": np.float32,
     "qform_code": np.int16,
     "qoffset_x": np.float32,
