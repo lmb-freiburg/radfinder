@@ -67,6 +67,8 @@ def main():
         margin = (pos - neg).item()
         call = "positive" if margin > 0 else "negative"
         pseudoprob = torch.sigmoid(torch.tensor(scale * margin)).item()
+        print(pos, neg)
+        print(pos * scale, neg * scale)
         print(
             f"  {disease:13s}: {call:<8} margin: {margin:+.4f}, "
             f"pseudo probability: {pseudoprob:4.0%}"
