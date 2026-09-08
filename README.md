@@ -49,7 +49,7 @@ conda create -n radfinder python=3.12 -y
 conda activate radfinder
 python -m ensurepip
 pip install -U pip setuptools wheel
-pip install -U requirements.txt
+pip install -U -r requirements.txt
 pip install -U -e .
 ```
 
@@ -65,8 +65,8 @@ python -m radfinder.cli.hf_example_real_input
 ```
 
 A joint forward pass `model(pixel_values=..., input_ids=..., attention_mask=..., grid_size=...)`
-returns both embeddings as a single `ModelOutput`. For a quick smoke test with dummy inputs
-(no data download needed) see `simple_example.py`.
+returns both embeddings as a single `ModelOutput`. The `hf_example_dummy_input` command above is a
+quick smoke test with dummy inputs (no data download needed).
 
 ## Setup datasets as required
 
