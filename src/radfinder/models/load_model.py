@@ -149,8 +149,8 @@ def create_siglip(
         model_settings = resolved_settings
     do_snippet = do_snippet_alignment
     if do_snippet.get("dual_cls_token", False):
-        image_feature_comb.init_local_cls_token()
-        log_info("Initialized local_cls_token from pretrained global CLS (dual-CLS mode)")
+        raise NotImplementedError("Dual CLS token mode is deactivated for simplicity")
+        # image_feature_comb.init_local_cls_token()
 
     is_axis_loc = do_snippet.get("snippet_mode") == SnippetAlignmentModeC.AXIS_LOCALIZATION
     loc_criterion = None

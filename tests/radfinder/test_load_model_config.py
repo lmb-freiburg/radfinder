@@ -121,7 +121,7 @@ def test_create_siglip_axis_localization_initializes_required_components(monkeyp
             "do_snippet_alignment": {
                 "enabled": True,
                 "snippet_mode": SnippetAlignmentModeC.AXIS_LOCALIZATION,
-                "dual_cls_token": True,
+                "dual_cls_token": False,
                 "axis2_use_cls_input": False,
                 "localization_sigma": 2.0,
                 "localization_tau": 0.1,
@@ -140,7 +140,6 @@ def test_create_siglip_axis_localization_initializes_required_components(monkeyp
     assert isinstance(model, SigLIP)
     assert model.loc_criterion is not None
     assert not hasattr(model, "ot_criterion")
-    assert feature_combiner.local_cls_initialized
     assert feature_combiner.axis_patch_initialized
 
 

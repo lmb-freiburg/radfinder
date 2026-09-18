@@ -12,10 +12,10 @@ Usage:
 
 from pathlib import Path
 
-import pandas as pd
 import torch
 from accelerate import Accelerator, DataLoaderConfiguration
 from attrs import define
+from radfinder.data.dataloader_args import RetrievalDatasetArgs, retrieval_dataset_args_to_dict
 from radfinder.data.dataloader_retrieval import get_retrieval_dataloader
 from radfinder.models.load_model import (
     DEFAULT_MODEL_CONFIG_FILE,
@@ -35,7 +35,7 @@ from typedparser import TypedParser, VerboseQuietArgs, add_argument
 
 
 @define
-class Args(VerboseQuietArgs):
+class Args(VerboseQuietArgs, RetrievalDatasetArgs):
     model_cfg: Path = add_argument(default=DEFAULT_MODEL_CONFIG_FILE)
     train_cfg: str | None = add_argument(help="Train config file (for snippet alignment settings)")
     dataset_name: str = add_argument(default="ctrate", help="Dataset name for evaluation")
@@ -113,6 +113,7 @@ def main_eval_binary_zs(args: Args):
         text_feat_mode=args.text_feat_mode,
         lazy=False,
         compose_class=ReprCompose,
+        dataset_config=retrieval_dataset_args_to_dict(args),
         do_snippet_alignment=do_snippet_alignment,
         add_slices=False,
         load_text=LoadTextMode.NONE,

@@ -2,13 +2,13 @@ from functools import partial
 from typing import Any
 
 from monai.data import DataLoader
-from radfinder.data.ct_rate import CTRateFilterMode
+from radfinder.data.dataloader_args import LANGUAGE_DEFAULT
 from radfinder.data.dataloader_train import get_dataset
 from radfinder.data.rad_chestct import NpzReader
 from radfinder.models.load_model import FeatMode
 from radfinder.transforms.eval_transform import TextTransformMode, get_eval_transform
 from radfinder.transforms.new_compose import ReprCompose
-from radfinder.transforms.shared_utils import Language, LoadTextMode, TransformKindC
+from radfinder.transforms.shared_utils import LoadTextMode, TransformKindC
 from radfinder.utils.collate import extended_collate_siglip
 from radfinder.utils.logging_utils import log_info
 from transformers import AutoTokenizer
@@ -29,20 +29,21 @@ def get_retrieval_dataloader(
     prefetch_factor: int | None = 2,
     image_feat_mode: str = FeatMode.FULL,
     text_feat_mode: str = FeatMode.FULL,
+    add_slices: bool = False,
+    lazy: bool = False,
+    compose_class=ReprCompose,
     do_snippet_alignment: dict | None = None,
     model_settings: dict | None = None,
-    lazy: bool = False,
-    # dataset-specific settings
-    language: str = Language.EN,
-    compose_class=ReprCompose,
-    add_slices: bool = False,
-    ctrate_filter_mode: str = CTRateFilterMode.FIRST_ALL,
     load_text: str = LoadTextMode.REPORTS,
     drop_findings: bool = False,
     drop_impressions: bool = False,
     drop_prefix: bool = False,
+    # dataset specific settings, see dataloader_args.py for field names
+    dataset_config: dict | None = None,
 ) -> tuple[DataLoader, Any]:
     """Create evaluation transform, dataset, and dataloader for retrieval."""
+    dataset_config = {} if dataset_config is None else dict(dataset_config)
+
     # Extract configuration parameters
     sliding_window_size = model_config["backbone_kwargs"]["sliding_window_size"]
     pixdim = model_config["backbone_kwargs"]["pixdim"]
@@ -78,7 +79,7 @@ def get_retrieval_dataloader(
         do_snippet_alignment=do_snippet_alignment,
         model_settings=model_settings,
         compose_class=compose_class,
-        language=language,
+        language=dataset_config.get("language", LANGUAGE_DEFAULT),
         lazy=lazy,
         image_reader=image_reader,
         text_transform_mode=ttm,
@@ -97,12 +98,14 @@ def get_retrieval_dataloader(
         max_datapoints=max_datapoints,
         data_fraction=data_fraction,
         key_subset=key_subset,
-        ctrate_filter_mode=ctrate_filter_mode,
+        dataset_config=dataset_config,
         add_slices=add_slices,
         load_text=load_text,
         sample_scan_per_dedup_report=False,  # not needed for eval
     )
-    extra = f", filter_mode={ctrate_filter_mode}" if dataset_name == "ctrate" else ""
+    extra = (
+        f", filter_mode={dataset_config['ctrate_filter_mode']}" if dataset_name == "ctrate" else ""
+    )
     log_info(
         f"Dataset {dataset_name} split={split}: {len(dataset):_d} samples "
         f"(data_fraction={data_fraction}{extra})"

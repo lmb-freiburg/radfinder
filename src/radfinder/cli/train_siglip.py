@@ -10,7 +10,6 @@ import torch
 import torch.nn as nn
 from accelerate import Accelerator, DataLoaderConfiguration
 from attr import define
-from radfinder.data.ct_rate import CTRateFilterMode
 from radfinder.data.dataloader_retrieval import get_retrieval_dataloader
 from radfinder.data.dataloader_train import get_train_dataloader_from_config
 from radfinder.data.prompt_rate_labels import (
@@ -582,11 +581,8 @@ def get_val_tasks(
             lazy=False,
             do_snippet_alignment=task_snippet_alignment,
             model_settings=model_settings,
-            language=val_task_config.get("language", "en"),
             add_slices=needs_slices,
-            ctrate_filter_mode=val_task_config.get(
-                "ctrate_filter_mode", CTRateFilterMode.FIRST_ALL
-            ),
+            dataset_config=val_task_config,
             load_text=load_text,
         )
         val_dict[val_task_file.stem] = (val_task_config, val_dataloader, val_dataset)

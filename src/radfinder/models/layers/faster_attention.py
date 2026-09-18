@@ -260,21 +260,27 @@ class FasterAttention(nn.Module):
             q_, k_, v_ = q, k, v
         drop = self.attn_drop.p if self.training else 0.0
         mask = attn_mask[:, None, None, :] if attn_mask is not None else None
-        backends = [SDPBackend.CUDNN_ATTENTION, SDPBackend.EFFICIENT_ATTENTION]
-        if q_.device.type != "cuda":
-            # The fused kernels are CUDA-only; add the math kernel so SDPA has a
-            # viable backend on CPU (and other non-CUDA devices).
-            backends.append(SDPBackend.MATH)
-        with sdpa_kernel(backends):
-            x = F.scaled_dot_product_attention(
-                q_,
-                k_,
-                v_,
-                dropout_p=drop,
-                scale=self.scale,  # IMPORTANT: keep 1/sqrt(90), not 1/sqrt(96)
-                is_causal=False,
-                attn_mask=mask,
-            )
+        # backends = [
+        #     SDPBackend.CUDNN_ATTENTION,
+        #     SDPBackend.EFFICIENT_ATTENTION,
+        #     SDPBackend.FLASH_ATTENTION,
+        # ]
+        # if q_.device.type != "cuda":
+        #     # The fused kernels are CUDA-only; add the math kernel so SDPA has a
+        #     # viable backend on CPU (and other non-CUDA devices).
+        #     backends.append(SDPBackend.MATH)
+        # with sdpa_kernel(backends):
+
+        # assuming this finds a good kernel by itself so forcing backends is not needed
+        x = F.scaled_dot_product_attention(
+            q_,
+            k_,
+            v_,
+            dropout_p=drop,
+            scale=self.scale,  # IMPORTANT: keep 1/sqrt(90), not 1/sqrt(96)
+            is_causal=False,
+            attn_mask=mask,
+        )
         if pad:
             x = x[..., :D]  # back to head_dim=90
         return x.transpose(1, 2).reshape(B, N, C)

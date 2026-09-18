@@ -36,9 +36,12 @@ def get_dataset(
     # dataset-specific settings
     load_text: str = LoadTextMode.REPORTS,
     ctrate_filter_mode: str = CTRateFilterMode.DUP_ALL,
+    dataset_config: dict | None = None,
     add_slices: bool = True,
     sample_scan_per_dedup_report: bool = False,
 ):
+    dataset_config = dict(dataset_config or {})
+    ctrate_filter_mode = dataset_config.get("ctrate_filter_mode", ctrate_filter_mode)
     include_reports = load_text != LoadTextMode.NONE
 
     if dataset_name == DatasetNameC.CTRATE:
@@ -82,8 +85,6 @@ def get_dataset(
             data_fraction=data_fraction,
             key_subset=key_subset,
         )
-    else:
-        raise NotImplementedError(f"Dataset {dataset_name} not implemented.")
     return dataset
 
 

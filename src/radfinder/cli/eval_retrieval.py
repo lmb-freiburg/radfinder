@@ -9,9 +9,8 @@ from pathlib import Path
 
 import torch
 from accelerate import Accelerator, DataLoaderConfiguration
-from attr import define
 from attrs import define
-from radfinder.data.ct_rate import CTRateFilterMode
+from radfinder.data.dataloader_args import RetrievalDatasetArgs, retrieval_dataset_args_to_dict
 from radfinder.data.dataloader_retrieval import get_retrieval_dataloader
 from radfinder.models.load_model import (
     DEFAULT_MODEL_CONFIG_FILE,
@@ -21,7 +20,6 @@ from radfinder.models.load_model import (
 )
 from radfinder.tasks.run_task import run_task_by_type
 from radfinder.transforms.new_compose import ReprCompose, TimedCompose
-from radfinder.transforms.shared_utils import Language
 from radfinder.utils.config import load_config_without_types, random_seed
 from radfinder.utils.logging_utils import configure_logging, log_debug, log_info
 from torch import nn
@@ -30,7 +28,7 @@ from typedparser import TypedParser, VerboseQuietArgs, add_argument
 
 
 @define
-class Args(VerboseQuietArgs):
+class Args(VerboseQuietArgs, RetrievalDatasetArgs):
     model_cfg: Path = add_argument(default=DEFAULT_MODEL_CONFIG_FILE)
     train_cfg: str | None = add_argument(help="Train config file (for snippet alignment settings)")
     dataset_name: str = add_argument(default="ctrate", help="Dataset name for evaluation")
@@ -44,9 +42,6 @@ class Args(VerboseQuietArgs):
         type=int, default=2, help="Prefetch factor for the dataloader"
     )
     features_dir_overwrite: str | None = add_argument()
-    language: str = add_argument(
-        default=Language.EN, help="Language for report generation: en, de, both"
-    )
     ckpt_file: str | None = add_argument(default=None, help="Checkpoint file to load weights from")
     timed_compose: bool = add_argument(action="store_true", help="Use timed compose")
     print_transform: bool = add_argument(action="store_true", help="Print transform")
@@ -55,12 +50,6 @@ class Args(VerboseQuietArgs):
     drop_prefix: bool = add_argument(
         action="store_true",
         help="Drop the literal 'Findings: ' / 'Impressions: ' prefixes from rendered reports.",
-    )
-    ctrate_filter_mode: str = add_argument(
-        default=CTRateFilterMode.DUP_ALL,
-        help=(
-            f"CT-RATE volume filter + per-report dedup. One of: {CTRateFilterMode.values_list()}"
-        ),
     )
     bootstrap: bool = add_argument(action="store_true", help="Also compute bootstrap CIs")
 
@@ -119,10 +108,9 @@ def main_eval_retrieval(args: Args):
         text_feat_mode=args.text_feat_mode,
         lazy=False,
         compose_class=TimedCompose if args.timed_compose else ReprCompose,
-        language=args.language,
+        dataset_config=retrieval_dataset_args_to_dict(args),
         do_snippet_alignment=do_snippet_alignment,
         model_settings=model_settings,
-        ctrate_filter_mode=args.ctrate_filter_mode,
         drop_findings=args.drop_findings,
         drop_impressions=args.drop_impressions,
         drop_prefix=args.drop_prefix,
