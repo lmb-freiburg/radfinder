@@ -1,11 +1,12 @@
 <div align="center">
 <a href="https://lmb.informatik.uni-freiburg.de/"><img src='assets/logo_cv_small.png' alt='Computer Vision, University of Freiburg' title='Computer Vision, University of Freiburg'/></a>
-<a href="hhttps://ece.au.dk/forskning/forsknings-og-udviklingsomraader/signal-processing-and-machine-learning/research-groups-alt/adaptive-agentic-ai-a3-la"><img src='assets/logo_a3_small.png' alt='Adaptive and Agentic AI (A3 Lab), University of Aarhus' title='Adaptive and Agentic AI (A3 Lab), University of Aarhus'/></a>
+<a href="https://ece.au.dk/forskning/forsknings-og-udviklingsomraader/signal-processing-and-machine-learning/research-groups-alt/adaptive-agentic-ai-a3-la"><img src='assets/logo_a3_small.png' alt='Adaptive and Agentic AI (A3 Lab), University of Aarhus' title='Adaptive and Agentic AI (A3 Lab), University of Aarhus'/></a>
 <br/>
 <a href="https://radfinder.github.io">Project Page</a> —
 <a href="https://arxiv.org/abs/2603.02026">Paper</a> —
 <a href="https://github.com/lmb-freiburg/radfinder">Code</a> —
-<a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a>
+<a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a> —
+<a href="https://radfinder.github.io/radfinder_slides.pdf">Slides</a>
 </div>
 
 # RadFinder
