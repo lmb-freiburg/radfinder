@@ -18,7 +18,10 @@ We pretrain a 3D CT vision–language model on 159k report–volume pairs with t
 A single unified model reaches state-of-the-art retrieval on CT-RATE, competitive disease
 classification, and slice-level localization at 12 mm resolution.
 
-**To appear at MICCAI 2026.**
+**Visit us at MICCAI 2026:**
+
+- **Oral Session O1B**, Monday, September 28, 2026, 11:06 AM – 11:18 AM
+- **Poster Session 4**, Wednesday, September 30, 2026, 10:30 AM – 12:30 PM, together with our second paper [RadGrounder – Scalable Training of Spatially Grounded 2D Vision-Language Models for Radiology](https://radgrounder.github.io/) (poster hosted by Yusuf Salcan)
 
 <a href="https://github.com/lmb-freiburg/radfinder/actions/workflows/build-py312-cpu.yml">
   <img alt="build 3.12 status" title="build 3.12 status" src="https://img.shields.io/github/actions/workflow/status/lmb-freiburg/radfinder/build-py312-cpu.yml?branch=main&label=build%203.12%20cpu" />
