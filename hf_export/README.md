@@ -19,7 +19,8 @@ tags:
 
 Links: 
 <a href="https://radfinder.github.io">Project page</a> —
-<a href="https://arxiv.org/abs/2603.02026">Paper</a> —
+<a href="https://papers.miccai.org/miccai-2026/0572-Paper3986.html">Paper</a> —
+<a href="https://arxiv.org/abs/2603.02026">arXiv</a> —
 <a href="https://github.com/lmb-freiburg/radfinder">Code</a> —
 <a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a>
 
@@ -68,10 +69,13 @@ If you use this code, models, or results, please cite:
 @inproceedings{ging2026radfinder,
   author    = {Simon Ging and Philipp Arnold and Sebastian Walter and Hani Alnahas and Hannah Bast and Elmar Kotter and Jiancheng Yang and Behzad Bozorgtabar and Thomas Brox},
   title     = {Learning to Read Where to Look: Disease-Aware Vision--Language Pretraining for 3{D} {CT}},
-  booktitle = {Medical Image Computing and Computer Assisted Intervention -- {MICCAI} 2026, Strasbourg, France, September 27 -- October 1, 2026, Proceedings},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention -- {MICCAI} 2026},
   series    = {Lecture Notes in Computer Science},
-  publisher = {Springer},
+  volume    = {16878},
+  publisher = {Springer Nature Switzerland},
   year      = {2026},
-  note      = {To appear},
+  month     = {September},
+  doi       = {10.1007/978-3-032-38059-3_24},
+  url       = {https://papers.miccai.org/miccai-2026/0572-Paper3986.html}
 }
 ```
