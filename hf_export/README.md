@@ -19,7 +19,7 @@ tags:
 
 Links: 
 <a href="https://radfinder.github.io">Project page</a> —
-<a href="https://papers.miccai.org/miccai-2026/0572-Paper3986.html">Paper</a> —
+<a href="https://papers.miccai.org/miccai-2026/paper/3986_paper.pdf">Paper</a> —
 <a href="https://arxiv.org/abs/2603.02026">arXiv</a> —
 <a href="https://github.com/lmb-freiburg/radfinder">Code</a> —
 <a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a>
