@@ -7,7 +7,8 @@
 <a href="https://arxiv.org/abs/2603.02026">arXiv</a> —
 <a href="https://github.com/lmb-freiburg/radfinder">Code</a> —
 <a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a> —
-<a href="https://radfinder.github.io/radfinder_slides.pdf">Slides</a>
+<a href="https://radfinder.github.io/radfinder_slides.pdf">Slides</a> —
+<a href="https://radfinder.github.io/radfinder_poster.pdf">Poster</a>
 </div>
 
 # RadFinder
