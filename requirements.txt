@@ -1,5 +1,10 @@
 # first install separately: torch torchvision 
 
+# author packages (PyPI)
+packg<1
+typedparser<1
+visiontext<1
+
 # core DL stack
 accelerate>=0.34
 transformers>=4.40
@@ -43,12 +48,8 @@ requests>=2.31
 python-dotenv>=1.0
 nvidia-ml-py>=13.580
 
-# author packages (PyPI)
-packg
-typedparser
-visiontext
-
 # dev
 black
 pytest
 pytest-cov
+
