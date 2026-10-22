@@ -1,23 +1,24 @@
 <div align="center">
 <a href="https://lmb.informatik.uni-freiburg.de/"><img src='assets/logo_cv_small.png' alt='Computer Vision, University of Freiburg' title='Computer Vision, University of Freiburg'/></a>
-<a href="hhttps://ece.au.dk/forskning/forsknings-og-udviklingsomraader/signal-processing-and-machine-learning/research-groups-alt/adaptive-agentic-ai-a3-la"><img src='assets/logo_a3_small.png' alt='Adaptive and Agentic AI (A3 Lab), University of Aarhus' title='Adaptive and Agentic AI (A3 Lab), University of Aarhus'/></a>
+<a href="https://ece.au.dk/forskning/forsknings-og-udviklingsomraader/signal-processing-and-machine-learning/research-groups-alt/adaptive-agentic-ai-a3-lab"><img src='assets/logo_a3_small.png' alt='Adaptive and Agentic AI (A3 Lab), University of Aarhus' title='Adaptive and Agentic AI (A3 Lab), University of Aarhus'/></a>
 <br/>
 <a href="https://radfinder.github.io">Project Page</a> —
-<a href="https://arxiv.org/abs/2603.02026">Paper</a> —
+<a href="https://papers.miccai.org/miccai-2026/paper/3986_paper.pdf">Paper</a> —
+<a href="https://arxiv.org/abs/2603.02026">arXiv</a> —
 <a href="https://github.com/lmb-freiburg/radfinder">Code</a> —
 <a href="https://huggingface.co/collections/lmb-freiburg/radfinder">Models</a>
 </div>
 
 # RadFinder
 
-_Disease-Aware Vision–Language Pretraining for 3D CT_
+_Learning to Read Where to Look: Disease-Aware Vision–Language Pretraining for 3D CT_
 
 We pretrain a 3D CT vision–language model on 159k report–volume pairs with two new supervision signals:
 **prompt-based disease labels** for classification and **intra-scan snippet localization** for axial depth grounding.
 A single unified model reaches state-of-the-art retrieval on CT-RATE, competitive disease
 classification, and slice-level localization at 12 mm resolution.
 
-**To appear at MICCAI 2026.**
+**Published at MICCAI 2026.**
 
 <a href="https://github.com/lmb-freiburg/radfinder/actions/workflows/build-py312-cpu.yml">
   <img alt="build 3.12 status" title="build 3.12 status" src="https://img.shields.io/github/actions/workflow/status/lmb-freiburg/radfinder/build-py312-cpu.yml?branch=main&label=build%203.12%20cpu" />
@@ -34,6 +35,7 @@ classification, and slice-level localization at 12 mm resolution.
 
 ## News
 
+- 22 October 2026: **RadFinder-2610 models** released on [🤗 Hugging Face](https://huggingface.co/collections/lmb-freiburg/radfinder): one shared output projection for all tasks simplifies the architecture. We release four versions by training data: full, RefCT, public, CT-RATE.
 - 15 June 2026: **Code and models** released, including the report structuring pipeline
 - 7 May 2026: **Accepted** to MICCAI 2026 (early-acceptance)
 - 2 March 2026: **Preprint** published on [arXiv](https://arxiv.org/abs/2603.02026)
@@ -272,10 +274,14 @@ If you use this code, models, or results, please cite:
 @inproceedings{ging2026radfinder,
   author    = {Simon Ging and Philipp Arnold and Sebastian Walter and Hani Alnahas and Hannah Bast and Elmar Kotter and Jiancheng Yang and Behzad Bozorgtabar and Thomas Brox},
   title     = {Learning to Read Where to Look: Disease-Aware Vision--Language Pretraining for 3{D} {CT}},
-  booktitle = {Medical Image Computing and Computer Assisted Intervention -- {MICCAI} 2026, Strasbourg, France, September 27 -- October 1, 2026, Proceedings},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention -- {MICCAI} 2026},
   series    = {Lecture Notes in Computer Science},
-  publisher = {Springer},
+  volume    = {16878},
+  pages     = {250--259},
+  publisher = {Springer Nature Switzerland},
   year      = {2026},
-  note      = {To appear}
+  month     = {September},
+  doi       = {10.1007/978-3-032-38059-3_24},
+  url       = {https://papers.miccai.org/miccai-2026/0572-Paper3986.html}
 }
 ```
