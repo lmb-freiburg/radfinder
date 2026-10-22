@@ -1,10 +1,10 @@
 # difference to the training config:
-# Weight init is huggingface RadFinder instead of SPECTRE
+# Weights come from the model config (default configs/models/radfinder.yaml, the released RadFinder) instead of SPECTRE
 # Epochs set to 0, so the trainer will only run the tests
 train:
     image_feat_mode: frozen_local
     text_feat_mode: full
-    init_ckpt: hf-hub:lmb-freiburg/radfinder
+    init_ckpt: null  # Hub model (e.g. hf-hub:lmb-freiburg/radfinder-2610-full) or local checkpoint, overrides the model_cfg weights
     batch_size: 16
     val_batch_size: 16    
     accum_steps: 256

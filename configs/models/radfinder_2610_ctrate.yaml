@@ -1,0 +1,2 @@
+# RadFinder-2610-ctrate: one projection head per side shared by all tasks
+huggingface_path: hf-hub:lmb-freiburg/radfinder-2610-ctrate
