@@ -170,7 +170,12 @@ def get_features_subdir(
         features_subdir_res = "1mm"
         images_subdir = "1mm"
     else:
-        raise NotImplementedError(f"Model {features_model_name} no feature dir implemented")
+        raise NotImplementedError(
+            f"No feature folder for model config '{features_model_name}'. The folder is chosen by the model config's "
+            f"file name: a config that loads a released RadFinder model through huggingface_path must be named "
+            f"radfinder*.yaml, e.g. radfinder_2610_full.yaml with 'huggingface_path: "
+            f"hf-hub:lmb-freiburg/radfinder-2610-full'."
+        )
     return (
         f"images_{images_subdir}_{features_subdir_dataset}",
         f"{model_name}_{features_subdir_res}_{features_subdir_dataset}",
